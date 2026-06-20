@@ -2,6 +2,22 @@
 
 - 풀이일: 2026-06-20
 - 범위: 성능 지표, Roofline model, pruning, quantization
+- 원본: [raw-quiz-1.txt](raw-quiz-1.txt)
+
+## 정답표
+
+| 번호 | 정답 |
+| --- | --- |
+| 1 | FLOPS |
+| 2 | 측정된 모든 워크로드 포인트들은 roofline 위에 위치한다. |
+| 3 | Unstructured pruning을 사용하면 structured pruning과 비교하여 하드웨어 가속에서 이점이 크다. |
+| 4 | 크기 4인 블록마다 2개의 원소를 제거 |
+| 5 | 가중치의 gradient 크기를 분석하여 학습에 기여하지 않는 가중치를 제거한다. |
+| 6 | Pruning 과정에서 제거된 가중치를 복원한다. |
+| 7 | Per-tensor quantization에서 outlier weight가 존재할 경우 값의 표현 범위가 넓어져 낮은 수준의 양자화 에러를 가진다. |
+| 8 | Dataset size |
+| 9 | K-means clustering |
+| 10 | 학습 완료 후 quantization 적용 |
 
 ## 1. 초당 부동소수점 연산 수를 의미하는 연산 메트릭으로 옳은 것은?
 
@@ -14,7 +30,7 @@
 
 정답: **FLOPS**
 
-해설: FLOPS는 Floating Point Operations Per Second의 약자로, 초당 수행 가능한 부동소수점 연산 수를 의미한다.
+해설: FLOPS는 Floating Point Operations Per Second의 약자로, 초당 수행 가능한 부동소수점 연산 수를 의미한다. GEMM은 행렬곱 연산 형태, MAC은 multiply-accumulate 연산, throughput은 단위 시간당 처리량을 더 넓게 말하는 지표다.
 
 ## 2. Roofline diagram에 대한 설명으로 옳지 않은 것은?
 
@@ -132,3 +148,10 @@
 정답: **학습 완료 후 quantization 적용**
 
 해설: PTQ는 이미 학습된 모델에 후처리로 quantization을 적용하는 방식이다. 학습 과정에서 quantization을 반영하는 방식은 QAT에 가깝다.
+
+## 면접 대비 한 줄 정리
+
+- Roofline은 연산량과 메모리 대역폭 중 무엇이 병목인지 보는 도구다.
+- Structured pruning은 실제 하드웨어 가속과 연결되기 쉽고, unstructured pruning은 압축률은 좋지만 sparse 연산 지원이 중요하다.
+- Quantization은 모델 크기, 메모리 사용량, 전력, 지연시간을 줄이는 데 유리하지만 outlier와 scale 선택이 정확도에 영향을 준다.
+- PTQ는 적용이 간단하고 빠르지만 정확도 손실이 있을 수 있고, QAT는 학습 비용이 더 들지만 정확도 보존에 유리하다.

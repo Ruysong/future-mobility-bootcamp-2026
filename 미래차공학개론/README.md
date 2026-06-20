@@ -35,5 +35,5 @@
 
 ## 퀴즈
 
-- [주차별 퀴즈 원본](퀴즈/raw-weekly-quiz.txt)
-- 현재 원본 파일은 비어 있습니다. 이후 퀴즈가 추가되면 Markdown으로 정리합니다.
+- [퀴즈 폴더](퀴즈/README.md)
+- 현재 확인된 `raw-weekly-quiz.txt`는 0바이트입니다. 실제 전범위 퀴즈 텍스트가 저장되면 `weekly-quiz.md`로 정리합니다.
