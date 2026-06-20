@@ -99,13 +99,13 @@ def convert_course(material_dir: Path, output_dir: Path, suffix: str) -> None:
 
 def main() -> int:
     convert_course(
-        ROOT / "materials" / "future-mobility-engineering",
-        ROOT / "notes" / "future-mobility-engineering" / "extracted-text",
+        ROOT / "미래차공학개론" / "교안",
+        ROOT / "미래차공학개론" / "노트" / "extracted-text",
         ".pdf",
     )
     convert_course(
-        ROOT / "materials" / "on-device-ai",
-        ROOT / "notes" / "on-device-ai" / "extracted-text",
+        ROOT / "온디바이스-AI" / "교안",
+        ROOT / "온디바이스-AI" / "노트" / "extracted-text",
         ".pptx",
     )
     return 0
