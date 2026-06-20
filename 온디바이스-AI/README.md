@@ -19,7 +19,6 @@
 
 ## 핵심 개념
 
-- [교안 자동 추출 텍스트](노트/extracted-text/)
 - 성능 지표: FLOPS, MAC, throughput, latency, power, memory footprint
 - Roofline model: 연산 성능과 메모리 대역폭의 병목을 함께 보는 분석 도구
 - Pruning: 중요도가 낮은 파라미터, 채널, 필터를 제거해 모델을 작게 만드는 기법
@@ -40,4 +39,3 @@
 
 - [퀴즈 폴더](퀴즈/README.md)
 - [Quiz 1 정리](퀴즈/quiz-1.md)
-- [Quiz 1 원본](퀴즈/raw-quiz-1.txt)
