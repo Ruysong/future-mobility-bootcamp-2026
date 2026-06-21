@@ -1,5213 +1,2632 @@
 # Classic CAN
 
 - 원본: [Classic CAN.pdf](<../교안/Classic CAN.pdf>)
-- 생성 방식: 이미지 렌더링 후 Windows OCR(ko)
 
 ## Page 1
 
-CAN
-전 재 욱
-Embedded System 연구실
-성균관대학교
+- 1 -
 Embedded System Lab
+CAN
+전 재 욱Embedded System  연구실성균관대학교
 
 ## Page 2
 
-INTRO TO CAN
+- 2 -
 Embedded System Lab
+INTRO TO CAN
 
 ## Page 3
 
-lntroduction tO CAN
-CAN (Contr011er Area Network) by Bosch
+- 3 -
+Embedded System Lab
+Introduction to CAN
+CAN (Controller Area Network) by Bosch
 CAN
 Very reliable data transmission
 Real-time requirements
-StiII used in networking ECUs
-Embedded System Lab
+Still used in networking ECUs
 
 ## Page 4
 
-CAN BLIS Networking
+- 4 -
 Embedded System Lab
+CAN Bus Networking
 
 ## Page 5
 
+- 5 -
+Embedded System Lab
+Conventional Connection
 (Before)
-ConventionaI Connection
-VehicIe Wiring: conventional multi•wire looms
--수결1= -수규-
-lbedded System Lab
 
 ## Page 6
 
+- 6 -
+Embedded System Lab
+CAN Bus Networking
 (After)
-CAN BLIS Networking
-Vehicle Wiring: CAN 816 network
-=뇨
-ECM
-0
-1.로羲
-BCM
-0
-CANBUS
-ded System Lab
 
 ## Page 7
 
-CAN BLIS Networking
+- 7 -
+Embedded System Lab
+CAN Bus Networking
 BMW 850 coupe
 The first CAN Bus vehicle in 1986
-Embedded System Lab
 
 ## Page 8
 
-CAN BLIS Networking
-AppIication result
-Reduction
-VehicIe wiring
-Vehicle overall weight
-Connector
-2km
-50kg
-Half
+- 8 -
 Embedded System Lab
+CAN Bus Networking
+Application resultReductionVehicle wiring 2kmVehicle overall weight 50kgConnector Half
 
 ## Page 9
 
-LAYERS OF CAN
+- 9 -
 Embedded System Lab
+LAYERS OF CAN
 
 ## Page 10
 
-㉦
-7
-6
-5
-4
-3
-2
-1
--10-
-Standard and lmolementation
-Application
-Layer
-Presentation
-Layer
-Session
-Layer
-Transport
-Layer
-Network
-Layer
-9S
-PMA
-Physical
-Layer
-PMS
-MDI
-ISO/OSI ModeI
-(ISO 74980
-Application Layer
-Ⅴ Message format, Human-Machine lnterfaces
-Presentation Layer
-17 C0ding int0 ls and Os; encryption, compression
-Session Layer
-Ⅴ Authentication, permISSions, session restoration
-Transport Layer
-17 End-to-end error control
-Network Layer
-1/ Network addressing; routing or switching
-Data Link Layer
-17 Error detection, flow control on physical link
-PhysicaI Layer
-17 Bit stream: physical medium, method Of representing bits
+- 10 -
 Embedded System Lab
+ApplicationLayerPresentationLayerSessionLayerTransportLayerNetworkLayerData LinkLayerPhysicalLayerLLCMACPLSPMAPMSMDIISO/OSI Model(ISO 7498O
+7654321
+Standard and Implementation
+Physical Layer√ Bit stream: physical medium, method of representing bitsData Link Layer√ Error detection, flow control on physical linkNetwork Layer√ Network addressing; routing or switchingTransport Layer√ End-to-end error controlSession Layer√ Authentication, permissions, session restorationPresentation Layer√ Coding into 1s and 0s; encryption, compressionApplication Layer√ Message format, Human-Machine Interfaces
 
 ## Page 11
 
-㉦
-7
-6
-5
-4
-3
-2
-1
--11-
-Standard and lmolementation
-Application
-Layer
-Presentation
-Layer
-Session
-Layer
-Transport
-Layer
-Network
-Layer
-LLC
-Data Link
-Layer
-MAC
-PMA
-Physical
-Layer
-PMS
-MDI
-ISO/OSI ModeI
-(ISO 74980
-empty
-CAN
-하otocol
-CAN
-PhysicaI Layer
-CAN in the
-ISO/OSI ModeI
+- 11 -
 Embedded System Lab
+ApplicationLayerPresentationLayerSessionLayerTransportLayerNetworkLayerData LinkLayerPhysicalLayerLLCMACPLSPMAPMSMDICANProtocolCANPhysical Layer
+empty
+ISO/OSI Model(ISO 7498OCAN in theISO/OSI Model
+7654321
+Standard and Implementation
 
 ## Page 12
 
-PhysicaI layer
+- 12 -
+Embedded System Lab
+Physical layer
 The way in which the signal is transmitted
 PLS (physical signaling)
 PMA (physical medium attachment)
 PMS (physical medium specification)
-MDI (medium-dependent interface)
-2
-1
--12-
-LLC
-Data Link
-Layer
-MAC
-PMA
-Physical
-Layer
-PMS
-MDI
-ISO/OSI ModeI
-(ISO 74980
-CAN
-하otocol
-CAN
-PhysicaI Layer
-CAN in the
-ISO/OSI ModeI
-Embedded System Lab
+MDI (medium-dependent interface)Data LinkLayerPhysicalLayerLLCMACPLSPMAPMSMDICANProtocolCANPhysical LayerISO/OSI Model(ISO 7498OCAN in theISO/OSI Model21
 
 ## Page 13
 
-PhysicaI layer
+- 13 -
+Embedded System Lab
+Physical layer
 PLS (physical signaling)
 Bit representation (coding, timing, etc.)
-Bit synchronization
-2
-1
--13-
-LLC
-Data Link
-Layer
-MAC
-PMA
-Physical
-Layer
-PMS
-MDI
-ISO/OSI ModeI
-(ISO 74980
-CAN
-하otocol
-CAN
-PhysicaI Layer
-CAN in the
-ISO/OSI ModeI
-Embedded System Lab
+Bit synchronizationData LinkLayerPhysicalLayerLLCMACPLSPMAPMSMDICANProtocolCANPhysical LayerISO/OSI Model(ISO 7498OCAN in theISO/OSI Model21
 
 ## Page 14
 
-PhysicaI layer
-PMA (physical medium attachment)
-Driver/receiver characteristics
-2
-1
--14-
-LLC
-Data Link
-Layer
-MAC
-PMA
-Physical
-Layer
-PMS
-MDI
-ISO/OSI ModeI
-(ISO 74980
-CAN
-하otocol
-CAN
-PhysicaI Layer
-CAN in the
-ISO/OSI ModeI
+- 14 -
 Embedded System Lab
+Physical layer
+PMA (physical medium attachment)
+Driver/receiver characteristicsData LinkLayerPhysicalLayerLLCMACPLSPMAPMSMDICANProtocolCANPhysical LayerISO/OSI Model(ISO 7498OCAN in theISO/OSI Model21
 
 ## Page 15
 
-PhysicaI layer
-PMS (physical medium specification)
-application-specific and is not generally standardized
-2
-1
--15-
-LLC
-Data Link
-Layer
-MAC
-PMA
-Physical
-Layer
-PMS
-MDI
-ISO/OSI ModeI
-(ISO 74980
-CAN
-하otocol
-CAN
-PhysicaI Layer
-CAN in the
-ISO/OSI ModeI
+- 15 -
 Embedded System Lab
+Physical layer
+PMS (physical medium specification)
+application-specific and is not generally standardizedData LinkLayerPhysicalLayerLLCMACPLSPMAPMSMDICANProtocolCANPhysical LayerISO/OSI Model(ISO 7498OCAN in theISO/OSI Model21
 
 ## Page 16
 
-PhysicaI layer
-MDI (medium•dependent interface)
-Connectors/wires
-2
-1
--16-
-LLC
-Data Link
-Layer
-MAC
-PMA
-Physical
-Layer
-PMS
-MDI
-ISO/OSI ModeI
-(ISO 74980
-CAN
-하otocol
-CAN
-PhysicaI Layer
-CAN in the
-ISO/OSI ModeI
+- 16 -
 Embedded System Lab
+Physical layer
+MDI (medium-dependent interface)
+Connectors/wiresData LinkLayerPhysicalLayerLLCMACPLSPMAPMSMDICANProtocolCANPhysical LayerISO/OSI Model(ISO 7498OCAN in theISO/OSI Model21
 
 ## Page 17
 
+- 17 -
+Embedded System Lab
 Data link layer
 LLC (logical link control)
 Message filtering
 Overload notification
-Error recovery procedure
-2
-1
--17-
-LLC
-Data Link
-Layer
-MAC
-PMA
-Physical
-Layer
-PMS
-MDI
-ISO/OSI ModeI
-(ISO 74980
-CAN
-하otocol
-CAN
-PhysicaI Layer
-CAN in the
-ISO/OSI ModeI
+Error recovery procedureData LinkLayerPhysicalLayerLLCMACPLSPMAPMSMDICANProtocolCANPhysical LayerISO/OSI Model(ISO 7498OCAN in theISO/OSI Model21
 MAC (medium access control)
 Message framing
 Arbitration
 Acknowledgement
 Error detection
 Error signaling
-Embedded System Lab
 
 ## Page 18
 
-㉦
-2
-1
--18-
-Standard and lmolementation
-LLC
-Data Link
-Layer
-MAC
-ISO/OSI ModeI
-(ISO 74980
-CAN
-하otocol
-CAN in the
-ISO/OSI ModeI
-ISO 11898-1
-Standards
-CAN
-ControlIer
-lmplemen
+- 18 -
 Embedded System Lab
+Data LinkLayerPhysicalLayerLLCMACPLSPMAPMSMDICANProtocolCANPhysical LayerISO/OSI Model(ISO 7498OCAN in theISO/OSI Model21
+Standard and Implementation
+ISO 11898-1StandardsImplementationCANController
 
 ## Page 19
 
-㉦
--19-
-MCU [Micro ControIIer Unit)
-MCU (Micro Contr011er Unit)
-Contains CPU core and other modules
-for implementing ECU (EIectronic ControI Unit) efficiently
-• SingIe core, MuIticore
-RAM, flash
-ADC, PWM, Timer, DMA,
-SCI, LIN, CAN, FIexRay, FECs
+- 19 -
 Embedded System Lab
+MCU (Micro Controller Unit)
+MCU (Micro Controller Unit)
+Contains CPU core and other modules for implementing ECU (Electronic Control Unit) efficiently
+Single core, Multicore
+RAM, flash
+ADC, PWM, Timer, DMA, …
+SCI, LIN, CAN, FlexRay, FECs
 
 ## Page 20
 
-㉦
-MuIti core
-MCU [Micro ControIIer Unit)
-More than one core
-DMA
-AdditionaI
-Core
-FIexRay ControIIer
-Fast Ethernet ControIIer
--20-
-Memory
-Core
-CAN ControIIer
-GPIO
-ADC
-Timer/Counter
-SCI
-SPI
-PWM
+- 20 -
 Embedded System Lab
+MCU (Micro Controller Unit)ADCTimer/CounterSCI
+CoreCAN ControllerPWMGPIO
+MemorySPIFast Ethernet ControllerFlexRay ControllerDMA
+AdditionalCore
+Multi core
+More than one core
 
 ## Page 21
 
+- 21 -
+Embedded System Lab
 CAN ECU
+Core
+CAN ControllerMCUECUCAN Transceiver
 CAN ECU
 MCU
 Core
 CAN controller
 CAN Transceiver
-ECU
--21-
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-Embedded System Lab
 
 ## Page 22
 
-㉦
-2
-1
-Standard and lmolementation
-LLC
-Data Link
-Layer
-MAC
-PMA
-Physical
-Layer
-PMS
-MDI
-ISO/OSI ModeI
-(ISO 74980
-MCU
-Core
-CAN ControlIer
-CAN
-Transceiver
-CAN
-ControlIer
-CAN
-1
-CAN
-하otocol
-High Spee
-CAN
-PhysicaI Layer
-OW
-CAN in the
-ISO/OSI ModeI
-ECU
-ISO 11898-1
-Transce•ver
-ISO 11898-2
-ISO 11898-3
-CiA DS-102
-Standards
-Transceiver
-CAN Bus
-Medium
-CAN Bus
-Connector
-lmplemen
+- 22 -
 Embedded System Lab
+Data LinkLayerPhysicalLayerLLCMACPLSPMAPMSMDICANProtocolCANPhysical LayerISO/OSI Model(ISO 7498OCAN in theISO/OSI Model21
+Standard and Implementation
+ISO 11898-1ISO 11898-2ISO 11898-3CiA DS-102StandardsCANControllerImplementationCANTransceiverCAN BusConnectorCAN BusMedium
+Core
+CAN ControllerMCUECUCAN TransceiverHigh Speed CAN TransceiverLow Speed CAN Transceiver
 
 ## Page 23
 
-CAN NETWORK
+- 23 -
 Embedded System Lab
+CAN NETWORK
 
 ## Page 24
 
-CAN Network
-ECUs connected via a physical transmission medium
-ECU 1
-ECU 2
-ECU n
+- 24 -
 Embedded System Lab
+CAN Network
+ECU 1…ECU 2ECU n
+ECUs connected via a physical transmission medium
 
 ## Page 25
 
-㉦
-Sender
-Sending A CAN Data Frame
-MCU
-Core
-CAN ControlIer
-CAN
-Transceiver
-1
-Header
-0110.
-0 11 0•
-data
-data
-TaiI
-MCU
-Core
-CAN ControlIer
-CAN
-Transceiver
-1
-Receiver
+- 25 -
 Embedded System Lab
+Sending A CAN Data Frame
+CoreCAN ControllerCAN TransceiverMCUCoreCAN ControllerCAN TransceiverMCUHeaderTaildatadataV0V1V1V0…0 1 1 0 …          SenderReceiver
 
 ## Page 26
 
-㉦
-01 10
-Receiving A CAN Data Frame
-MCU
-Core
-CAN ControlIer
-CAN
-Transceiver
-1
-Header
-data
-data
-TaiI
-MCU
-Core
-CAN ControlIer
-CAN
-Transceiver
-0 11 0•
-1
-Receiver
-Sender
--26-
+- 26 -
 Embedded System Lab
+Receiving A CAN Data Frame
+CoreCAN ControllerCAN TransceiverMCUCoreCAN ControllerCAN TransceiverMCUV0V1V1V0…HeaderTaildatadata0 1 1 0 …          ReceiverSender
 
 ## Page 27
 
-CAN Network
-data
-MCU
-Core
-CAN ControlIer
-CAN
-Transceiver
-1
-MCU
-Core
-CAN ControlIer
-CAN
-Transceiver
-1
-Receiver
-Sender
--27-
+- 27 -
 Embedded System Lab
+CAN Network
+CoreCAN ControllerCAN TransceiverMCUCoreCAN ControllerCAN TransceiverMCU…dataReceiverSender
 
 ## Page 28
 
-CAN ControIIer
-FuII CAN controller
-Basic CAN controller
+- 28 -
 Embedded System Lab
+CAN Controller
+Full CAN controller
+Basic CAN controller
 
 ## Page 29
 
-BasiC CAN ControlIer
+- 29 -
+Embedded System Lab
+Basic CAN Controller
 CAN controller without object storage
 Final filtering must be done by the application software
 i.e. CPU core
-Basic CAN Controller
-Transm:t Buffer
-Receive Buffer
-High
--29-
-MCU
-CPU
-CAN Other
-Task Tasks
-Embedded System Lab
 
 ## Page 30
 
-FulI CAN ControIIer
+- 30 -
+Embedded System Lab
+Full CAN Controller
 CAN controller with object storages
 Acceptance filtering
-8
-Full CAN Contr
-TX Priority
-Transmft Buffer 1
-Transmit Buffer 2
-Transmit Buffer n
-Acceptance
-FiIter Receive Buffer 1
-Receive Buffer 2
-Receive Buffer n
--30-
-MCU
-CPU
-CAN Other
-Task Tasks
-Embedded System Lab
 
 ## Page 31
 
-IMPLEMENTATION OF CAN
-NETWORK
--31-
+- 31 -
 Embedded System Lab
+IMPLEMENTATION OF CAN NETWORK
 
 ## Page 32
 
-CAN ControIIer
-CAN controller and physical transmission medium
-are electrically isolated
-Although overvoltages on the CAN bus may destroy the CAN
-transceiver,
-the CAN controller and the underlying hOSt are preserved
-MCU •`
-Core
-CAN ControlIer
-CAN
-Transceiver
-MCU •`
-Core
-CAN ControlIer
-CAN
-Transceiver
-ECU
-RT
-Termination
-Resistor
--32-
-ECU
-ECU
-CANH
-대igh Line)
-CANH
-(LOW Line)
-MCU •`
-Core
-CAN Controller
-CAN
-Transceiver
-Termination
-Resistor
+- 32 -
 Embedded System Lab
+CAN Controller
+CAN controller and physical transmission medium are electrically isolated
+Although overvoltages on the CAN bus may destroy the CAN transceiver, the CAN controller and the underlying host are preserved
 
 ## Page 33
 
-CAN ControIIer
+- 33 -
+Embedded System Lab
+CAN Controller
 CAN controller
 On-chip
-Stand-alone
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-MCU
-Core
-1
-ECU
-CAN Controller
-CAN
-Transceiver
-ECU
-Embedded System Lab
+Stand-aloneCore
+CAN ControllerMCUECUCAN TransceiverCore
+CAN ControllerMCUECUCAN Transceiver
 
 ## Page 34
 
+- 34 -
+Embedded System Lab
 CAN Network
 Bus topology
-Embedded System Lab
+Main LineStub Line
 
 ## Page 35
 
+- 35 -
+Embedded System Lab
 CAN Network
 Passive star topology
-Stub Line,
-CAN ECU
-十S ub Line
-Stub in9
-Stub LineSs
-CANH
-CANL
-CAN ECU
-수 Stub Line
-Main Line
-Embedded System Lab
+Stub LineStub LineStub LineStub LineMain LineStub Line
 
 ## Page 36
 
+- 36 -
+Embedded System Lab
 CAN Network
 Passive star topology
-ECU 1
-(terminated)
-ECU 4
-ECU 2
-ECU 3
--36-
-ECU 5
-ECU 6
-ECU 8
-ECU 7
-(Terminated)
-Embedded System Lab
 
 ## Page 37
 
+- 37 -
+Embedded System Lab
 CAN Network
 Passive star topology
-ECU
-2.0111
 <Horii>
--37-
-Tx
-4.0111
-5.5m
-2.0111
-5.5m
-Junct1011
-ECU
-Junct1011
-Z=Zdn[Q]
-Gateway ECU
-Twisted-pmr CabIe
-4= 120Q
-r<0
-r= 1
-Non-Termmal ECU
-10- 100kQ
 
 ## Page 38
 
+- 38 -
+Embedded System Lab
 CAN Network
 An unshielded twisted two-wire line
-physical transmission medium used most frequently in
-applications
+physical transmission medium used most frequently in applications
 Max data rate: 1 Mbit/s
 Max network extension: about 40 meters
-Bus termination resistors contribute tO preventing
-transient phenomena (reflections).
+Bus termination resistors contribute to preventing transient phenomena (reflections).
 Max number of CAN nodes: 32
-By 慘0 11898
-Embedded System Lab
+By ISO 11898
 
 ## Page 39
 
-6) Data-Rate/Bus-Length RatiO in CAN Network
-1000
-500
-100
-50
-20
-10
-10
-30
-<WiIfred Voss>
--39-
-20
-60
-50
-150
-100
-300
-200
-600
-500
-1500
-1000
-3000
-2000
-6000
-5000 m
-15000 ft
+- 39 -
 Embedded System Lab
+Data-Rate/Bus-Length Ratio in CAN Network
+<Wilfred Voss>
 
 ## Page 40
 
-CAN PHYSICAL LAYER
--40-
+- 40 -
 Embedded System Lab
+CAN PHYSICAL LAYER
 
 ## Page 41
 
-CAN lnterface
+- 41 -
+Embedded System Lab
+CAN Interface
+Core
+CAN ControllerMCUECUCAN Transceiver
 CAN interface
 CAN controller
 CAN transceiver
-ECU
--41-
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-Embedded System Lab
 
 ## Page 42
 
+- 42 -
+Embedded System Lab
 CAN ECU
 Common CAN controller to
-high speed CAN 대S CAN)
+high speed CAN (HS CAN)
 low speed CAN (LS CAN)
-single wire CAN (SW CAN)
-MCU
-1
-Core
-CAN ControIler
-CAN
-Transceiver
-ECU
-Embedded System Lab
+single wire CAN (SW CAN)Core
+CAN ControllerCAN TransceiverMCUECU
 
 ## Page 43
 
-CAN ECU
-CAN PhysicaI Layer Standards
-High speed CAN physical layer (慘0 11898-2)
-LOW speed CAN physical layer (慘0 11898-3)
-Single wire CAN physical layer (SAE J2411)
-MCU
-Core
-CAN ControIler
-CAN
-Transceiver
-ECU
-1
+- 43 -
 Embedded System Lab
+CAN ECU
+CAN Physical Layer Standards
+High speed CAN physical layer (ISO 11898-2)
+Low speed CAN physical layer (ISO 11898-3)
+Single wire CAN physical layer (SAE J2411)CoreCAN ControllerMCUECUCAN Transceiver
 
 ## Page 44
 
-㉦
-CAN PhYSiCaI Layer Standards
-A - HIGH SPEED
-B - FAULT TOLERANT
-C - SINGLE WIRE
-(AU5790)
-譬薦薯
-Bus VoItage
-Bus VoItage
-Bus VoItage
-기5
-Recessive
-CAN_H
-CAN L
-ReceSSlVe
-5
-4
-1
-0
-Dominant
-Recessive
-Dominant
-CAN_L
-CAN_H
-ReceSSIve
-5
-4
-0
-Recessive
-Dominant
-CAN_H
-Recessive
-<PhiIips Semiconductor, AN2005>
+- 44 -
 Embedded System Lab
+CAN Physical Layer Standards
+<Philips Semiconductor, AN2005>3.51.5
 
 ## Page 45
 
+- 45 -
+Embedded System Lab
 CAN Transceiver
 High speed CAN transceiver
 Two differential bus lines
-" CAN high line (CANH)
+CAN high line (CANH)
 CAN low line (CANL)
-Node 1
-High—Speed
-CAN Transceiver
-1200
-Node 2
-H1gh—Speed
-CAN Transceiver
-CAN H
-CAN L
-Node N
-High-Speed
-CAN Transceiver
-1200
-Embedded System Lab
 
 ## Page 46
 
-CAN Transceiver
-LOW Speed CAN transceiver
-Two differential bus lines
-" CAN high line (CANH)
-CAN low line (CANL)
-Node 1
-Fault Tolerant
-CAN Transceiver
--46-
-Node 2
-Fault Tolerant
-CAN Transceiver
-CAN H
-CAN L
-Node N
-Fault Tolerant
-CAN Transceiver
+- 46 -
 Embedded System Lab
+CAN Transceiver
+Low Speed CAN  transceiver
+Two differential bus lines
+CAN high line (CANH)
+CAN low line (CANL)
 
 ## Page 47
 
--47-
+- 47 -
+Embedded System Lab
 CAN Transceiver
 High speed CAN and Low Speed CAN
 Two differential bus lines of a CAN transceiver
-" CAN high line (CANH)
-CAN low line (CANL)
-) Determination Of logical value
-• By voltage difference between CANH and CANL
-Embedded System Lab
+CAN high line (CANH)
+CAN low line (CANL)Determination of logical value
+By voltage difference between CANH and CANL
 
 ## Page 48
 
-CAN Transceiver
-SingIe wire CAN
-Single wire bus line 0f a CAN transceiver
-" CANH
-Common Ground
-Node 1
-Single Wire
-CAN Transceiver
-Node 2
-Single Wire
-CAN Transce1ver
-Node N
-Single Wire
-CAN Transceiver
-CAN Bus
-Load
-CAN Bus
-Load
-CAN Bus
-CAN Bus
-Load
+- 48 -
 Embedded System Lab
+CAN Transceiver
+Single wire CAN
+Single wire bus line of a CAN transceiver
+CANH
+Common Ground
 
 ## Page 49
 
-CAN BUS LEVEL
--49-
+- 49 -
 Embedded System Lab
+CAN BUS LEVEL
 
 ## Page 50
 
-CAN BLIS
+- 50 -
+Embedded System Lab
+CAN Bus
 Transmission medium (CAN bus)
 CAN high line (CANH)
 CAN low line (CANL)
-Core
-CAN ControIIer
-CAN
-Transceiver
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-CANH
-CANL
-CANH:
-CANL:
--50-
-CAN High line
-CAN Low line
-Termination
-ab
+ECUECUECUCoreCAN ControllerCAN TransceiverMCUECUECUCoreCAN ControllerCAN TransceiverMCUECUCoreCAN ControllerCAN TransceiverMCUECU
 
 ## Page 51
 
-CAN BLIS
-SignaI transmission in a 대S & LS) CAN
-Transmission Of differential voltages
-(differential signal transmission)
-) Effectively eliminates the negative effects Of interference
-voltage
-MCU
-CAN
-Transce iver
-MCU
-CAN
-Tra
-CAN
-Transce iver
-CANH
-CANL
-CANH:
-CANL:
--51-
-CAN High line
-CAN Low line
-Termination
-Lab
+- 51 -
+Embedded System Lab
+CAN Bus
+Signal transmission in a (HS & LS) CAN
+Transmission of differential voltages
+(differential signal transmission)Effectively eliminates the negative effects of interference voltage
+ECUECUECUCoreCAN ControllerCAN TransceiverMCUECUECUCoreCAN ControllerCAN TransceiverMCUECUCoreCAN ControllerCAN TransceiverMCUECU
 
 ## Page 52
 
-CAN BLIS
-lnterference voltages in cars
-Can be induced by motors, ignition systems, and switch
-contacts
+- 52 -
 Embedded System Lab
+CAN Bus
+Interference voltages in cars
+Can be induced by motors, ignition systems, and switch contacts
 
 ## Page 53
 
-CAN BLIS
-The voltage on the CAN high line (without noise)
-The voltage on the CAN low line (without noise)
-If noise occurs, b0th voltages may be changed similarly
-VH + AV
-VL + AV
-SO, the voltage difference iS the same as in no noise
-(VH + AV) - (VL + AV) = VH - VL
+- 53 -
 Embedded System Lab
+CAN Bus
+VH
+The voltage on the CAN high line (without noise)
+VL
+The voltage on the CAN low line (without noise)
+If noise occurs, both voltages may be changed similarly
+VH  + ΔV
+VL  + ΔV
+So, the voltage difference is the same as in no noise
+(VH  + ΔV) – (VL  + ΔV) =  VH  –VL
 
 ## Page 54
 
-㉦ CAN Bus (High SDeed CAN, 60 11898-2]
+- 54 -
+Embedded System Lab
+CAN Bus (High Speed CAN, ISO 11898-2)
 Max data rate of 1 Mbps
 500 Kbps
 Termination resistors
 Prevents reflections in a high-speed CAN network.
 Key parameter for the bus termination resistor
-Characteristic impedance Of the electrical line
+Characteristic impedance of the electrical line
 120 Ohm
-Embedded System Lab
 
 ## Page 55
 
-㉦ CAN BLIS (LOW SDeed FT CAN, ISO 11898-3]
-Max data rate of 125 Kbps
-LOW speed CAN (慘0 11898-3)
-NOt specify any bus termination resistors.
-FauIt-ToIerant CAN
-Designed t0 withstand
-opens, shorts, and incorrect loads on one Of the CAN data lines,
-) falling back tO a single data line when a fault is encountered.
-TO preserve network functionality where a data line fails,
-Two resistors at each ECU
+- 55 -
 Embedded System Lab
+CAN Bus (Low Speed FT CAN, ISO 11898-3)
+Max data rate of 125 Kbps
+Low speed CAN (ISO 11898-3)
+Not specify any bus termination resistors.
+Fault-Tolerant CAN
+Designed to withstand opens, shorts, and incorrect loads on one of the CAN data lines, falling back to a single data line when a fault is encountered.
+To preserve network functionality where a data line fails,
+Two resistors at each ECU
 
 ## Page 56
 
-㉦ CAN BLIS (SingIe Wire CAN, SAE ]2411]
-Max data rate of 33.3 Kbps (or 83.3 Kbps)
-SingIe wire CAN (SAE J2411)
-NOt specify any bus termination resistors
-One resistor at each ECU
--56-
+- 56 -
 Embedded System Lab
+CAN Bus (Single Wire CAN, SAE J2411)
+Max data rate of 33.3 Kbps (or 83.3 Kbps)
+Single wire CAN (SAE J2411)
+Not specify any bus termination resistors
+One resistor at each ECU
 
 ## Page 57
 
-CAN BLIS LeveIs
-PhysicaI signal transmission in a CAN network
-High-speed CAN bus interface (慘0 11898-2)
-Low-speed CAN bus interface (慘0 11898-3)
-Single wire CAN bus interface (SAE J2411)
--57-
+- 57 -
 Embedded System Lab
+CAN Bus Levels
+Physical signal transmission in a CAN network
+High-speed CAN bus interface (ISO 11898-2)
+Low-speed CAN bus interface (ISO 11898-3)
+Single wire CAN bus interface (SAE J2411)
 
 ## Page 58
 
-㉦
-High-SDeed CAN BLIS LeveIs
-CAN Node
-CAN Node
-CANH
-CANL
-CAN Node
+- 58 -
 Embedded System Lab
+High-Speed CAN Bus Levels
+VHVL
 
 ## Page 59
 
-㉦
-Single Ended
-Bus Voltaoe
-3.5V
-2.5V
-1.5V
-2.OV
-OV -
--59-
-High-SDeed CAN BLIS LeveIs
-LogicaI 1
-Recessive
-LogicaI 0
-Dominant
-LogicaI 1
-Recessive
+- 59 -
 Embedded System Lab
+High-Speed CAN Bus Levels
+2.0V0VLogical “0”Logical “1”Logical “1”RecessiveRecessiveDominant
+VHVLVH  –VL
 
 ## Page 60
 
-㉦
-High-SDeed CAN BLIS LeveIs
-The voltage on the CAN high line
-The voltage on the CAN low line
-High•speed CAN bus interface (慘0 11898-2)
-A differential voltage . VH - VL
-2 VOIt logical “0" dominant
-0 VOIt logical “1”, recessive
--60-
+- 60 -
 Embedded System Lab
+High-Speed CAN Bus Levels
+VH
+The voltage on the CAN high line
+VL
+The voltage on the CAN low line
+High-speed CAN bus interface (ISO 11898-2)
+A differential voltage : VH  –VL
+2 Volt logical “0”, dominant
+0 Volt logical “1”, recessive
 
 ## Page 61
 
-㉦
-Single Ended
-Bus Voltaoe
-3.5V
-2.5V
-1.5V
-lhfferennal
-Bus Voltaoe
-5.OV
-0㉦V
-0.5V
--1.OV
-High-SDeed CAN BLIS LeveIs
-DifferenUaI mput
-voltage range for
-dommant State
-Differentral mput
-voltage range for
-recesstve state
-nme
-LogicaI 1
-Recessive
-LogicaI 0
-Dominant
-LogicaI “1
-Recessive
+- 61 -
+Embedded System Lab
+High-Speed CAN Bus Levels
+Logical “0”Logical “1”Logical “1”
+VHVLVH  –VL
 
 ## Page 62
 
-㉦
-High-SDeed CAN BLIS LeveIs
-A differential voltage : VH - VL
-VH - VL 2 0.9 Volt logical “0”, dominant
-VH - VL 0.5 Volt ) logical “1”, recessive
+- 62 -
 Embedded System Lab
+High-Speed CAN Bus Levels
+A differential voltage : VH  –VL
+VH  –VL≥ 0.9Volt logical “0”, dominant
+VH  –VL≤ 0.5 Volt logical “1”, recessive
 
 ## Page 63
 
-6) Dominant and Recessive in CAN Network
-Dominant
-Logical 0
-Recessive
-Logical 1
+- 63 -
 Embedded System Lab
+Dominant and Recessive in CAN Network
+Dominant
+Logical “0”
+Recessive
+Logical “1”
 
 ## Page 64
 
-6) Dominant and Recessive in CAN Network
-SUPP0se that
-AII ECUs send logical “1” values t0 the CAN bus
-simultaneously
-Then, the resultant logical value on the CAN bus
-EI
-Logical 1
-1
-2
-3
-4
-5
-6
+- 64 -
 Embedded System Lab
+Dominant and Recessive in CAN Network
+Suppose that
+All ECUs send logical “1” values to the CAN bus simultaneously
+Then, the resultant logical value on the CAN bus
+Logical “1”123456“1”“1”“1”“1”“1”“1”“1”
 
 ## Page 65
 
-6) Dominant and Recessive in CAN Network
-SUPP0se that
-ECUI and ECU3 send logical 0
-while the other ECUs send logical “1” simultaneously
-Then the resultant logical value on the CAN bus
-Logical 0
-1
-2
-3
-4
-5
-6
+- 65 -
 Embedded System Lab
+Dominant and Recessive in CAN Network
+Suppose that
+ECU1 and ECU3 send logical “0”,while the other ECUs send logical “1” simultaneously
+Then the resultant logical value on the CAN bus
+Logical “0”123456“1”“1”“1”“1”“0”“0”“0”
 
 ## Page 66
 
-6) Dominant and Recessive in CAN Network
-If one ECU sends logical “0” t0 the CAN bus
-Then the logical value on the CAN bus is always 0
-regardless Of logical values sent by the other ECU
-)(: Don't care condition
-1
--66-
-2
-3
-4
-5
-6
+- 66 -
 Embedded System Lab
+Dominant and Recessive in CAN Network
+If one ECU sends logical “0” to the CAN bus
+Then the logical value on the CAN bus is always “0”regardless of logical values sent by the other ECU 123456“X”“X”“X”“X”“X”“0”“0”X: Don’t care condition
 
 ## Page 67
 
-6) Dominant and Recessive in CAN Network
+- 67 -
+Embedded System Lab
+Dominant and Recessive in CAN Network
 That is, at the same time
-ECU 1 transceiver ) 3.5 volt and 1.5 volt to CAN bus lines
-ECU 2 transceiver 2.5 volt and 2.5 volt to CAN bus lines
-2 ECU 3 transceiver 2.5 volt and 2.5 volt to CAN bus lines
-MCU
-Core
-CAN ControIIer
-7
-CAN
-Transceiver
-ECU 1
-1.5 volt
-CANH:
-CANL:
--67-
-ECU 2
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-0
-2.5 volt
-7
-0
-3.5 volt
-CAN High line
-CAN Low line
-Terminatlon
-CANH
-CANL
-2.5 volt
-Core
-CAN ControIIer
-CAN
-Transceiver
-ECU 3
-0
-2.5 volt
-2.5 volt
-ab
+ECU 1 transceiver 3.5 volt and 1.5 volt to CAN bus lines
+ECU 2 transceiver  2.5 volt and 2.5 volt to CAN bus lines
+ECU 3 transceiver 2.5 volt and 2.5 volt to CAN bus lines
+ECUECUECUCoreCAN ControllerCAN TransceiverMCUECU 1ECUCoreCAN ControllerCAN TransceiverMCUECU 2CoreCAN ControllerCAN TransceiverMCUECU 3
+3.5 volt 2.5 volt 2.5 volt 1.5 volt2.5 volt2.5 volt
 
 ## Page 68
 
-6) Dominant and Recessive in CAN Network
+- 68 -
+Embedded System Lab
+Dominant and Recessive in CAN Network
 Then
-VoItages Of CAN bus lines
-> 3.5 volt and 1.5 volt
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-MCU
-7
-Core
-CAN ControIIer
-CAN
-Transceiver
-ECU 1
-CANH:
-CANL:
-ECU 2
-7
-CANH
-CANL
-Core
-CAN ControIIer
-CAN
-Transceiver
-들5卍ol
-1
-CAN High line
-CAN Low line
-Terminatlon
-ECU 3
-ab
+Voltages of CAN bus lines3.5 volt and 1.5 volt
+ECUECUECUCoreCAN ControllerCAN TransceiverMCUECU 1ECUCoreCAN ControllerCAN TransceiverMCUECU 2CoreCAN ControllerCAN TransceiverMCUECU 3
+3.5 volt 1.5 volt
 
 ## Page 69
 
-6) Dominant and Recessive in CAN Network
-Circuits of CAN Transceivers
--69-
-are implemented such that they satisfy this rule.
+- 69 -
 Embedded System Lab
+Dominant and Recessive in CAN Network
+Circuits of CAN Transceivers
+are implemented such that they satisfy this rule.
 
 ## Page 70
 
-6)
--70-
-High SDeed CAN Transceiver [NXP T]A1041]
-TXD
-EN
-STB
-WAKE
-ERR
-RXD
-1
-6
-14
-9
-8
-4
-VBAT
-5
-LEVEL
-ADAPTOR
-WAKE
-COMPARATOR
-VI/O
-VI/O
-TIME-OUT
-MODE
-CONTROL
-十
-FAILURE
-DETECTOR
-十
-WAKE-UP
-DETECTOR
-RXD
-RECESSIVE
-DETECTION
-2
-GND
-TJA1041
-TEMPERATURE
-PROTECTION
-DRIVER
-VCC
-SPLIT
-VBAT
-LOW POWER
-RECEIVER
-Vcc
-NORMAL
-RECEIVER
-VCC VBAT
-3
-7
-INH
-13
-CANH
-CANL
-12
-SPLIT
-mgu166
-edded System Lab
+- 70 -
+Embedded System Lab
+High Speed CAN Transceiver (NXP TJA1041)
 
 ## Page 71
 
-㉦
-TXD and 8x0 in CAN Transceiver
-TxD and RxD pins
-TWO pins between CAN controller and transceiver
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
--71-
-MCU
-Core
-CAN ControIIer
-TxD
-RxD
-CAN
-Tra
+- 71 -
 Embedded System Lab
+TxD and RxD in CAN Transceiver
+TxD and RxD pins
+Two pins between CAN controller and transceiverECUECUCoreCAN ControllerCAN TransceiverMCUECUECUCoreCAN ControllerCAN TransceiverMCUECUTxDRxD
 
 ## Page 72
 
-㉦
-TXD and 8x0 in CAN Transceiver
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-CANH:
-CANL:
-CANH
-CANL
-CAN High line
-CAN Low line
-Terminatlon
+- 72 -
 Embedded System Lab
+TxD and RxD in CAN Transceiver
+ECUECUECUCoreCAN ControllerCAN TransceiverMCUECUECUCoreCAN ControllerCAN TransceiverMCUECUCoreCAN ControllerCAN TransceiverMCUECU
 
 ## Page 73
 
-㉦
-TXD and 8x0 in CAN Transceiver
-TxD and RxD pin
-MCU
-Core
-CAN ControIIer
-MCU
-Core
-CAN ControIIer
-MCU
-TxD
-CAN
-Transceiver
-RxD
-TxD
-CAN
-Transceiver
-RxD
-Core
-CAN ControIIer
-TxD
-CAN
-Transceiver
-RxD
-CANH:
-CANL:
-CAN High line
-CAN Low line
-Terminatlon
-CANH
-CANL
+- 73 -
 Embedded System Lab
+TxD and RxD in CAN Transceiver
+TxD and RxD pin
+ECUECUECUCoreCAN TransceiverMCUECUCAN ControllerECUCoreCAN ControllerCAN TransceiverMCUECUCoreCAN ControllerCAN TransceiverMCUECU
+TxDRxDTxDRxDTxDRxD
 
 ## Page 74
 
-6)
-High SDeed CAN Transceiver [NXP T]A1041]
-TXD
-EN
-STB
-WAKE
-ERR
-RXD
-1
-6
-14
-9
-8
-4
-VBAT
-5
-LEVEL
-ADAPTOR
-WAKE
-COMPARATOR
-VI/O
-VI/O
-TIME-OUT
-MODE
-CONTROL
-十
-FAILURE
-DETECTOR
-十
-WAKE-UP
-DETECTOR
-RXD
-RECESSIVE
-DETECTION
-2
-GND
-TJA1041
-TEMPERATURE
-PROTECTION
-DRIVER
-VCC
-SPLIT
-VBAT
-LOW POWER
-RECEIVER
-Vcc
-NORMAL
-RECEIVER
-VCC VBAT
-3
-7
-INH
-13
-CANH
-CANL
-12
-SPLIT
-mgu166
-edded System Lab
+- 74 -
+Embedded System Lab
+High Speed CAN Transceiver (NXP TJA1041)
 
 ## Page 75
 
-㉦
+- 75 -
+Embedded System Lab
 CANH and CANL in CAN Transceiver
 CANH and CANL pins
-TWO pins between CAN transceiver and CAN bus lines
-MCU
-Core
-CAN ControIIer
-TxD
-CAN
-Tran
-CANL
-RxD
-CANH
-Embedded System Lab
+Two pins between CAN transceiver and CAN bus linesECUECUCoreCAN ControllerCAN TransceiverMCUECUTxDRxDCAN high lineCAN low lineCANHCANL
 
 ## Page 76
 
-6)
-0
-High SDeed CAN Transceiver [NXP T]A1041]
-0
-0
-EN
-STB
-WAKE
-ERR
-1
-6
-14
-9
-8
-4
-VBAT
-5
-LEVEL
-ADAPTOR
-WAKE
-COMPARATOR
-VI/O
-VI/O
-TIME-OUT
-MODE
-CONTROL
-十
-FAILURE
-DETECTOR
-十
-WAKE-UP
-DETECTOR
-RXD
-RECESSIVE
-DETECTION
-2
-GND
-TJA1041
-TEMPERATURE
-PROTECTION
-DRIVER
-VCC
-SPLIT
-VBAT
-LOW POWER
-RECEIVER
-Vcc
-NORMAL
-RECEIVER
-VCC VBAT
-3
-7
-INH
-13
-12
-SPLIT
-7
-mgu166
-edded System Lab
+- 76 -
+Embedded System Lab
+High Speed CAN Transceiver (NXP TJA1041)CoreCAN ControllerMCU
 
 ## Page 77
 
-6)
-High SDeed CAN Transceiver [NXP T]A1050]
-: TXD
-• RXD
-Vref
--77-
-8
-200
-1
-4
-GND
-5
-30gA
-GND
-TXD
-DOMINANT
-TIME-OUT
-TIMER
-REFERENCE
-VOLTAGE
-TEMPERATURE
-PROTECTION
-DRIVER
-RECEIVER
-TJA1050
-3
-O.5Vcc
-7
-25
-25
-GND
-6
-2
-MGS374
-GND
-CANH
-CANL
-System Lab
+- 77 -
+Embedded System Lab
+High Speed CAN Transceiver (NXP TJA1050)
 
 ## Page 78
 
-200
-GND
-Vref
+- 78 -
+Embedded System Lab
 CAN ECU
-30FIA
-GND
-TXD
-DOMINANT
-TIME-OUT
-TIMER
-REFERENCE
-VOLTAGE
-TEMPERATURE
-PROTECTION
-DRIVER
-O.5Vcc
-RECEIVER
-25
-25
-GND
-TJA1050
-MG$374
-GND
-Embedded
+CoreCAN ControllerMCUECU
 
 ## Page 79
 
+- 79 -
+Embedded System Lab
 3.3V CAN Transceiver
 High speed CAN bus level in 3.3V CAN transceiver
-LogicaI 0
-Dominant
-=3V
-LogicaI 1
-Recessive
-~2.3V
-V이CANH)
-V이CANL)
-Embedded System Lab
+Logical “0”Logical “1”
 
 ## Page 80
 
-6) LOW-SDeed [Fault-ToIerant) CAN BLIS LeveIs
-5.OV
-CAN H
-CAN L
-LogicaI 1
-ReceSSlve
--80-
-3.6V
-CAN L
-CAN H
-1 4 `7
-LogicaI “0'
-Dominant
+- 80 -
 Embedded System Lab
+Low-Speed (Fault-Tolerant) CAN Bus Levels
+Logical “0”Logical “1”
 
 ## Page 81
 
-㉦
-Low-SDeed CAN BLIS LeveIs
-Low•speed bus interface (慘0 11898-3)
-A differential voltage : VH - VL
-" VH - VL = 2 VOIt logical “0”, dominant
-H
-L
--81-
-- 5 VOIt logical “1”, recessive
+- 81 -
 Embedded System Lab
+Low-Speed CAN Bus Levels
+Low-speed bus interface (ISO 11898-3)
+A differential voltage : VH  –VL
+VH  –VL= 2 Volt logical “0”, dominant
+VH  –VL= –5 Volt logical “1”, recessive
 
 ## Page 82
 
-㉦
-Low-SDeed CAN BLIS LeveIs
-A differential voltage : VH - VL
-VH - VL > 0 Volt logical “0”, dominant
-VH - VL < 0 Volt logical “1”, recessive
+- 82 -
 Embedded System Lab
+Low-Speed CAN Bus Levels
+A differential voltage : VH  –VL
+VH  –VL> 0 Volt logical “0”, dominant
+VH  –VL< 0 Volt logical “1”, recessive
 
 ## Page 83
 
-LOW-SDeed CAN Transceiver
-(ON Semiconductor AMIS-4168x)
-INH
-WAKE
-STB
-EN
-TxD
-GND
-ERR
-RxD
-1
-7
-5
-6
-Vcc (가
-VBAT
-14
-Mode &
-wake-up
-control
-Thermal
-shutdown
-Receiver
-VCC
-10
-POR
-Dnver
-control
-Filter
-04)
-4
-AMIS—4168)(
-•9
-1
-1
-RTL •
-CANH
-CANL
-RTH :
-13
-4
-3
-Failure
-handling
-led System Lab
+- 83 -
+Embedded System Lab
+Low-Speed CAN Transceiver (ON Semiconductor AMIS-4168x)
 
 ## Page 84
 
-CAN Transceiver
-LOW Speed CAN transceiver
-Node 1
-Fault Tolerant
-CAN Transceiver
-Node 2
-Fault Tolerant
-CAN Transceiver
-CAN H
-CAN L
-Node N
-Fault Tolerant
-CAN Transceiver
+- 84 -
 Embedded System Lab
+CAN Transceiver
+Low Speed CAN  transceiver
 
 ## Page 85
 
-㉦
-CAN Bus
-SingIe Wire CAN BLIS LeveIs
-Recessive
-4.0\/
-Dominant
-0.1 V
-Recessive
+- 85 -
 Embedded System Lab
+Single Wire CAN Bus Levels
 
 ## Page 86
 
-㉦
-SingIe Wire CAN BLIS LeveIs
-SingIe wire CAN bus interface (SAE J2411)
-VH = 4.0 Volt logical “0”, dominant
-VH = 0.1 Volt logical “1”, recessive
--86-
+- 86 -
 Embedded System Lab
+Single Wire CAN Bus Levels
+Single wire CAN bus interface (SAE J2411)
+VH  = 4.0 Volt logical “0”, dominant
+VH  = 0.1 Volt logical “1”, recessive
 
 ## Page 87
 
-㉦
--87-
-SingIe Wire CAN BLIS LeveIs
-VH 2 3.4 VoIt logical “0”
-dominant
-VH 1.6 VoIt logical “1”
-, recesslve
+- 87 -
 Embedded System Lab
+Single Wire CAN Bus Levels
+VH ≥ 3.4 Volt logical “0”, dominant
+VH  ≤1.6 Volt  logical “1”, recessive
 
 ## Page 88
 
-6)
-Singe Wire Transceiver (NXP AU5790]
-NSTB
-(M0de 0)
-MODE
-CONTROL
-(MOde 1)
-BATTERY (+12`7)
-BAT
-VOLTAGE
-REFERENCE
-GND
-TEMP.
-PROTECTION
-OUTPUT
-BUFFER
-RECEIVER
-LOSS OF
-GROUND
-PROTECTION
-AU5790
-CANH
-(BUS)
-RTH
-(LOAD)
-mbedded System Lab
+- 88 -
+Embedded System Lab
+Singe Wire Transceiver (NXP AU5790)
 
 ## Page 89
 
-TWISTED PAIR
--89-
+- 89 -
 Embedded System Lab
+TWISTED PAIR
 
 ## Page 90
 
-Crosstalk
--90-
-Crosstalk
+- 90 -
 Embedded System Lab
+Crosstalk
 
 ## Page 91
 
-ShieIded CabIe
+- 91 -
+Embedded System Lab
+Shielded Cable
 Can reduce
 electrical noise interference
 electromagnetic emission
 crosstalk between cables near each other
 Expensive
--91-
-mbedded System Lab
 
 ## Page 92
 
-UnshieIded CabIe
+- 92 -
+Embedded System Lab
+Unshielded Cable
 Less robust than shielded cable
 Cheaper than shielded cable
-ded System Lab
 
 ## Page 93
 
-UnshieIded TwiSt Pair
-Twisting wires in differential transmissions
-can reduce
-Electrical noise interference
-Electromagnetic emission
-more than untwisting wires dO
+- 93 -
 Embedded System Lab
+Unshielded Twist Pair
+Twisting wires in differential transmissionscan reduce
+Electrical noise interference
+Electromagnetic emissionmore than untwisting wires do
 
 ## Page 94
 
-Twisted Pair
-The voltage on the CAN high line (without noise)
-The voltage on the CAN low line (without noise)
-If noise OCCurs in twisted pair,
-itS effect iS similar on tWO wires
-i.e. bOth voltages may be changed similarly
-> VH + AV (rather than VH)
-> VL + AV (rather than VL)
-SO, the voltage difference iS the same as in no noise
-(VH + AV) - (VL + AV) = VH - VL
+- 94 -
 Embedded System Lab
+Twisted Pair
+VH
+The voltage on the CAN high line (without noise)
+VL
+The voltage on the CAN low line (without noise)
+If noise occurs in twisted pair,
+its effect is similar on two wires
+i.e.  both voltages may be changed similarlyVH  + ΔV (rather than VH)VL  + ΔV (rather than VL)
+So, the voltage difference is the same as in no noise
+(VH  + ΔV) – (VL  + ΔV) =  VH  –VL
 
 ## Page 95
 
-Twisted Pair
-Number Of wraps in twisted pair
-At least 30 wraps per meter
+- 95 -
 Embedded System Lab
+Twisted Pair
+Number of wraps in twisted pair
+At least 30 wraps per meter
 
 ## Page 96
 
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-CAN BLIS
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-CANH:
-CANL:
--96-
-CAN High line
-CAN Low line
-Terminatlon
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-CANH
-CANL
+- 96 -
 Embedded System Lab
+CAN Bus
+ECUECUECUCoreCAN ControllerCAN TransceiverMCUECUECUCoreCAN ControllerCAN TransceiverMCUECUCoreCAN ControllerCAN TransceiverMCUECU
 
 ## Page 97
 
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-CAN BLIS
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-CANH:
-CANL:
--97-
-CANH
-CANL
-CAN High line
-CAN LO`쇔 line
-Terminatlon
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
+- 97 -
 Embedded System Lab
+ECUECUECUCoreCAN ControllerCAN TransceiverMCUECUECUCoreCAN ControllerCAN TransceiverMCUECUCoreCAN ControllerCAN TransceiverMCUECU
+CAN Bus
 
 ## Page 98
 
+- 98 -
+Embedded System Lab
 CAN Network
 An unshielded twisted two-wire line
 Less robust to noise than shielded lines
 Cheaper than shielded lines
-PhysicaI transmission medium used most frequently
-Embedded System Lab
+Physical transmission medium used most frequently
 
 ## Page 99
 
-TERMINATION
--99-
+- 99 -
 Embedded System Lab
+TERMINATION
 
 ## Page 100
 
+- 100 -
+Embedded System Lab
 CAN Network
 Bus topology
 Termination resistors
-" Preventing transient phenomena (reflections)
-CANH:
-CANL:
--100-
-ECU
-CAN High line
-CAN LOW line
-Terminatlon
-ECU
-ECU
-CANH
-CANL
-Embedded System Lab
+Preventing transient phenomena (reflections)ECUECUECU
 
 ## Page 101
 
+- 101 -
+Embedded System Lab
 CAN Network
 Passive star topology
 Termination resistors
-ln main line ONLY
-Stub Line
-ECU
-ECU
-CANH
-CANL
-Stub Line
-Main Line
-CANH:
-CANL:
-CAN Htgh line
-CAN LOW line
-TermInatIon
--101-
-Embedded System Lab
+In main line ONLY
+ECUECUECUECUECUECUMain LineStub LineStub Line
 
 ## Page 102
 
+- 102 -
+Embedded System Lab
 CAN Network
 With termination resistors
-Sending a signal at A
-ECU
-CANH:
-CANL:
--102-
-ECU
-CAN High line
-CAN LOW line
-Terminatlon
-ECU
-CANH
-CANL
-Embedded System Lab
+Sending  a signal                     at “A”,A
+AECUECUECU
 
 ## Page 103
 
+- 103 -
+Embedded System Lab
 CAN Network
 With termination resistors
-The same shape OCCurs at B
-CANH:
-CANL:
--103-
-ECU
-CAN High line
-CAN LOW line
-Terminatlon
-ECU
-CANH
-CANL
-ECU
-Embedded System Lab
+The same shape signal                    occurs at “B”BECUECUECU
 
 ## Page 104
 
+- 104 -
+Embedded System Lab
 CAN Network
 Without termination resistors,
-ECU
-CAN High line
-CAN LOW line
-ECU
-CANH
-CANL
-CANH:
-CANL:
--104-
-ECU
-Embedded System Lab
+ECUECUECU
 
 ## Page 105
 
+- 105 -
+Embedded System Lab
 CAN Network
-EI Without termination resistors
-Because Of reflection, a distorted at B
-CANH:
-CANL:
--105-
-ECU
-CAN High line
-CAN LO`솊 line
-ECU
-CANH
-CANL
-ECU
-I System Lab
+Without termination resistors
+Because of reflection,   a distorted signal                    occurs at “B”
+BECUECUECU
 
 ## Page 106
 
+- 106 -
+Embedded System Lab
 Termination
 For preventing the reflection,
-high-Speed CAN networks must be terminated with the
-characteristic impedance Of the physical transmission medium
-Characteristic impedance Of the physical transmission
-EI
-medium
+high-Speed CAN networks must be terminated with the characteristic impedance of the physical transmission medium
+Characteristic impedance of the physical transmission medium
 120 Ohm
--106-
-Embedded System Lab
 
 ## Page 107
 
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-CAN BLIS
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
-CANH:
-CANL:
--107-
-CANH
-CANL
-CAN High line
-CAN LO`쇔 line
-Terminatlon
-MCU
-Core
-CAN ControIIer
-CAN
-Transceiver
+- 107 -
 Embedded System Lab
+ECUECUECUCoreCAN ControllerCAN TransceiverMCUECUECUCoreCAN ControllerCAN TransceiverMCUECUCoreCAN ControllerCAN TransceiverMCUECU
+CAN Bus
 
 ## Page 108
 
-ECU
-SDIit Bus Termination
-ECU
-CANH
-CANL
-Low- filterwrth f
-1
-2 7t RC L
--108-
-ECU
+- 108 -
 Embedded System Lab
+Split Bus Termination
+ECUECUECU
 
 ## Page 109
 
--109-
-SDIit Bus Termination
-A split bus termination
-two identical resistors (~60 0 士 10/0 )
-one capacitor (typically 4.7 nF for high speed CAN)
-) Acts like a low-pass filter
-can improve noise immunity and reduce emissions
+- 109 -
 Embedded System Lab
+Split Bus Termination
+A split bus termination
+two identical resistors (~60 Ω±1% )
+one capacitor (typically 4.7 nF for high speed CAN)Acts like a low-pass filter
+can improve noise immunity and reduce emissions
 
 ## Page 110
 
-6) SDlit Pin inA High SDeed Transceiver
-Some high speed transceivers have a SPLIT pin
-StabiIization Of the recessive voltage level on the bus
-Reduce electromagnetic emission in networks
--110-
+- 110 -
 Embedded System Lab
+Split Pin in A High Speed Transceiver
+Some high speed transceivers have a SPLIT pin
+Stabilization of the recessive voltage level on the bus
+Reduce electromagnetic emission in networks
 
 ## Page 111
 
-6)
-SDlit Pin in A High SDeed Transceiver
-VSPLIT = 0.5 Vcc
-in normal mode
-otherwise floating
--111•
-Vcc
-TJA1042T
-GND
-CANH
-60 (그
-SPLIT
-CANL
-075aaa020
-.. Lab
+- 111 -
+Embedded System Lab
+Split Pin in A High Speed Transceiver
 
 ## Page 112
 
-High SDeed CAN
-Termination with with the characteristic impedance Of
-the physical transmission medium
+- 112 -
+Embedded System Lab
+High Speed CAN
+Termination with with the characteristic impedance of the physical transmission medium
 Characteristic impedance: 120 Ohm
 Max data rate: 1Mbps (500 Kbps)
-ECU
-1
-High—Speed
-CAN Transceiver
-1200
--112-
-ECU
-H1gh-Speed
-CAN Transceiver
-CAN H
-CAN L
-ECU
-High-Speed
-CAN Transce1ver
-1200
-Embedded System Lab
+ECUECUECU
 
 ## Page 113
 
-㉦
--113-
-LOW SDeed (FauIt ToIerant) CAN
-OveraII RTH : 100 - 500 0
-lndividual RTH : 500 - 16K0
-Max data rate: 125Kbps
-Node 1
-Node 2
-Fault Tolerant
-Fault Tolerant
-CAN Transceiver
-CAN Transceiver
-로
-로
-CAN H
-CAN L
-Node N
-Fault Tolerant
-CAN Transcejver
+- 113 -
 Embedded System Lab
+Low Speed (Fault Tolerant) CAN
+Overall RTH: 100 – 500 Ω
+Individual RTH: 500 Ω – 16KΩ
+Max data rate: 125Kbps
 
 ## Page 114
 
-SingIe Wire CAN
-RTH : 9.09 KQ
-NormaI data rate: 33.3 Kbps
+- 114 -
+Embedded System Lab
+Single Wire CAN
+RTH: 9.09 KΩ
+Normal data rate: 33.3 Kbps
 83.3 Kbps diagnostic mode
-Node 1
-SingIe Wire
-CAN Transceiver
-Node 2
-SingIe Wire
-CAN Transceiver
-Node N
-SingIe Wire
-CAN Transceiver
-CAN Bus
--11.
-Load
-CAN Bus
-Load
-CAN Bus
-CAN Bus
-Load
 
 ## Page 115
 
-BIT CODING
--115-
+- 115 -
 Embedded System Lab
+BIT CODING
 
 ## Page 116
 
+- 116 -
+Embedded System Lab
 Bit Coding
 Bit coding
-Logical “0” and “1” which physical voltages?
--116-
-Embedded System Lab
+Logical “0”  and “1” which physical voltages?
 
 ## Page 117
 
+- 117 -
+Embedded System Lab
 Bit Coding
-Bit coding must be able t0
+Bit coding must be able to
 reduce radiated emissions significantly
 be also harmonized with a required capacity
--117-
-Embedded System Lab
 
 ## Page 118
 
-Bit Coding
-RZ(Return t0 Zero) C0ding
-NRZ (Non Return t0 Zero) coding
--118-
+- 118 -
 Embedded System Lab
+Bit Coding
+RZ(Return to Zero) Coding
+NRZ (Non Return to Zero) coding
 
 ## Page 119
 
-Bit Coding
-RZ(Return t0 Zero) C0ding
-The signal drops (returns) t0 zero btw each pulse
-Self-cIocking
--119-
+- 119 -
 Embedded System Lab
+Bit Coding
+RZ(Return to Zero) Coding
+The signal drops (returns) to zero btw each pulse
+Self-clocking
 
 ## Page 120
 
-Bit Coding
-One example 0f RZ coding
-Logical “1”
-Logical “0”
--120-
-0
-0
+- 120 -
 Embedded System Lab
+Bit Coding
+One example of RZ coding
+Logical “1” 
+Logical “0” 00
 
 ## Page 121
 
-Bit Coding
-One example 0f RZ coding
-11010010
--121-
+- 121 -
 Embedded System Lab
+Bit Coding
+One example of RZ coding
+11010010
 
 ## Page 122
 
-Bit Coding
-One example 0f RZ coding
-11010010
--122-
+- 122 -
 Embedded System Lab
+Bit Coding
+One example of RZ coding
+11010010011010010
 
 ## Page 123
 
-Bit Coding
-NRZ (Non Return t0 Zero) coding
-Logical '1' by one condition
-Logical '0' by the other condition
-No other neutral or rest condition
-N0t self-clocking
--123-
+- 123 -
 Embedded System Lab
+Bit Coding
+NRZ (Non Return to Zero) coding
+Logical ‘1’ by one condition
+Logical ‘0’ by the other condition
+No other neutral or rest condition
+Not self-clocking
 
 ## Page 124
 
+- 124 -
+Embedded System Lab
 Bit Coding in CAN
 CAN
 NRZ bit coding
-Binary signals t0 be transmitted are mapped directly
-Logical “1” t0 a high level
-Logical “0” t0 a low level
-Logical Bus Level
-NRZ C0ding
--124-
-Embedded System Lab
+Binary signals to be transmitted are mapped directly
+Logical “1” to a high level
+Logical “0” to a low level
+0 V5 V
 
 ## Page 125
 
-㉦
-Sender
--125-
-Sending A CAN Data Frame
-MCU
-Core
-CAN ControlIer
-CAN
-Transceiver
-1
-data
-Header data
-01 1 0.
-OV 5V 5V OV .
-3.5V 2.5V 2.5V
-TaiI
-3.5V .
-MCU
-Core
-CAN ControlIer
-CAN
-Transceiver
-1
-Receiver
-1.5V 2.5V 2.5V 1.5V .
+- 125 -
 Embedded System Lab
+Sending A CAN Data Frame
+CoreCAN ControllerCAN TransceiverMCUCoreCAN ControllerCAN TransceiverMCUdataSenderReceiver1.5V   2.5V   2.5V 1.5V … 3.5V   2.5V   2.5V 3.5V …0V  5V  5V 0V …          0  1  1  0  …          HeaderTaildata
 
 ## Page 126
 
+- 126 -
+Embedded System Lab
 NRZ Coding
 Advantage
-Consecutive bits Of the same polarity exhibit no level changes
-" Very high data rates
+Consecutive bits of the same polarity exhibit no level changes
+Very high data rates
 Emissions within limits
 Disadvantage
-N0t self-clocking,
-• NRZ does not have any synchronization properties
-If no level change occurs over a longer period Of time,
-> the receiver may lose synchronization
-NRZ coding requires an explicit synch mechanism
+Not  self-clocking;
+NRZ does not have any synchronization properties
+If no level change occurs over a longer period of time,the receiver may lose synchronizationNRZ coding requires an explicit synch mechanism
 which reduces transmission efficiency
--126-
-Embedded System Lab
 
 ## Page 127
 
--127-
+- 127 -
+Embedded System Lab
 NRZ Coding in CAN
 Synchronization mechanism in CAN (of NRZ coding)
 bit stuffing method
 Bit stuffing method
 After five homogeneous bits,
 the sender inserts a complementary bit in the bit stream
-Embedded System Lab
 
 ## Page 128
 
+- 128 -
+Embedded System Lab
 NRZ Coding in CAN
 Bit stuffing method
 Example 1
-" SUPPOSe one CAN controller wants tO send
-0000001 .
-1 2 3 4 5
-2 Then it will send
-00000 1 01 .
--128-
-Embedded System Lab
+Suppose one CAN controller wants to send0000001 …
+Then it will send00000 1 01 …1  2  3  4  5
 
 ## Page 129
 
+- 129 -
+Embedded System Lab
 NRZ Coding in CAN
 Bit stuffing method
 Example 2
-" SUPPOSe one CAN controller wants tO send
-1 2 3 4 5
-1 2 3 4 5
-00000001111100 .
-Then it will send
-00000 1 0011111 0 00 .
--129-
-Embedded System Lab
+Suppose one CAN controller wants to send00000001111100 …Then it will send0000010011111000 …1  2  3  4  51  2  3  4  5
 
 ## Page 130
 
+- 130 -
+Embedded System Lab
 NRZ Coding in CAN
 Bit stuffing method
 Example 3
-" SUPPOSe one CAN controller wants tO send
-1 2 3 4 5
-.. 0000011110000110 .
-Then it will send
-.. 000001 1111 00000 1 110.
--130-
-Embedded System Lab
+Suppose one CAN controller wants to send... 0000011110000110 …Then it will send... 00000 1 1111 0 0000 1 110 …1  2  3  4  5
 
 ## Page 131
 
-CAN IDENTIFIER
--131-
+- 131 -
 Embedded System Lab
+CAN IDENTIFIER
 
 ## Page 132
 
-㉦
--132-
-ldentifier in CAN Data Frame
-CAN data frame
-Header
-ldentifier
-data
-data
-TaiI
-TaiI
-Not the destination of CAN frame
-But describes the meaning Of the data
-e.g. Engine rpm, Engine temperature, Transmission stage,
+- 132 -
 Embedded System Lab
+Identifier in CAN Data Frame
+CAN data frame
+Identifier
+Not the destination of CAN frame
+But describes the meaning of the data
+e.g. Engine rpm, Engine temperature, Transmission stage, …
+HeaderTaildataTaildataID
 
 ## Page 133
 
-㉦
-ldentifier in CAN Data Frame
+- 133 -
+Embedded System Lab
+Identifier in CAN Data Frame
 CAN frame contains
 NOT address
 BUT identifier
--133-
-Embedded System Lab
 
 ## Page 134
 
-㉦
--134-
-ldentifier in CAN Data Frame
-Message routing
-The meaning 0f a message is marked by an identifier.
-" So, each ECU can decide
-whether or not the message carried on the bus is relevant tO it
-by acceptance filtering
-System flexibility
-ln a CAN network,
-an ECU does not have to consider
-information relating tO the configuration Of the system
+- 134 -
 Embedded System Lab
+Identifier in CAN Data Frame
+Message routing
+The meaning of a message is marked by an identifier.
+So, each ECU can decide whether or not the message carried on the bus is relevant to itby acceptance filtering
+System flexibility
+In a CAN network,
+an ECU does not have to consider information relating to the configuration of the system
 
 ## Page 135
 
-ExamDIe Of One ldentifier
+- 135 -
+Embedded System Lab
+Example of One Identifier
 A CAN network
 12 ECUs in 5 groups
-17 sensors in ECUI
-Group A
-Group B
-Group C Group D
-SL.lPPOse that ECUI sends one CAN data frame
-containing one sensor value connected tO ECUI
-data
--135-
-TaiI
-Group E
-Embedded System Lab
+17 sensors in ECU1
+Suppose that ECU1 sends one CAN data frame
+containing one sensor value connected to ECU1123456789101112
+Group AGroup BGroup CGroup DGroup E
+TaildataID
 
 ## Page 136
 
-ExamDIe Of One ldentifier
+- 136 -
+Embedded System Lab
+Example of One Identifier
 A CAN network
 12 ECUs in 5 groups
-17 sensors in ECUI
-Group A
-llbits of identifier
-Which group?
-3 bits
--136-
-Group B
-data
-Group C Group D
-TaiI
-Group E
-Which ECU?
-3 bits
-Which sensor?
-5 bits
-Embedded System Lab
+17 sensors in ECU1
+11bits of identifier123456789101112
+Group AGroup BGroup CGroup DGroup ETaildataIDWhich group? Which ECU? Which sensor?3 bits 3 bits 5 bits
 
 ## Page 137
 
-CAN COMMUNICATION
--137-
+- 137 -
 Embedded System Lab
+CAN COMMUNICATION
 
 ## Page 138
 
-TYDes Of Communication
-Unicast
-MuIticast
-Broadcast
--138-
+- 138 -
 Embedded System Lab
+Types of Communication
+Unicast
+Multicast
+Broadcast
 
 ## Page 139
 
+- 139 -
+Embedded System Lab
 Unicast
 A frame is sent from one ECU to another ECU.
 One sender and one receiver
--139-
-0
-0
-Embedded System Lab
 
 ## Page 140
 
--140-
+- 140 -
+Embedded System Lab
 Multicast
 A frame is sent from one ECU to several ECUs
 One sender and muti (several) receivers
-0
-0
-Embedded System Lab
 
 ## Page 141
 
--141-
-Broadcast
-A frame is sent from one ECU to of the other ECUs
-One sender and (of the other) receivers
-0
+- 141 -
 Embedded System Lab
+Broadcast
+A frame is sent from one ECU to all of the other ECUs
+One sender and all (of the other) receivers
 
 ## Page 142
 
-parcel DeIivery
-EV One sender & one receiver
-Sender determines itS corresponding receiver by an address
-" Unicast
--142-
+- 142 -
 Embedded System Lab
+Parcel Delivery
+One sender & one receiver
+Sender determines its corresponding receiver by an address
+Unicast
 
 ## Page 143
 
-CAN Data frame DeIivery
-EI
-One sender & (maybe) several receivers
-A frame can be used t0 address a group 0f ECU simultaneously
-• MuIticast
--143-
+- 143 -
 Embedded System Lab
+CAN Data frame Delivery
+One sender & (maybe) several receivers
+A frame can be used to address a group of ECU simultaneously
+Multicast
 
 ## Page 144
 
-㉦
-CAN Communication PrinciDIe
+- 144 -
+Embedded System Lab
+CAN Communication Principle
 One CAN frame
 Does NOT include its destination address
-BUT includes one identifier (ID) instead Of address
+BUT includes one identifier (ID) instead of address
 Sender
-Does NOT determine itS corresponding receiver
-Embedded System Lab
+Does NOT determine its corresponding receiver
 
 ## Page 145
 
-㉦
-CAN Communication PrinciDIe
-BIock diagram 0f CAN controller
-MCU
-Core
-CAN Controller
-CAN
-Transceiver
-Core
-TX Buffer
-CAN ControIIer
-Send
-MCU
-RX Buffer
-Acceptance
-FiItering
-Receive
-CAN
-Transceiver
-ECU
--145-
-ECU
+- 145 -
 Embedded System Lab
+CAN Communication Principle
+Block diagram of CAN controllerCoreCAN ControllerCAN TransceiverMCUECUCoreMCUECUTX BufferRX BufferAcceptanceFilteringSendReceiveCAN ControllerCAN Transceiver
 
 ## Page 146
 
-㉦
-CAN Communication PrinciDIe
-One CAN network
-MCU
-CAN
-Transceiver
-ECU 1
-CAN
-Transceiver
-CAN ControIler
-Core
-ECU 3
--146-
-MCU
-CAN
-ECU2 Transceiver
-CAN
-Transceiver
-CAN Controller
-Core
-ECU 4
+- 146 -
 Embedded System Lab
+CAN Communication Principle
+One CAN networkCoreCAN ControllerCAN TransceiverMCUECU 1CoreCAN ControllerCAN TransceiverMCUECU 2CoreCAN ControllerCAN TransceiverMCUECU 3CoreCAN ControllerCAN TransceiverMCUECU 4
 
 ## Page 147
 
-㉦
-CAN Communication PrinciDIe
-One CAN network
-MCU
-Core
-Acceptance I
-CAN ControIIer
-FiItering
-ECU 1
-Acceptance
-CAN ControIIer
-FiItering
-Core
-ECU 3
--147-
-MCU
-Core
-CAN ControIIer
-Send
-ECU 2
-Acceptance
-FiItering
-Receive
-Acceptance
-CAN ControIIer
-FiItering
-Core
-ECU 4
+- 147 -
 Embedded System Lab
+CAN Communication Principle
+One CAN networkCoreMCUECU 1CoreMCUECU 3
+TX BufferRX BufferAcceptanceFilteringSendReceiveCoreMCUECU 2CAN ControllerTX BufferRX BufferAcceptanceFilteringSendReceiveCAN ControllerTX BufferRX BufferAcceptanceFilteringSendReceiveCAN ControllerCoreMCUECU 4TX BufferRX BufferAcceptanceFilteringSendReceiveCAN Controller
 
 ## Page 148
 
-ExamDIe 1
-SUPP0se that ECUI sends one data frame of ID=Ox IA.
-ID= (000 0001 1010) 2
--148-
+- 148 -
 Embedded System Lab
+Example 1
+Suppose that ECU1 sends one data frame of ID=0x 1A.
+ID = (000 0001 1010)21234
 
 ## Page 149
 
-ExamDIe 1 [Unicast)
-Sender
-ECUI sends one data frame of lD=Ox IA
-ID = (000 0001 1010) 2
-Receiver
-ECU2 will extract the information of the data frame
-1
--149-
-2
+- 149 -
 Embedded System Lab
+Example 1 (Unicast)
+Sender
+ECU1 sends one data frame of ID=0x 1A
+ID = (000 0001 1010)2
+Receiver
+ECU2 will extract the information of the data frame1234
 
 ## Page 150
 
-ExamDIe 2
-SUPP0se that ECU2 sends one data frame of ID=Ox 3C.
-ID= (000 0011 1100)2
--150-
+- 150 -
 Embedded System Lab
+Example 2
+Suppose that ECU2 sends one data frame of ID=0x 3C.
+ID = (000 0011 1100)21234
 
 ## Page 151
 
-ExamDIe 2 [MuIticast)
+- 151 -
+Embedded System Lab
+Example 2 (Multicast)
 Sender
-ECU2 sends one data frame of lD=Ox 3C
+ECU2 sends one data frame of ID=0x 3C
 ID = (000 0011 1100)2
 Receiver
-ECUI and ECU4 will extract the information
-1
--151-
-2
-4
-Embedded System Lab
+ECU1 and ECU4 will extract the information1234
 
 ## Page 152
 
-ExamDIe 3
-SUPP0se that ECU3 sends one data frame of ID = 0x7A1.
-ID = (111 1010 0001)2
--152-
+- 152 -
 Embedded System Lab
+Example 3
+Suppose that ECU3 sends one data frame of ID = 0x7A1.
+ID = (111 1010 0001)21234
 
 ## Page 153
 
-ExamDIe 3 [Broadcast)
-Sender
-ECU3 sends one data frame of lD=Ox 7A1
-Receiver
-AII ECUs (ECUI, ECU2, and ECU4) will extract the information
-1
--153-
-2
-3
-4
+- 153 -
 Embedded System Lab
+Example 3 (Broadcast)
+Sender
+ECU3 sends one data frame of ID=0x 7A1
+Receiver
+All ECUs (ECU1, ECU2, and ECU4) will extract the information1234
 
 ## Page 154
 
-㉦
--154-
-CAN Communication PrinciDIe
-Receiver-selective method
-Sender does NOT know its corresponding receiver
+- 154 -
 Embedded System Lab
+CAN Communication Principle
+Receiver-selectivemethod
+Sender does NOT know its corresponding receiver1246?35????
 
 ## Page 155
 
-㉦
-CAN Communication PrinciDIe
-Receiver-selective method
-Other ECUs (except sender) will determine
-the extraction of information
-depending on ID & acceptance filtering
-2
-1
--155-
-4
-5
+- 155 -
 Embedded System Lab
+CAN Communication Principle
+Receiver-selectivemethod
+Other ECUs (except sender) will determine the extraction of information depending on ID & acceptance filtering124635
 
 ## Page 156
 
-㉦
-Receiver SeIective Method
-lncrease configuration flexibility
--156-
+- 156 -
 Embedded System Lab
+Receiver Selective Method
+Increase configuration flexibility123
 
 ## Page 157
 
-㉦
-Receiver SeIective Method
-lncrease configuration flexibility
-lntegration of ECU 4
-without modification Of existing ECUI, ECU2, and ECU3
-1
--157-
-2
-3
-4
+- 157 -
 Embedded System Lab
+Receiver Selective Method
+Increase configuration flexibility
+Integration of ECU 4 without modification of existing ECU1, ECU2, and ECU31234
 
 ## Page 158
 
-CSMA/CR
--158-
+- 158 -
 Embedded System Lab
+CSMA/CR
 
 ## Page 159
 
-㉦
--159-
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
+- 159 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
 
 ## Page 160
 
-㉦
-Media Access ControI in CAN
-MuIti master
-Each ECU has the right t0 access the CAN bus
+- 160 -
+Embedded System Lab
+Media Access Control in CAN
+Multi master
+Each ECU has the right to access the CAN bus
 without requiring permission
 without prior coordination with other CAN ECUs
 Decentralized bus access
--160-
-Embedded System Lab
 
 ## Page 161
 
-㉦
-Media Access ControI in CAN
-"Free” (or "ldle”) bus
-NO frame is being sent now on the CAN bus
-Any ECU can start its transmission now.
--161-
+- 161 -
 Embedded System Lab
+Media Access Control in CAN
+“Free” (or “Idle”) bus
+No frame is being sent now on the CAN busAny ECU can start its transmission now.
 
 ## Page 162
 
-㉦
--162-
-Media Access ControI in CAN
-"Busy” bus
-One frame iS being sent now
-" No ECU can start its transmission at this moment.
-2 After the current transmission iS over and itS interframe space,
-it is allowed for some ECU to start to send its frame.
+- 162 -
 Embedded System Lab
+Media Access Control in CAN
+“Busy” bus
+One frame is being sent now
+No ECU can start its transmission at this moment.
+After the current transmission is over and its interframe space, it is allowed for some ECU to start to send its frame.
 
 ## Page 163
 
-㉦
--163-
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-Carrier Sense
-If one ECU wants to send one frame,
-it must check whether the bus is "free
-If the bus is "free”, this ECU can start to send its frame
+- 163 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+Carrier Sense
+If one ECU wants to send one frame,it must check whether the bus is “free”
+If the bus is “free”, this ECU can start to send its frame
 
 ## Page 164
 
-㉦
--164-
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-Carrier Sense
-If one ECU wants to send one frame,
-it must check whether the bus is "free
-If the bus is "free”, this ECU can start to send its frame
-2 Otherwise (i.e. bus is "bUSY"), this ECU must wait
-until the current transmission and itS interframe space are over.
+- 164 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+Carrier Sense
+If one ECU wants to send one frame,it must check whether the bus is “free”
+If the bus is “free”, this ECU can start to send its frame
+Otherwise (i.e. bus is “busy”), this ECU must wait until the current transmission and its interframe space are over.
 
 ## Page 165
 
-㉦
--165-
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-S1-1PPOSe
-There exist 6 ECUs on a CAN bus
-우후후후우후
+- 165 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+Suppose
+There exist 6 ECUs on a CAN bus123456
 
 ## Page 166
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-S1-1PPOSe
-One frame starts to be sent from 띠.
-우후구후우우
-Current CAN frame
--166-
-time
+- 166 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+Suppose
+One frame starts to be sent from t1.
+Current CAN framet1 123456time
 
 ## Page 167
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-S1-1PPOSe
-One frame starts to be sent from 띠.
-ECUI wants to send its frame at t3.
-> Then it needs tO listen the shared medium before starting tO send it.
-Carrier sense
-> Because the CAN bus is busy at 더,
-ECUI cannot start tO send its frame immediately
-Current CAN frame
-3
-IFS
-1
--167-
-time
+- 167 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+Suppose
+One frame starts to be sent from t1.
+ECU1 wants to send its frame at t3.Then it needs to listen the shared medium before starting to send it.–Carrier senseBecause the CAN bus is busy at t3,ECU1 cannot start to send its frame immediatelyCurrent CAN framet1t31√t2IFS time
 
 ## Page 168
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-S1-1PPOSe
-One frame starts to be sent from 띠.
-ECUI wants to send its frame at t3.
-> ECUI cannot start to send it until the CAN bus is free.
-> This occurs after the interframe space expires.
-ECUI monitors the CAN bus (Carrier Sense) tO detect this.
-> ECU 1 must wait until t2
-1 Carrier sense by ECUI
-1
--168-
-Current CAN frame IFS
-3
-time
+- 168 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+Suppose
+One frame starts to be sent from t1.
+ECU1 wants to send its frame at t3.ECU1 cannot start to send it until the CAN bus is free.This occurs after the interframe space expires.–ECU1 monitors the CAN bus (Carrier Sense) to detect this.ECU 1 must wait until t2.Current CAN framet1t31√t2IFSCarrier sense by ECU1time
 
 ## Page 169
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-S1-1PPOSe
-One frame starts to be sent from 띠.
-ECUI wants to send its frame at t3.
-> lt must wait until t2
-2 ECU3 wants tO send its frame at t4. (tl < t3 < t4 < t2 )
-> lt must wait until t2
-Carrier sense by ECUI
-0㉦
-Carrier sense by ECU3
-Current CAN frame IFS
-1
--169-
-3
-time
+- 169 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+Suppose
+One frame starts to be sent from t1.
+ECU1 wants to send its frame at t3.It must wait until t2
+ECU3 wants to send its frame at t4. (t1< t3< t4< t2) It must wait until t2Current CAN framet1t43t31√√t2IFSCarrier sense by ECU3timeCarrier sense by ECU1
 
 ## Page 170
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-S1-1PPOSe
-One frame starts to be sent from 띠.
-ECUI wants to send its frame at t3.
-> lt must wait until t2
-2 ECU3 wants to send its frame at t4.
-> lt must wait until t2
-ECU4 wants tO send its frame at t5. (tl < t3 < t4 < t5 < t2 )
-> lt must wait until t2
-Carrier sense by ECU4
-Carrier sense by ECU3
-Carrier sense by ECUI
-IFS
-1
--170-
-Current CAN frame
-3
-time
+- 170 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+Suppose
+One frame starts to be sent from t1.
+ECU1 wants to send its frame at t3.It must wait until t2
+ECU3 wants to send its frame at t4.It must wait until t2
+ECU4 wants to send its frame at t5. (t1< t3< t4< t5< t2) It must wait until t2Current CAN framet1t54t43t31√√√t2IFSCarrier sense by ECU4Carrier sense by ECU3Carrier sense by ECU1time
 
 ## Page 171
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-" More than one ECU may start tO send their frames simultaneously.
-Then, at t2
-ECUI, ECU3, and ECU4 start tO send their frames simultaneously.
-후후후후후우
-> Collision OCCL.lß!
-Current CAN frame
-1
-3
--171-
-1
-3
-IFS
-4
-time
+- 171 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+More than one ECU may start to send their frames simultaneously.
+Then, at t2,
+ECU1, ECU3, and ECU4 start to send their frames simultaneously.Collision occurs!123456Current CAN framet1t54t43t31t2IFS time
 
 ## Page 172
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-At t2,
-ECUI, ECU3, and ECU4 start tO send their frames simultaneously.
-> Collision OCCL.lß!
-Suppose ID3 < IDI and lD3 < lD4 (numerically).
-• Then frame3 has higher priority than framel and frame4.
-1
-IDI
-framel
--172-
-2
-3
-ID3
-frame3
-4
-ID4
-fra e4
-5
-6
+- 172 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+At t2,
+ECU1, ECU3, and ECU4 start to send their frames simultaneously.Collision occurs!
+Suppose ID3 < ID1 and ID3 < ID4 (numerically).
+Then frame3 has higher priority than frame1 and frame4.123456frame1frame3ID3frame4ID4ID1
 
 ## Page 173
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-Then, frame3 will be sent
-That is,
-> ECU3 will gain access tO the bus and transmit its frame
-> ECUI and ECU4 will relinquish tO send
-and wait after the frame3 transmission iS over and
-the next interframe space expires.
-1
--173-
-2
-3
-ID3
-frame3
-4
-5
-6
+- 173 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+Then, frame3 will be sent
+That is, ECU3 will gain access to the bus and transmit its frameECU1 and ECU4 will relinquish to send and wait after the frame3 transmission is over and the next interframe space expires.123456frame3ID3
 
 ## Page 174
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-ECU3 can start to send frame3 at t2
-ECUI and ECU 4 must wait their transmissions until t6
-> ThiS OCCUÆ after the next inter frame space expires.
-> ECUI and ECU4 monitor the CAN bus (Carrier Sense) tO detect this.
-Carrier sense by ECU 4
-Carrier sense by ECU 1
-IFS Frame3 by ECU3 IFS
-Current CAN frame
-1
-3
--174-
-- time
+- 174 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+ECU3 can start to send frame3 at t2.
+ECU1 and ECU 4 must wait their transmissions until t6This occurs after the next inter frame space expires.ECU1 and ECU4 monitor the CAN bus (Carrier Sense) to detect this.Current CAN framet1t5t4t3t2IFSFrame3 by ECU 3IFSCarrier sense by ECU 4Carrier sense by ECU 1t6time
 
 ## Page 175
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-SUPP0se that
-no other ECUs want to send their frames from t2 to t6
-(except ECUI and ECU4 )
-Carrier sense by ECU 4
-Carrier sense by ECU 1
-IFS Frame3 by ECU3 IFS
-Current CAN frame
-1
-3
--175-
-- time
+- 175 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+Suppose that no other ECUs want to send their frames from t2to  t6(except ECU1 and ECU4 )Current CAN framet1t5t4t3t2IFSFrame3 by ECU 3IFSt6timeCarrier sense by ECU 4Carrier sense by ECU 1
 
 ## Page 176
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-Then, at t6
-ECUI and ECU4 start tO send their frames simultaneously.
-> Collision OCCL.lß!
-Current CAN frame
-1
-3
--176-
-IFS Frame3 by ECU 3
-1
-IFS
-- time
+- 176 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+Then, at t6,
+ECU1 and ECU4 start to send their frames simultaneously.Collision occurs!Current CAN framet1t5t4t3t2IFSFrame3 by ECU 3IFSt641time
 
 ## Page 177
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-At t6,
-ECUI and ECU4 start tO send their frames simultaneously.
-> Collision OCCL.lß!
-Suppose ID4 < IDI (numerically).
-• Then frame4 has higher priority than framel.
-1
-IDI
-framel
-2
-3
-4
-ID4
-fra e4
-5
-6
+- 177 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+At t6,
+ECU1 and ECU4 start to send their frames simultaneously.Collision occurs!
+Suppose ID4 < ID1 (numerically).
+Then frame4 has higher priority than frame1.123456frame1frame4ID4ID1
 
 ## Page 178
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-Then, frame4 will be sent
-That is,
-> ECU4 will gain access tO the bus and transmit its frame
-> ECUI will relinquish tO send
-and wait after the frame4 transmission iS over and
-the next interframe space expires.
-1
--178-
-2
-3
-4
-ID4
-fra e4
-5
-6
+- 178 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+Then, frame4 will be sent
+That is, ECU4 will gain access to the bus and transmit its frameECU1 will relinquish to send and wait after the frame4 transmission is over and the next interframe space expires.123456frame4ID4
 
 ## Page 179
 
-㉦
-Media Access ControI in CAN
-CSMNCR
-Carrier Sense MuItiple Access/COIIision Resolution
-ECU4 can start to send frame4 at t6
-ECUI must wait its transmissions
-after the next inter frame space expires.
-> ECUI monitor the CAN bus (Carrier Sense) tO detect this.
-Current CAN frame
-1
-3
--179-
-IFS Frame3 by ECU 3
-IFS
-Carrier sense by ECU 1
-Frame4 by ECU4 IFS
+- 179 -
 Embedded System Lab
+Media Access Control in CAN
+CSMA/CR
+Carrier Sense Multiple Access/Collision Resolution
+ECU4 can start to send frame4 at t6.
+ECU1 must wait its transmissionsafter the next inter frame space expires.ECU1 monitor the CAN bus (Carrier Sense) to detect this.Current CAN framet1t5t4t3t2IFSFrame3 by ECU 3IFSt6Frame4 by ECU4IFSCarrier sense by ECU 1
 
 ## Page 180
 
-PRIORITY OF CAN FRAME
--180-
+- 180 -
 Embedded System Lab
+PRIORITY OF CAN FRAME
 
 ## Page 181
 
-PrioritY Of CAN Frame
-The identifier defines a static priority Of one frame.
-(Numerically) Lower identifier, higher priority
--181-
+- 181 -
 Embedded System Lab
+Priority of CAN Frame
+The identifier defines a static priority of one frame.
+(Numerically) Lower identifier, higher priority
 
 ## Page 182
 
-PrioritY Of CAN Frame
-SUPP0se ECUI, ECU3, and ECU4
-start tO send their frames simultaneously.
-IDI = (0101111 0101)2
-lD3 = (010 1100 1101) 2
-lD4 = (011 0011 0001) 2
-1
-IDI
-framel
--182-
-2
-3
-ID3
-frame3
-4
-ID4
-fra e4
-5
-6
+- 182 -
 Embedded System Lab
+Priority of CAN Frame
+Suppose ECU1, ECU3, and ECU4 start to send their frames simultaneously.
+ID1  =  (010 1111 0101)2
+ID3  =  (010 1100 1101)2
+ID4  =  (011 0011 0001)2123456frame1frame3ID3frame4ID4ID1
 
 ## Page 183
 
-PrioritY Of CAN Frame
-SUPP0se ECUI, ECU3, and ECU4
-start tO send their frames simultaneously.
-IDI = (0101111 0101)2
-lD3 = (010 1100 1101) 2
-lD4 = (011 0011 0001) 2
-NumericaIIy, ID3 is the lower than IDI and ID4
-> The priority Of frame3 is the higher
-) ECU3 is the winner.
-1
--183-
-2
-3
-ID3
-frame3
-4
-5
-6
+- 183 -
 Embedded System Lab
+Priority of CAN Frame
+Suppose ECU1, ECU3, and ECU4 start to send their frames simultaneously.
+ID1  =  (010 1111 0101)2
+ID3  =  (010 1100 1101)2
+ID4  =  (011 0011 0001)2
+Numerically, ID3 is the lower than ID1 and ID4The priority of frame3 is the higherECU3 is the winner.123456frame3ID3
 
 ## Page 184
 
-ConceDt Of Bus Access
-MuIti-master architecture
-Each ECU in the CAN network has the right t0 access the CAN
-bus
-without requiring permission
-~ without prior coordination with other CAN ECUs
-More than one ECU may access the CAN bus simultaneously.
-• That is, more than one ECU may start tO send their frames
-simultaneously.
--184-
+- 184 -
 Embedded System Lab
+Concept of Bus Access
+Multi-master architecture
+Each ECU in the CAN network has the right to access the CAN bus
+without requiring permission
+without prior coordination with other CAN ECUs
+More than one ECU may access the CAN bus simultaneously.
+That is, more than one ECU may start to send their frames simultaneously.
 
 ## Page 185
 
-ConceDt Of Bus Access
-EV ln case Of simultaneous bus access,
-Highest priority CAN frame will be sent
-The higher the priority 0f a CAN frame, the sooner it
-can be transmitted on the CAN bus.
-ln case 0f poor system design, IOW priority CAN frames
-even run the risk Of never being transmitted.
--185-
+- 185 -
 Embedded System Lab
+Concept of Bus Access
+In case of simultaneous bus access,
+Highest priority CAN frame will be sent
+The higher the priority of a CAN frame, the sooner it can be transmitted on the CAN bus.
+In case of poor system design, low priority CAN frames even run the risk of never being transmitted.
 
 ## Page 186
 
-ConceDt Of Bus Access
-Arbitration
-Selection of one ECU which will start to send its frame
-in case Of simultaneous bus access
-Bitwise arbitration
--186-
+- 186 -
 Embedded System Lab
+Concept of Bus Access
+Arbitration
+Selection of one ECU which will start to send its framein case of simultaneous bus access
+Bitwise arbitration
 
 ## Page 187
 
-CAN FRAME TYPES
--187-
+- 187 -
 Embedded System Lab
+CAN FRAME TYPES
 
 ## Page 188
 
+- 188 -
+Embedded System Lab
 Message Transfer
 Data frames
 Remote frames
 Error frames
-OverIoad frames
--188-
-Embedded System Lab
+Overload frames
 
 ## Page 189
 
+- 189 -
+Embedded System Lab
 Message Transfer
 Data frames
-Transport the data (i.e. information) from one sender
-tO receivers
-Header
--189-
-data
-TaiI
-Embedded System Lab
+Transport the data (i.e. information) from one sender to receiversHeaderTaildata
 
 ## Page 190
 
+- 190 -
+Embedded System Lab
 Message transfer
 Remote frames
 Sent by an ECU active on the bus
-TO request the transmission Of a data frame
+To request the transmission of a data frame
 whose identifier has the same value as that of the remote frame
-NO data (i.e. information) are included in remote frames
-Header
--190-
-TaiI
-Embedded System Lab
+No data (i.e. information) are included in remote framesHeaderTail
 
 ## Page 191
 
-Message transfer
-EV Error frames
-Transmitted by any ECU present on the bus
-as soon as an error iS detected on the bus
-Active & passive error frames
--191-
+- 191 -
 Embedded System Lab
+Message transfer
+Error frames
+Transmitted by any ECU present on the bus as soon as an error is detected on the bus
+Active & passive error frames
 
 ## Page 192
 
-Message transfer
-EV Error frames
-Transmitted by any ECU present on the bus
-as soon as an error iS detected on the bus
-Active & passive error frames
-Active error frame
-Active error flag
--192-
-Error delimiter
-11111111
+- 192 -
 Embedded System Lab
+Message transfer
+Error frames
+Transmitted by any ECU present on the bus as soon as an error is detected on the bus
+Active & passive error frames0  0  0  0  0  01  1  1  1  1  1  1  1Active error flagError delimiterActive error frame
 
 ## Page 193
 
-Message transfer
-EV Error frames
-Transmitted by any ECU present on the bus
-as soon as an error iS detected on the bus
-Active & passive error frames
-Passive error frame
-Passive error flag
-1 11 1 1 1
--193-
-1
-Error delimiter
-1111111
+- 193 -
 Embedded System Lab
+Message transfer
+Error frames
+Transmitted by any ECU present on the bus as soon as an error is detected on the bus
+Active & passive error frames
+1  1  1  1  1  11  1  1  1  1  1  1  1Passive error flagError delimiterPassive error frame
 
 ## Page 194
 
-Message transfer
-OverIoad frames
-TO request a supplementary time interval
-between the preceding and following frames
-OverIoad frame
-0 0 0 0 0 0 1 1 1 1 1 1 1 1
--194-
+- 194 -
 Embedded System Lab
+Message transfer
+Overload frames
+To request a supplementary time interval between the preceding and following frames0  0  0  0  0  01  1  1  1  1  1  1  1Overload frame
 
 ## Page 195
 
-Message transfer
-lnterframe space (IFS)
-Separate in time {the current frame}
-from {the preceding frame}
-Minimum 3bits in CAN
-The 1St frame
--195-
-IFS
-The 2nd frame
-IFS
-The 3rd frame
-IFS
+- 195 -
 Embedded System Lab
+Message transfer
+Interframe space (IFS)
+Separate in time {the current frame} from    {the preceding frame}
+Minimum 3bits in CANThe 1stframeIFSThe 2ndframeIFSThe 3rdframeIFS
 
 ## Page 196
 
-BIT STUFFING
--196-
+- 196 -
 Embedded System Lab
+BIT STUFFING
 
 ## Page 197
 
--197-
+- 197 -
+Embedded System Lab
 Bit stuffing
 After 5 bits of identical value
-DeIiberately introduce (at the transmission ECU)
-one additional opposite value bit
-t0 'break the rhythm
-Embedded System Lab
+Deliberately introduce (at the transmission ECU) one additional opposite value bit  to ‘break the rhythm’
 
 ## Page 198
 
-㉦
-ECU
--198-
-Sending A CAN Data Frame
-MCU
-Core
-CAN ControlIer
-CAN
-Transceiver
-1
-Header
-MCU
-Core
-CAN ControlIer
-CAN
-Transceiver
-1
-data
-data
-TaiI
-ECU
+- 198 -
 Embedded System Lab
+Sending A CAN Data Frame
+CoreCAN ControllerCAN TransceiverMCUECUCoreCAN ControllerCAN TransceiverMCUECUHeaderTaildatadata
 
 ## Page 199
 
-Bit stuffing
-Frame tO be transmitted, before stuffing
-1 2 3 | 4 5 6 7 8 1 9
-1 1 0 0 0 0 0 0 1
-Frame with stuffing
-| 12 3 4 5 6 7 S 8 9
-1 1 00000 1 0 1
-“1
-10 0 0 0 0 1 0 1”willbetransmitted.
--199-
+- 199 -
 Embedded System Lab
+Frame to be transmitted, before stuffing
+Frame with stuffing
+“1  1 0  0  0  0  0  1 0  1” will be transmitted.
+Bit stuffing
+1 1  0  0  0  0  0  0  11 1  0  0  0  0  0  1 0  1
 
 ## Page 200
 
--200-
-Bit stuffing
-Frame tO be transmitted, before stuffing
-1 2 3 | 4 5 6 7 8 1 9
-Frame with stuffing
-| 12 J 3 4 5 6 | 7 S 1 8 9
-Frame destuffed on reception
-1 1 0 0 0 0 0 0 1
+- 200 -
 Embedded System Lab
+Frame to be transmitted, before stuffing
+Frame with stuffing
+Frame destuffed on reception
+Bit stuffing
+1 1  0  0  0  0  0      0  1
 
 ## Page 201
 
-Range Of Bit stuffing
-ln data frames and remote frames
-data frame
-Header
-remote frame
-Bit stuffing range
-Header
--201-
-Bit stuffing range
-data
-TaiI
-TaiI
+- 201 -
 Embedded System Lab
+Range of Bit stuffing
+HeaderTaildataBit stuffing range
+In data frames and remote frames
+HeaderTailBit stuffing rangedata frame remote frame
 
 ## Page 202
 
-Range Of Bit stuffing
-Arbitration field
-ldentifier
-Stored in buffers
--202-
-Control field
-Data frame
-N(0로N로8)
-Data field
-Stored in transmit]receve buffers
-Bit stuffing
-(mmber Of bits = 44 + 8N)
-CRC field
-0R0
-Endof frame
+- 202 -
 Embedded System Lab
+Range of Bit stuffing
 
 ## Page 203
 
-Range Of Bit stuffing
-(ln data frames and remote frames)
-Range 0f bit stuffing
-" Start of frame (SOF), arbitration field, control field, data field,
-CRC sequence
-NO bit stuffing
-CRC delimiter, ACK slot, ACK delimiter, End Of frame (EOF)
-Data frame
-SOF
--203-
-ID
-RTR
-rl
-ControI FieId
-rO
-DLC
-Bit Stuffing
-CRC CRC ACK AC
-Data
-Sequence DeI SIot DeI
--그
-EOF
+- 203 -
 Embedded System Lab
+Range of Bit stuffing
+(In data frames and remote frames)
+Range of bit stuffing
+Start of frame (SOF), arbitration field, control field, data field, CRC sequence
+No bit stuffing
+CRC delimiter, ACK slot, ACK delimiter, End of frame (EOF)SOFEOFRTRACKDelID ACKSlotCRCSequenceCRCDelDataControl Fieldr1r0DLCData frameBit Stuffing
 
 ## Page 204
 
+- 204 -
+Embedded System Lab
 Bit stuffing
 Error and overload frames
 fixed structures
-" NO bit stuffing
--204-
-Embedded System Lab
+No bit stuffing
 
 ## Page 205
 
-PurDose Of Bit stuffing
-A basic prerequisite for correct data transmission
-Synchronization Of communication partners
--205-
+- 205 -
 Embedded System Lab
+Purpose of Bit stuffing
+A basic prerequisite for correct data transmission
+Synchronization of communication partners
 
 ## Page 206
 
-PurDose Of Bit stuffing
-A basic prerequisite for correct data transmission
-Synchronization Of communication partners
-Disadvantage Of NRZ coding
-Not self-clocking,
-NRZ does not have any synchronization properties
-If no level change occurs over a longer period Of time,
-> the receiver may lose synchronization
--206-
+- 206 -
 Embedded System Lab
+Purpose of Bit stuffing
+A basic prerequisite for correct data transmission
+Synchronization of communication partners
+Disadvantage of NRZ coding
+Not  self-clocking;
+NRZ does not have any synchronization properties
+If no level change occurs over a longer period of time,the receiver may lose synchronization
 
 ## Page 207
 
--207-
-PurDose Of Bit stuffing
-A basic prerequisite for correct data transmission
-Synchronization Of communication partners
-Disadvantage Of NRZ coding
-Not self-clocking,
-NRZ does not have any synchronization properties
-If no level change occurs over a longer period Of time,
-> the receiver may lose synchronization
-SO, bit stuffing is necessary for resynchronization
+- 207 -
 Embedded System Lab
+Purpose of Bit stuffing
+A basic prerequisite for correct data transmission
+Synchronization of communication partners
+Disadvantage of NRZ coding
+Not  self-clocking;
+NRZ does not have any synchronization properties
+If no level change occurs over a longer period of time,the receiver may lose synchronization
+So, bit stuffing is necessary for resynchronization
 
 ## Page 208
 
-PurDose Of Bit stuffing
+- 208 -
+Embedded System Lab
+Purpose of Bit stuffing
 Resynchronization
-Only OCCur on recessive•to•dominant edges.
+Only occur on recessive-to-dominant edges.
 Bit stuffing
 Max 10 bits between resynchronization
-Synchronization
-Edge
-1
-1
-0
--208-
-0
-1
-0 0 0
-Bit
-Time
-1
-1
-0
-Embedded System Lab
+0    0    0    0    01    1    1    1    10
 
 ## Page 209
 
-㉦
-Max Number Of Bit Stuffing
-Because 0f bit stuffing (from SOF to CRC sequence)
-Max number of stuff bits
-in a standard data frame 0f 8 byte data field
+- 209 -
+Embedded System Lab
+Max Number of Bit Stuffing
+Because of bit stuffing (from SOF to CRC sequence)
+Max number of stuff bits in a standard data frame of 8 byte data field
 24 bits
 The theoretically longest standard data frame
 132 bit
--209-
-Embedded System Lab
 
 ## Page 210
 
--210-
-STANDARD DATA FRAME IN CAN
+- 210 -
 Embedded System Lab
+STANDARD DATA FRAME IN CAN
 
 ## Page 211
 
-Standard Data frame
-SOF
--211-
-ID
-Header
-RTR
-rl
-Control FieId
-rO
-DLC
-TaiI
-CRC CRC ACK AC
-Data
-Sequence DeI SIOt DeI
-EOF
+- 211 -
 Embedded System Lab
+Standard Data frame
+SOFEOFRTRACKDelID ACKSlotCRCSequenceCRCDelDataControl Fieldr1r0DLCHeaderTail
 
 ## Page 212
 
-Start 0f Frame [SOF)
-A single dominant bit
-Signaling t0 all receivers the start 0f an exchange
-SOF
-1 bit
--212-
-data
-EOF
+- 212 -
 Embedded System Lab
+Start of Frame (SOF)
+A single dominant bit
+Signaling to all receivers the start of an exchangedataSOFEOF1 bit“0”
 
 ## Page 213
 
-Start 0f Frame [SOF)
-A falling edge
-from the previous recessive (bus idle) level
-tO the dominant level (SOF)
-is used tO synchronize the entire network
-Before SOF
-LogicaI 1
-FaIIing edge
--213-
-LO
-SOF
-ical 0
+- 213 -
 Embedded System Lab
+Start of Frame (SOF)
+A falling edge
+from the previous recessive (bus idle) level to the dominant level (SOF)
+is used to synchronize the entire networkBefore SOFLogical “1”SOFLogical “0”
+Falling edge
 
 ## Page 214
 
-Start Of Frame [SOF)
-AII ECUs (except the sender)
-must be fully synchronized with each other
-before the start bit can pass
-with using the falling edge
-1
--214-
-2
-3
-4
-5
-6
+- 214 -
 Embedded System Lab
+Start of Frame (SOF)
+All ECUs (except the sender)
+must be fully synchronized with each other before the start bit can pass
+with using the falling edge123456
 
 ## Page 215
 
-Standard Data frame
-Arbitration field
-Arbitration
-field
-SOF
-ID
-RTR
-1 bit
-Data
-11 bits
--215-
-EOF
+- 215 -
 Embedded System Lab
+Standard Data frame
+Arbitration fieldSOFEOFRTRIDDataArbitrationfield11 bits1 bit
 
 ## Page 216
 
--216-
+- 216 -
+Embedded System Lab
 Arbitration Field
-EV When collision OCCurs,
+When collision occurs,
 one CAN frame will be selected by the arbitration field
 Arbitration field
-ldentifier bits (ID)
-Sets the priority Of the data frame
+Identifier bits (ID)
+Sets the priority of the data frame
 RTR (remote transmission request) bit
-The higher priority Of the data frame
-than its corresponding remote frame with the same ID
-Embedded System Lab
+The higher priority of the data frame than its corresponding remote frame with the same ID
 
 ## Page 217
 
-ldentifier
-Describes the meaning Of the data
-e.g. Engine rpm, Engine temperature, Transmission stage,
-data
+- 217 -
+Embedded System Lab
+Identifier
+Describes the meaning of the data
+e.g. Engine rpm, Engine temperature, Transmission stage, …
 Acceptance filtering
 Receiver-selective
-TaiI
-Sets the priority 0f the data frame
--217-
-Embedded System Lab
+Sets the priority of the data frameTaildataID
 
 ## Page 218
 
-ldentifier
-ID sets the priority 0f the data frame
-11 bits
-Transmitting from ID_IO (MSB) to ID_O (LSB)
-7 most significant bits(From ID_IO to lD_4) must not be
-recesslve
-ID= 11 11 11 1)( )0()(
-ldentifier
-SOF IDIO
-MSB
--218-
-ID9
-ID8
-ID7
-ID6
-ID5 ID4
-ID3
-ID2
-IDI
-IDO RTR
-LSB
+- 218 -
 Embedded System Lab
+Identifier
+ID sets the priority of the data frame
+11 bits
+Transmitting from ID_10 (MSB) to ID_0 (LSB)
+7 most significant bits(From ID_10 to ID_4) must not all be recessive
+ID =  11  11  11  1x  xx xSOFRTRID10IdentifierID9ID8ID7ID6ID5ID4ID3ID2ID1ID0MSBLSB
 
 ## Page 219
 
-ldentifier
-ID sets the priority 0f the data frame
-11 bits
-Transmitting from ID_IO to ID_O (least significant)
-7 most significant bits(From ID_IO to lD_4) must not be
-recesslve
-ID= 11 11 11 1)( )0()(
-The max combinations:
-211 - 24 = 2048 - 16 = 2032
--219-
+- 219 -
 Embedded System Lab
+Identifier
+ID sets the priority of the data frame
+11 bits
+Transmitting from ID_10 to ID_0 (least significant)
+7 most significant bits(From ID_10 to ID_4) must not all be recessive
+ID =  11  11  11  1x  xx x
+The max combinations:
+211- 24=  2048  - 16  =  2032
 
 ## Page 220
 
+- 220 -
+Embedded System Lab
 RTR Bit
 Remote transmission request
-RTR bit is used by the sender
-tO inform receivers Of the frame type
+RTR bit is used by the sender to inform receivers of the frame type
 data frame or remote frame
--220-
-Embedded System Lab
 
 ## Page 221
 
--221-
+- 221 -
+Embedded System Lab
 RTR Bit
 Remote transmission request
-RTR bit is used by the sender
-tO inform receivers Of the frame type
+RTR bit is used by the sender to inform receivers of the frame type
 data frame or remote frame
-ln a data frame,
+In a data frame,
 Dominant RTR bit
-RTR = “0” (dominant) "false"
-NO request for remote transmission data frame
-Embedded System Lab
+RTR = “0” (dominant) “false”
+No request for remote transmission data frame
 
 ## Page 222
 
+- 222 -
+Embedded System Lab
 RTR Bit
 Remote transmission request
-RTR bit is used by the sender
-tO inform receivers Of the frame type
+RTR bit is used by the sender to inform receivers of the frame type
 data frame or remote frame
-ln a remote frame,
+In a remote frame,
 Recessive RTR bit
-RTR = “1” (recessive) "true"
-Request for remote transmission remote frame
-Embedded System Lab
+RTR = “1” (recessive) “true”
+Request for remote transmission remote frame
 
 ## Page 223
 
--223-
-Arbitration
-SUPP0se ECU2, ECU3, and ECU4 start to
-send their frames simultaneously.
-14로\
+- 223 -
 Embedded System Lab
+Arbitration
+Suppose ECU2, ECU3, and ECU4 start to send their frames simultaneously.1234frame2frame3frame4
 
 ## Page 224
 
-Arbitration
-SUPP0se ECU2, ECU3, and ECU4 start to
-send their frames simultaneously.
-lD2 = 101 1110 0011, RTR=O (dataframe)
-lD3 = 101 0100 0100, RTR=I (remoteframe)
-lD4 = 101 0100 0100, RTR=O (data frame)
-14로\
--224-
+- 224 -
 Embedded System Lab
+Arbitration
+Suppose ECU2, ECU3, and ECU4 start to send their frames simultaneously.
+ID2  =  101  1110  0011,  RTR = 0  (data frame)
+ID3  =  101  0100  0100,  RTR = 1  (remote frame)
+ID4  =  101  0100  0100,  RTR = 0  (data frame)1234frame2frame3ID3frame4ID4ID2
 
 ## Page 225
 
-Arbitration
-SUPP0se ECU2, ECU3, and ECU4 start to
-send their frames simultaneously.
-lD2 = 101 1110 0011, RTR=O (dataframe)
-lD3 = 101 0100 0100, RTR=I (remoteframe)
-lD4 = 101 0100 0100, RTR=O (data frame)
-ECU4 is the winner.
-1
--225-
-2
-3
-4
-ID4
-fra e4
+- 225 -
 Embedded System Lab
+Arbitration
+Suppose ECU2, ECU3, and ECU4 start to send their frames simultaneously.
+ID2  =  101  1110  0011,  RTR = 0  (data frame)
+ID3  =  101  0100  0100,  RTR = 1  (remote frame)
+ID4  =  101  0100  0100,  RTR = 0  (data frame)ECU4 is the winner.1234frame4ID4
 
 ## Page 226
 
--226 -
-Arbitration
-ID2 = 101 1110 0011, RTR=O (dataframe)
-ID3 = 101 0100 0100, RTR=I (remote frame)
-ID4 = 101 0100 0100, RTR=O (data frame)
+- 226 -
 Embedded System Lab
+Arbitration
+ID2  =  101  1110  0011,  RTR = 0  (data frame)
+ID3  =  101  0100  0100,  RTR = 1  (remote frame)
+ID4  =  101  0100  0100,  RTR = 0  (data frame)
 
 ## Page 227
 
+- 227 -
+Embedded System Lab
 Bitwise Arbitration
 During arbitration,
-(by using an internal monitoring device 0f the bus)
-each sender compares
-{the level of the transmitted bit} with
-{the level of the bit on the bus}
-) If these levels are identical, the ECU continues to send
+(by using an internal monitoring device of the bus)each sender compares{the level of the transmitted bit} with {the level of the bit on the bus}If these levels are identical, the ECU continues to send
 Sending a recessive level & observing a dominant level
 Lose arbitration
 Close down and send no more bits
--227-
-Embedded System Lab
 
 ## Page 228
 
-ID2 = 101
-ID3 = 101
-ID4 = 101
-Bitwise Arbitration
-1110 0011, RTR=O (data frame)
-0100 0100, RTR= 1 (remote frame)
-0100 0100, RTR=O (data frame)
-ldentifier
-ECU2
-ECU3
-ECU4
-Bus
--228-
-SOF
-0
-0
-0
-0
-1
-0
-1
-1
-1
-1
-9
-0
-0
-0
-0
-8
-1
-1
-1
-1
-7
-1
-0
-0
-0
-6
-1
-1
-1
-5 4 3 2 1
-Receiving Mode
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-1
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-Receiving Mode
-Transmission Mode
+- 228 -
 Embedded System Lab
+Bitwise Arbitration
+ID2  =  101  1110  0011,  RTR = 0  (data frame)
+ID3  =  101  0100  0100,  RTR = 1  (remote frame)
+ID4  =  101  0100  0100,  RTR = 0  (data frame)ECU2ECU3ECU4SOFIdentifierRTR109 8 7 6 5 4 3 2 1 00 1 0 1 1Receiving Mode0 1 0 1 0 1 0 0 0 1 0 0 10 1 0 1 0 1 0 0 0 1 0 0 00 1 0 1 0 1 0 0 0 1 0 0 0BusReceiving ModeTransmission Mode
 
 ## Page 229
 
--229-
-이제 여러 개의 ECU가 동시에 CAN frame을 전송하고자 할
-때 어 떻게 bitwise arbitration 되는 지 보도록 하겠습니 다.
+- 229 -
 Embedded System Lab
+이제 여러 개의ECU가 동시에CAN frame을 전송하고자 할때 어떻게bitwise arbitration 되는 지 보도록 하겠습니다.
 
 ## Page 230
 
-㉦
-CAN Node A
-CAN Node B
-CAN Node C
-CAN Node D
--230-
-Bus Access in the CAN Network
-0不3
-I
-I
-I
-I
-I
-I
-0文097
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-0
-I
-I
-I
-dc
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-02(7 E
-IIIIII
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
-I
+- 230 -
 Embedded System Lab
+Bus Access in the CAN NetworkCAN Node ACAN Node BCAN Node CCAN Node D
+0X0C7
+0X378
+0X20C
+0X75E
+0X227
+0X207
 
 ## Page 231
 
+- 231 -
+Embedded System Lab
 Control Field
 Reserved bits
-rl and rO
+r1 and r0
 Reserved for later use
-Ensure future upward compatibility (extended CAN 2.OB frame)
-UsuaIIy set dominant values
-SOF
--231-
-ID
-ControI
-field
-RTR rl r0 DLC DLC DLC DL
-Data
-EOF
-Embedded System Lab
+Ensure future upward compatibility (extended CAN 2.0B frame)
+Usually set dominant valuesr1r0DLC3DLC2DLC1DLC0SOFEOFRTRIDDataControlfield
 
 ## Page 232
 
+- 232 -
+Embedded System Lab
 Control Field
 Data length code (DLC)
-DLC3, DLC2, DLCI, DLCO
-" The number Of bytes in the data field
-SOF
--232-
-ID
-ControI
-field
-RTR rl r0 DLC DLC DLC DL
-Data
-EOF
-Embedded System Lab
+DLC3, DLC2, DLC1, DLC0
+The number of bytes in the data field
+r1r0DLC3DLC2DLC1DLC0SOFEOFRTRIDDataControlfield
 
 ## Page 233
 
-Data Length C0de
-Number 하
-DLC3
-Data Bytes
--233-
-ControI FieId
-DLC2
-DLCI
-DLCO
+- 233 -
 Embedded System Lab
+Control Field
+Data Length CodeNumber of Data BytesDLC3 DLC2 DLC1 DLC00 0 0 0 01 0 0 0 12 0 0 1 03 0 0 1 14 0 1 0 05 0 1 0 16 0 1 1 07 0 1 1 18 1 0 0 0
 
 ## Page 234
 
-ControI FieId
-Data Length C0de of CAN FD
-Number 하
-DLC3
-Data Bytes
-12
-20
-24
-32
-48
-64
-DLC2
-DLCI
-DLCO
+- 234 -
 Embedded System Lab
+Control Field
+Data Length Code of CAN FDNumber of Data BytesDLC3 DLC2 DLC1 DLC012 1 0 0 116 1 0 1 020 1 0 1 124 1 1 0 032 1 1 0 148 1 1 1 064 1 1 1 1
 
 ## Page 235
 
-Data field
-Standard Data frame
-Data field
-SOF
--235-
-ID
-RTR rl rO DLC DLC DLC DL
-3 2 1 0
-Data
-EOF
+- 235 -
 Embedded System Lab
+r1r0DLC3DLC2DLC1DLC0
+Standard Data frame
+Data fieldSOFEOFRTRIDDataData field
 
 ## Page 236
 
+- 236 -
+Embedded System Lab
 Data Field
 Location of the information to be transmitted
-From 0 t0 a max 0f 8 bytes
-9 different kinds Of length
-4 bits of DLC
-Data field
-0~8b es
-ControI
-field
--236-
-CRC
-field
-Embedded System Lab
+From 0 to a max of 8 bytes
+9 different kinds of length
+4 bits of DLCCRCfieldData field0~8 bytesControlfield
 
 ## Page 237
 
+- 237 -
+Embedded System Lab
 Data Field
-Transmission Of one byte
+Transmission of one byte
 MSB (most significant bit) first
 LSB (least significant bit) last
-ExampIe
-transmission 0f Ox1A = ( 0000 1010 )2
-Data field
-1 b e
-ControI
-0001 1010
-field
--237-
-CRC
-field
-Embedded System Lab
+Example
+transmission of  0x1A = ( 0000 1010 )2CRCfieldControlfield0001 1010Data field1 byte
 
 ## Page 238
 
-Data Field
-Transmission Of each byte
-MSB (most significant bit) first
-LSB (least significant bit) last
-ControI
-field
--238-
-Data field
-0~8b es
-CRC
-field
+- 238 -
 Embedded System Lab
+Data Field
+Transmission of each byte
+MSB (most significant bit) first
+LSB (least significant bit) lastCRCfieldMSBLSBData field0~8 bytesControlfield
 
 ## Page 239
 
-Endianness 0f Data field
-Then, how 4 byte data 0f Ox IA 3B 56 78 will be sent?
+- 239 -
+Embedded System Lab
+Endianness of Data field
+Then, how 4 byte data of 0x 1A  3B  56  78  will be sent?
 Endianness
 Byte ordering
--239-
-Embedded System Lab
 
 ## Page 240
 
-Endianness 0f Data field
-SUPP0se that one CAN frame wants t0 send 4 byte data
-Ox IA 3B 56 78
-Big endian (MotoroIa mode)
-Send
-then
-then
-then
-ControI
-OxIA= ( 0000 1010)2 first
-Ox3B=(0011 1011 )2
-0x56 =( 0000 1010 )2
-0x78 =(0111 1000 )2
-1010
-0011
-4 byte
-Bi endian
-1011 0101
-0001
-field
--240-
-0110
-0111 1000
-CRC
-field
+- 240 -
 Embedded System Lab
+Endianness of Data field
+Suppose that one CAN frame wants to send 4 byte data
+0x 1A  3B  56 78
+Big endian (Motorola mode)
+Send   0x1A = ( 0000  1010 )2  first
+then    0x3B = ( 0011  1011 )2
+then    0x56  = ( 0000 1010 )2
+then    0x78  = ( 0111 1000 )2 CRCfield4 byte(Big endian)Controlfield0001  1010 0011  10110101  01100111 1000
 
 ## Page 241
 
-Endianness 0f Data field
-SUPP0se that one CAN frame wants t0 send 4 byte data
-Ox IA 3B 56 78
-LittIe endian (lntel MOde)
-Send
-then
-then
-then
-ControI
-0x78 =(0111 1000 )2 first
-0x56 =( 0000 1010 )2
-Ox3B=( 0011 1011 )2
-Ox1A= ( 0001 1010 )2
-4 byte
-(LittIe endian)
-0101 0110 0011 1011
-0111 1000
-field
--241-
-0001 1010
-CRC
-field
+- 241 -
 Embedded System Lab
+Endianness of Data field
+Suppose that one CAN frame wants to send 4 byte data
+0x 1A  3B  56 78
+Little endian (Intel Mode)
+Send   0x78  = ( 0111 1000 )2  first
+then    0x56  = ( 0000 1010 )2
+then    0x3B = (  0011 1011 )2
+then    0x1A =  ( 0001 1010 )2 CRCfield4 byte(Little endian)Controlfield0001  1010 0011  10110101  01100111 1000
 
 ## Page 242
 
-080 Field
+- 242 -
+Embedded System Lab
+r1r0DLC3DLC2DLC1DLC0
+CRC Field
 CRC field
 CRC sequence
 15 bits
 CRC delimiter
-lbit,l
-DLC DLC
-SOF
--242-
-ID
-RTR rl 『0 DLC
-3
-1
-DL
-0
-Data
-2
-CRC
-FieId
-CRC
-Sequence
-15 bits
-CRC
-DeI
-lbit
-EOF
-Embedded System Lab
+1bit, “1”SOFEOFRTRIDDataCRCSequenceCRCDelCRC Field1bit“1”15 bits
 
 ## Page 243
 
-080 Field
-CaIcuIation of CRC sequence
-by the sender CAN controller
-Destuff the bit sequence from SOF to data
-SOF
-SOF
-ID
-ID
-RTR rl rO DLC DLC DLC DL
-Destuffing
-RTR rl r DLC DLC DL DL
-Destuffed bit sequence
--243-
-Data
-Data
+- 243 -
 Embedded System Lab
+CRC Field
+Calculation of CRC sequence by the sender CAN controller
+Destuff the bit sequence from SOF to datar1r0DLC3DLC2DLC1DLC0SOFRTRIDDataDestuffed bit sequencer1r0DLC3DLC2DLC1DLC0SOFRTRIDDataDestuffing
 
 ## Page 244
 
-080 Field
-CaIcuIation of CRC sequence
-by the sender CAN controller
-Destuff the bit sequence from SOF to data
-Add 15 bit “0” to the (destuffed) bit sequence from SOF to data
-SOF
--244-
-ID
-Destuffed bit sequence
-RTR rl r DLC DLC DL DL
-Data
-000 0000 0000 0000
+- 244 -
 Embedded System Lab
+CRC Field
+Calculation of CRC sequence by the sender CAN controller
+Destuff the bit sequence from SOF to data
+Add 15 bit “0” to the (destuffed) bit sequence from SOF to datar1r0DLC3DLC2DLC1DLC0SOFRTRIDData000 0000 0000 0000Destuffed bit sequence
 
 ## Page 245
 
-080 Field
-CaIcuIation of CRC sequence
-by the sender CAN controller
+- 245 -
+Embedded System Lab
+CRC Field
+Calculation of CRC sequence by the sender CAN controller
 Destuff the bit sequence from SOF to data
 Add 15 bit “0” to the (destuffed) bit sequence from SOF to data
-Divide the above result (in modulo 2)
-by (1100 0101 1001 1001)2 (Ox C599)
-• The remainder Of this division, 15 bits, is CRC sequence
-1100 0101 1001 1001
-SOF
--245-
-ID
-RTR rl r DLC DLC DL DL
-Data
-000 0000 0000 0000
-Embedded System Lab
+Divide the above result (in modulo 2)by  (1100 0101 1001 1001)2(0x C599)
+The remainder of this division, 15 bits, is CRC sequence1100  0101 1001 1001r1r0DLC3DLC2DLC1DLC0SOFRTRIDData000 0000 0000 0000
 
 ## Page 246
 
-080 Field
-The sender CAN controller
-appends 15 bit CRC sequence and
-lbit CRC delimiter (whose value is
-after data field
-SOF
-ID
-RTR rl rO DLC DLC DLC DL
-1 bit
-CRC
-FieId
-CRC
-Data
-Sequence
-15 bits
-CRC
-DeI
-lbit
-11 bits
--246-
-EOF
+- 246 -
 Embedded System Lab
+r1r0DLC3DLC2DLC1DLC0
+CRC Field
+The sender CAN controller
+appends 15 bit CRC sequence and1bit CRC delimiter (whose value is “1”)after data fieldSOFEOFRTRIDDataCRCSequenceCRCDelCRC Field1bit“1”15 bits11 bits1 bit
 
 ## Page 247
 
-080 Field
--247-
-CRC sequence
-15bits
-Hamming distance: d = 6
-Five independent bit errors are 1000/0 detectable
+- 247 -
 Embedded System Lab
+CRC Field
+CRC sequence
+15 bits
+Hamming distance: d = 6
+Five independent bit errors are 100% detectable
 
 ## Page 248
 
-Hamming distance
-Hamming distance between two strings Of equal length
-The number Of positions
-at which the corresponding symbols are different
-The hamming distance between 1011 and 0101
-0 1 0 1
--248-
+- 248 -
 Embedded System Lab
+Hamming distance
+Hamming distance between two strings of equal length
+The number of positions at which the corresponding symbols are different
+The hamming distance between 1011 and 0101
+1   0   1   1
+0   1   0   13
 
 ## Page 249
 
--249-
+- 249 -
+Embedded System Lab
 Hamming distance
 Hamming distance measures
-Minimum number of substitutions
-required tO change one string intO the other
-Number Of errors that transformed one string intO the other
-Embedded System Lab
+Minimum number of substitutionsrequired to change one string into the other
+Number of errorsthat transformed one string into the other
 
 ## Page 250
 
-080 in CAN
-CRC in CAN protocol
-ls restricted to the detection of errors
-NOt applied tO their correction
--250-
+- 250 -
 Embedded System Lab
+CRC in CAN protocol
+Is restricted to the detection of errors
+Not applied to their correctionCRC in CAN
 
 ## Page 251
 
-080 Field in Receiver
-The receiver CAN controller
-divides the (destuffed) bit sequence
-from SOF to CRC sequence (in modulo 2)
-by (1100 0101 1001 1001)2 (Ox C599)
-If the remainder of this division is “000 0000 0000 0000"
-NO transmission error
-If the remainder iS nonzero,
-Error
-1100 0101 1001 1001
-SOF
--251-
-ID
-RTR rl DLC DLC DL
-3 2 1
-DL
-0
-Data
-CRC
-Se uenc
+- 251 -
 Embedded System Lab
+CRC Field in Receiver
+The receiver CAN controller
+divides the (destuffed) bit sequencefrom SOF to CRC sequence (in modulo 2)by (1100 0101 1001 1001)2(0x C599)
+If the remainder of this division is “000 0000 0000 0000”
+No transmission error
+If the remainder is nonzero,
+Error 1100  0101 1001 1001r1r0DLC3DLC2DLC1DLC0SOFRTRIDDataCRCSequence
 
 ## Page 252
 
-AcknowIedgement field
-AcknowIedgement field
-ACK slot
-lbit
-夐
-ACK delimiter
-lbit, 1
-SOF
-ID
-RTR rl rO DLC DLC DLC DL
-1 bit
-CRC
-Data
-Sequence
-15 bits
-11 bits
--252-
-ACK
-FieId
-CRC ACK ACK
-EOF
-DeI slot DeI
-lbit
-1 bit lbit
+- 252 -
 Embedded System Lab
+Acknowledgement field
+Acknowledgement field
+ACK slot
+1 bit
+ACK delimiter
+1 bit, “1”r1r0DLC3DLC2DLC1DLC0SOFEOFRTRIDDataCRCSequenceCRCDelACK Field11 bits1 bitACKslotACKDel1 bit1bit“1”15 bits1bit“1”
 
 ## Page 253
 
-AcknowIedgement field
-The sender CAN controller sends two recessive bits
-during acknowledgement field
-ln practice, the sender leaves the bus free and
-switches itself tO listening or 'receiver' mode
-SOF
-ID
-RTR rl rO DLC DLC DLC DL
-1 bit
-CRC
-Data
-Sequence
-15 bits
-11 bits
--253-
-ACK
-FieId
-CRC ACK ACK
-EOF
-DeI slot DeI
-lbit
-1 bit lbit
+- 253 -
 Embedded System Lab
+Acknowledgement field
+The sender CAN controller sends two recessive bits during acknowledgement field
+In practice, the sender leaves the bus free and switches itself to listening or ‘receiver’ moder1r0DLC3DLC2DLC1DLC0SOFEOFRTRIDDataCRCSequenceCRCDelACK Field11 bits1 bitACKslotACKDel1 bit1bit“1”15 bits1bit“1”
 
 ## Page 254
 
-㉦
-080 and AcknowIedgement
-The receiver CAN controller sends a value
-during ACK slot
-with considering the error occurrence
-SOF
-ID
-11 bits
-RTR rl rO DLC DLC DLC DL
-1 bit
-Receiver
-CRC CRC ACK ACK
-EOF
-Data
-Sequence DeI slot DeI
+- 254 -
 Embedded System Lab
+CRC and Acknowledgement
+The receiver CAN controller sends a value during ACK slot
+with considering the error occurrencer1r0DLC3DLC2DLC1DLC0SOFEOFRTRIDDataCRCSequenceCRCDel11 bits1 bitACKslotACKDelReceiver
 
 ## Page 255
 
-㉦
-080 and AcknowIedgement
-If no transmission error iS detected by the receiver
-The receiver CAN controller sends
-a positive acknowledgement during ACK slot
-A dominant level, 0
-SOF
-ID
-RTR rl rO DLC DLC DLC DL
-1 bit
-11 bits
--255-
-0 (NO error)
-sent by receiver
-CRC CRC ACK ACK
-EOF
-Data
-Sequence DeI slot DeI
+- 255 -
 Embedded System Lab
+CRC and Acknowledgement
+If no transmission error is detected by the receiver
+The receiver CAN controller sends a positive acknowledgement during ACK slot
+A dominant level, “0”r1r0DLC3DLC2DLC1DLC0SOFEOFRTRIDDataCRCSequenceCRCDel11 bits1 bitACKslotACKDel“0” (No error)sent by receiver
 
 ## Page 256
 
-㉦
-080 and AcknowIedgement
-If transmission error is detected,
-The receiver CAN controller sends
-a negative acknowledgement during ACK slot
-A recessive level, 1
-SOF
-ID
-RTR rl rO DLC DLC DLC DL
-1 bit
-11 bits
--256-
-1 (Error)
-sent by receiver
-CRC CRC ACK ACK
-EOF
-Data
-Sequence DeI slot DeI
+- 256 -
 Embedded System Lab
+CRC and Acknowledgement
+If transmission error is detected,
+The receiver CAN controller sendsa negative acknowledgement during ACK slot
+A recessive level, “1”r1r0DLC3DLC2DLC1DLC0SOFEOFRTRIDDataCRCSequenceCRCDel11 bits1 bitACKslotACKDel“1” (Error)sent by receiver
 
 ## Page 257
 
-㉦
-080 and AcknowIedgement
-ExampIe1
-Suppose that there is no error detected from SOF to CRC del
-during the transmission 0f frame3 by ECU3.
-1
--257-
-2
-3
-ID3
-frame3
-4
-5
-6
+- 257 -
 Embedded System Lab
+CRC and Acknowledgement
+Example1
+Suppose that there is no error detected from SOF to CRC delduring the transmission of frame3 by ECU3.123456frame3ID3
 
 ## Page 258
 
-㉦
-080 and AcknowIedgement
-ExampIe1
-Then, receivers (i.e. ECUI, ECU2, ECU4, ECU5, and ECU6)
-send dominant values, “0” during ACK slot,
-independent Of any acceptance filtering.
-ECU3 (Sender) will read the logical value “0” during ACK slot.
-1
--258-
-2
-3
-4
-5
-6
+- 258 -
 Embedded System Lab
+CRC and Acknowledgement
+Example1
+Then, all receivers (i.e. ECU1, ECU2, ECU4, ECU5, and ECU6) send dominant values, “0”, during ACK slot,independent of any acceptance filtering.
+ECU3 (Sender) will read the logical value “0” during ACK slot.123456“0”“0”“0”“0”“0”“0”
 
 ## Page 259
 
-㉦
-Positive AcknowIedgement
+- 259 -
+Embedded System Lab
+Positive Acknowledgement
 After sender transmits data field,
 it starts to transmit CRC field.
-Both receivers start to execute CRC check.
-Sender
-Rec. 1
-Rec. 2
-CAN
-Bus
--259-
-Header
-Header
-CRC
-Data
-Sequence
-Data
-CRC
-Sequence
-Embedded System Lab
+Both receivers start to execute CRC check.DataSenderRec. 1Rec. 2CAN BusHeaderDataHeaderCRCSequenceCRCSequence
 
 ## Page 260
 
-㉦
-Positive AcknowIedgement
-CRC field complete.
-B0th receivers have completed CRC check.
-Both receivers start to send an ACK.
-Sender sends ACK slot recessively.
-Sender
-Rec. 1
-Rec. 2
-CAN
-Bus
--260-
-Header
-Header
-CRC CRC ACK
-Data
-Sequence
-Data
-CRC
-Sequence
-DeI sIOt
-CRC
-DeI
+- 260 -
 Embedded System Lab
+Positive Acknowledgement
+CRC field complete.
+Both receivers have completed CRC check.
+Both receivers start to send an ACK.
+Sender sends ACK slot recessively.CRCSequenceCRCDelCRCSequenceCRCDelDataSenderRec. 1Rec. 2CAN BusHeaderDataHeaderACKslot
 
 ## Page 261
 
-㉦
-Positive AcknowIedgement
-B0th receivers ack positively (ACK slot: dominant)
-Sender detects positive acknowledgement.
-Sender starts to transmit ACK DEL.
-Sender
-Rec. 1
-Rec. 2
-CAN
-Bus
--261-
-Header
-Header
-CRC
-Data
-Sequence
-ACK
-lsIOt
-CRC
-ACK
-DeI
-DeI
-Data
-CRC
-Sequence
-CRC
-DeI
+- 261 -
 Embedded System Lab
+Positive Acknowledgement
+Both receivers ack positively (ACK slot: dominant)
+Sender detects positive acknowledgement.
+Sender starts to transmit ACK DEL.“0”“0”“0”“1”ACKslotCRCSequenceCRCDelCRCSequenceCRCDelDataSenderRec. 1Rec. 2CAN BusHeaderDataHeaderACKDel
 
 ## Page 262
 
-㉦
-Positive AcknowIedgement
+- 262 -
+Embedded System Lab
+Positive Acknowledgement
 ACK field complete.
 Sender starts to transmit EOF.
-ACK ACK
-I sIOtI DeI
-Sender
-Rec. 1
-Rec. 2
-CAN
-Bus
--262-
-Header
-Header
-CRC
-Data
-Sequence
-CRC
-Data
-Sequence
-CRC
-DeI
-CRC
-DeI
-I
-I
-EOF
-Embedded System Lab
+“1”“1”ACKDel“0”“0”“0”“1”ACKslotCRCSequenceCRCDelCRCSequenceCRCDelDataSenderRec. 1Rec. 2CAN BusHeaderDataHeaderEOF
 
 ## Page 263
 
-㉦
-Positive AcknowIedgement
-End of frame (EOF) complete.
-End 0f frame: “000 0000" (7 bit recessive bits)
-lFS(lnter Frame Space) starts
-ACK ACK
-I sIOtI DeI I EOF
-Sender
-Rec. 1
-Rec. 2
-CAN
-Bus
--263-
-Header
-Header
-CRC
-Data
-Sequence
-CRC
-Data
-Sequence
-CRC
-DeI
-CRC
-DeI
-I
-I
-I
-I
-I
-“1111111”
-I
-I
-I
-“1111111”
-I
+- 263 -
 Embedded System Lab
+Positive Acknowledgement
+End of frame (EOF) complete.
+End of frame: “000 0000” (7 bit recessive bits)
+IFS(Inter Frame Space) startsEOF“1111111”“1”“1”ACKDel“0”“0”“0”“1”ACKslotCRCSequenceCRCDelCRCSequenceCRCDelDataSenderRec. 1Rec. 2CAN BusHeaderDataHeader“1111111”
 
 ## Page 264
 
-㉦
-Positive AcknowIedgement
-IFS (lnter Frame Space) complete.
-Then Bus ldle.
-ACK ACK
-I sIOtI DeI I
-Sender
-Rec. 1
-Rec. 2
-CAN
-Bus
--264-
-Header
-Header
-CRC
-Data
-Sequence
-CRC
-CRC
-DeI
-CRC
-Data
-I
-I
-I
-I
-I
-I
-I
-I
-EOF
-“1111111”
-“1111111”
-Sequence DeI
-I
-Data frame
+- 264 -
 Embedded System Lab
+Positive Acknowledgement
+IFS (Inter Frame Space) complete.
+Then Bus Idle.EOF“1111111”“1”“1”ACKDel“0”“0”“0”“1”ACKslotCRCSequenceCRCDelCRCSequenceCRCDelDataSenderRec. 1Rec. 2CAN BusHeaderDataHeader“1111111”IFS“111”“111”Data frame
 
 ## Page 265
 
-㉦
-080 and AcknowIedgement
-ExampIe 2
-SLIPPOSe
-" ECUI, ECU5, and ECU6 detect no errors from SOF to CRC del
-during the transmission of frame3 by ECU3
-2 ECU2 and ECU4 detect errors during CRC check
-1
--265-
-2
-3
-ID3
-frame3
-4
-5
-6
+- 265 -
 Embedded System Lab
+CRC and Acknowledgement
+Example 2
+Suppose
+ECU1, ECU5, and ECU6 detect no errors from SOF to CRC del during the transmission of frame3 by ECU3
+ECU2 and ECU4 detect errors during CRC check123456frame3ID3
 
 ## Page 266
 
-㉦
-080 and AcknowIedgement
-ExampIe 2
-Then, during ACK slot,
-" ECUI, ECU5, and ECU6 send dominant values, “0
-ECU2 and ECU4 send recessive values, 1
-ECU3(Sender) will read the logical value “0" during ACK slot.
-1
--266-
-2
-3
-4
-5
-6
+- 266 -
 Embedded System Lab
+CRC and Acknowledgement
+Example 2
+Then, during ACK slot,
+ECU1, ECU5, and ECU6 send dominant values, “0”,
+ECU2 and ECU4 send recessive values, “1”,
+ECU3(Sender) will read the logical value “0” during ACK slot.123456“0”“1”“1”“0”“0”“0”
 
 ## Page 267
 
-㉦
-080 and AcknowIedgement
-ExampIe 2
-After ACK delimiter,
-" ECU2 and ECU4 send error frames tO signal errors
-1
--267-
-2
-Error
-frame
-3
-4
-Error
-frame
-5
-6
+- 267 -
 Embedded System Lab
+CRC and Acknowledgement
+Example 2
+After ACK delimiter,
+ECU2 and ECU4 send error frames to  signal errors123456Error frameError frame
 
 ## Page 268
 
-㉦
-080 and AcknowIedgement
-ExampIe 3
-SLIPPOSe
-" ECUI, ECU2, ECU4, ECU5, and ECU6 detect errors in CRC check
-during the transmission of frame3 by ECU3
-1
--268-
-2
-3
-ID3
-frame3
-4
-5
-6
+- 268 -
 Embedded System Lab
+CRC and Acknowledgement
+Example 3
+Suppose
+ECU1, ECU2, ECU4, ECU5, and ECU6 detect errors in CRC checkduring the transmission of frame3 by ECU3123456frame3ID3
 
 ## Page 269
 
-㉦
-080 and AcknowIedgement
-ExampIe 2
-Then, during ACK slot,
-" ECUI, ECU2, ECU4, ECU5, and ECU6 send recessive values, 1
-ECU3 (Sender) will read the logical value “1” during ACK slot.
-ECU3 (Sender)detects an ACK error
-1
--269-
-2
-3
-4
-5
-6
+- 269 -
 Embedded System Lab
+CRC and Acknowledgement
+Example 2
+Then, during ACK slot,
+ECU1, ECU2, ECU4, ECU5, and ECU6 send recessive values, “1”
+ECU3 (Sender) will read the logical value “1” during ACK slot.
+ECU3 (Sender)detects an ACK error123456“1”“1”“1”“1”“1”“1”
 
 ## Page 270
 
-㉦
-080 and AcknowIedgement
-ExampIe 2
+- 270 -
+Embedded System Lab
+CRC and Acknowledgement
+Example 2
 Then, during ACK slot,
-" ECUI, ECU2, ECU4, ECU5, and ECU6 send recessive values, 1
+ECU1, ECU2, ECU4, ECU5, and ECU6 send recessive values, “1”
 ECU3 (Sender) will read the logical value “1” during ACK slot.
 detects an ACK error and
-terminates the 0090ing message transmission
-by sending an error flag.
-1
--270-
-2
-3
-Error
-frame
-4
-5
-6
-Embedded System Lab
+terminates the ongoing message transmission by sending an error flag. 123456Error frame
 
 ## Page 271
 
-㉦
-080 and AcknowIedgement
-ExampIe 2
-Then, during ACK slot,
-" ECUI, ECU2, ECU4, ECU5, and ECU6 send recessive values, 1
-ECUI, ECU2, ECU4, ECU5, and ECU6 also send error frames
-later.
-1
-Error
-frame
--271-
-2
-Error
-frame
-3
-Error
-frame
-4
-0
-Error
-frame
-5
-Error
-frame
-6
-Error
-frame
+- 271 -
 Embedded System Lab
+CRC and Acknowledgement
+Example 2
+Then, during ACK slot,
+ECU1, ECU2, ECU4, ECU5, and ECU6 send recessive values, “1”
+ECU1, ECU2, ECU4, ECU5, and ECU6 also send error frames later.123456Error frameError frameError frameError frameError frameError frame
 
 ## Page 272
 
-AcknowIedgement field
-AcknowIedgement field
+- 272 -
+Embedded System Lab
+Acknowledgement field
+Acknowledgement field
 ACK slot
 ACK delimiter
-CRC
-field
-CRC DeIimiter
-ACK field
-End of
-frame
-ACK 90t
--272-
-ACK Delimiter
-Embedded System Lab
+CRC Delimiter
 
 ## Page 273
 
-AcknowIedgement field
--273-
-ACK slot
-Whenever a receiver has correctly received a message,
-it acknowledges this tO the sender
-by sending a dominant bit in the ACK slot time
+- 273 -
 Embedded System Lab
+Acknowledgement field
+ACK slot
+Whenever a receiver has correctly received a message,it acknowledges this to the senderby sending a dominant bit in the ACK slot time
 
 ## Page 274
 
-AcknowIedgement field
+- 274 -
+Embedded System Lab
+Acknowledgement field
 ACK delimiter
 Always recessive
-SO, when a message has been correctly received
-by all ECUs in the network
-ACK slot ((dominant) bit is surrounded by two recessive bits
-(CRC delimiter and ACK delimiter)
-CRC
-field
+So, when a message has been correctly received by all ECUs in the network
+ACK slot ((dominant) bit is surrounded by two recessive bits (CRC delimiter and ACK delimiter)
 CRC Delimiter
-End of
-ACK field
-ACK 90t
--274-
-frame
-ACK Delimiter
-Embedded System Lab
 
 ## Page 275
 
--275-
-AcknowIedgement field
-EV ln a transmission,
-The sender ECU sends two recessive bits along the bus
-ln practice,
-the sender leaves the bus free and
-switches itself tO listening or 'receiver' mode
+- 275 -
 Embedded System Lab
+Acknowledgement field
+In a transmission,
+The sender ECU sends two recessive bits along the bus
+In practice, the sender leaves the bus free and switches itself to listening or ‘receiver’ mode
 
 ## Page 276
 
--276-
-AcknowIedgement field
-Whenever a receiver has correctly received a message,
-it acknowledges this tO the sender
-by sending a dominant bit in the ACK sIOt time
-A〃 receivers in the network
-must send an ack signal over the network
-if they have not detected any error Of any kind.
+- 276 -
 Embedded System Lab
+Acknowledgement field
+Whenever a receiver has correctly received a message,it acknowledges this to the senderby sending a dominant bit in the ACK slot time
+All receivers in the network must send an ack signal over the network if they have not detected any error of any kind.
 
 ## Page 277
 
-AcknowIedgement field
-If the sending ECU receives an acknowledgement,
-lt means at least one ECU in the network has received the
-message completely and without errors.
--277-
+- 277 -
 Embedded System Lab
+Acknowledgement field
+If the sending ECU receives an acknowledgement,
+It means at least one ECU in the network has received the message completely and without errors.
 
 ## Page 278
 
-End 0f data frame
-Data frame is terminated
-by a sequence Of 7 recessive bits
-The end of data frame has a fixed structure
-NO bit stuffing
-SOF
--278-
-ID
-RTR rl rO DLC DLC DLC DL
-CRC CRC ACK ACK
-EOF
-Data
-Sequence DeI slot DeI
+- 278 -
 Embedded System Lab
+End of data frame
+Data frame is terminated by a sequence of 7 recessive bits
+The end of data frame has a fixed structure
+No bit stuffingr1r0DLC3DLC2DLC1DLC0SOFEOFRTRIDDataCRCSequenceCRCDelACKslotACKDel
 
 ## Page 279
 
-lnterframe SDace [IFS)
-lnterframe space (IFS)
-Before the next frame starts to be sent,
-minimum 3 bit recessive time interval iS required in CAN.
-SOF
--279-
-ID
-RTR rl rO DLC DLC DLC DL
-CRC
-Data
-Sequence
-CRC ACK ACK
-EOF
-DeI slot DeI
-23 bit
-IFS
+- 279 -
 Embedded System Lab
+Interframe Space (IFS)
+Interframe space (IFS)
+Before the next frame starts to be sent,minimum 3 bit recessive time interval is required in CAN.r1r0DLC3DLC2DLC1DLC0SOFEOFRTRIDDataCRCSequenceCRCDel≥3 bitACKslotACKDelIFS
 
 ## Page 280
 
-6) PhYSicaI Transfer Of a Standard Data Frame
-SignaIs in oscilloscope
-500kbps
-SOF
-Arbitration
-field
-3.5v
-2.5v
-1.5v
--280-
-ontro
-Data field (4 bytes)
-field
-CRC
-field
-ACK
-field
-EOF
+- 280 -
 Embedded System Lab
+Physical Transfer of a Standard Data Frame
+Signals in oscilloscope
+500kbpsEOFArbitrationfieldData field (4 bytes)CRCfieldACKfieldControlfieldSOF3.5v1.5v2.5v
 
 ## Page 281
 
-6) PhYSicaI Transfer Of a Standard Data Frame
-SignaIs in oscilloscope
-500kbps
-SOF: dominant ("0”)
-SOF
-Arbitration
-field
-0
-3.5v
-2.5v
-1.5v
--281-
-ontro
-Data field (4 bytes)
-field
-CRC
-field
-ACK
-field
-EOF
+- 281 -
 Embedded System Lab
+Physical Transfer of a Standard Data Frame
+Signals in oscilloscope
+500kbps
+SOF: dominant (“0”)EOFArbitrationfieldData field (4 bytes)CRCfieldACKfieldControlfieldSOF3.5v1.5v2.5v0
 
 ## Page 282
 
-6) PhYSicaI Transfer Of a Standard Data Frame
-SignaIs in oscilloscope
+- 282 -
+Embedded System Lab
+Physical Transfer of a Standard Data Frame
+Signals in oscilloscope
 500kbps
 Control field:
-000100 4byte data
-SOF
-Arbitration
-field
-ontro
-Data field (4 bytes)
-field
-CRC
-field
-b00100
-3.5v
-2.5v
-1.5v
--282-
-ACK
-field
-EOF
-Embedded System Lab
+000100 4byte dataEOFArbitrationfieldData field (4 bytes)CRCfieldACKfieldControlfieldSOF3.5v1.5v2.5v000100
 
 ## Page 283
 
-6) PhYSicaI Transfer Of a Standard Data Frame
-SignaIs in oscilloscope
+- 283 -
+Embedded System Lab
+Physical Transfer of a Standard Data Frame
+Signals in oscilloscope
 500kbps
 CRC del, ACK slot, ACK del
-101
-SOF
-Arbitration
-field
-ontro
-Data field (4 bytes)
-field
-CRC
-field
-3.5v
-2.5v
-1.5v
--283-
-ACK
-field
-EOF
-Embedded System Lab
+101EOFArbitrationfieldData field (4 bytes)CRCfieldACKfieldControlfieldSOF3.5v1.5v2.5v101
 
 ## Page 284
 
-6) PhYSicaI Transfer Of a Standard Data Frame
-SignaIs in oscilloscope
+- 284 -
+Embedded System Lab
+Physical Transfer of a Standard Data Frame
+Signals in oscilloscope
 500kbps
 EOF
-1111111
-SOF
-Arbitration
-field
-ontro
-Data field (4 bytes)
-field
-CRC
-field
-3.5v
-2.5v
-1.5v
--284-
-ACK
-field
-EOF
-11111111
-Embedded System Lab
+111 1111EOFArbitrationfieldData field (4 bytes)CRCfieldACKfieldControlfieldSOF3.5v1.5v2.5v1111111
 
 ## Page 285
 
-㉦
-12
-Arb1tratlon field
-ldentifier
-Stored in buffers
--285-
-Standard Data Frame in CAN
-6
-00血이 field
-4
-Data frame
-N(0로N로8)
-Data field
-8
-Stored in transmit]receve buffers
-B1t stuffing
-(mmber Of bits = 44 + 8N)
-16
-CRC field
-8
-15
-0R0
-8
-7
-Endof frame
+- 285 -
 Embedded System Lab
+Standard Data Frame in CAN
 
 ## Page 286
 
-㉦
-Arbltratlon field
-ldentifier
-Stored in buffers
--286-
-Standard Data Frame in CAN
-00血이 field
-Data frame
-N(0드N드8)
-Data field
-Stored in transmit/recewe buffers
-Bit stuffing
-(number Of bits = 44 + 8N)
-0R0 field
-0R0
-8
-Endof frame
+- 286 -
 Embedded System Lab
+Standard Data Frame in CAN
 
 ## Page 287
 
--287-
-STANDARD REMOTE FRAME IN CAN
+- 287 -
 Embedded System Lab
+STANDARD REMOTE FRAME IN CAN
 
 ## Page 288
 
-㉦
-Data Frame VS Remote Frame
+- 288 -
+Embedded System Lab
+Data Frame vs Remote Frame
 Data frame
 Contains some information (data) in this frame
 Purpose
@@ -5216,2055 +2635,969 @@ Remote frame
 Does NOT contain any information in this frame
 i.e. no data field
 Purpose
-Request the transmission Of its corresponding data frame
-from another ECU
-> The identifier Of the corresponding data frame is the same as the
-remote frame
+Request the transmission of its corresponding data frame from another ECUThe identifier of the corresponding data frame is the same as the remote frame
 NO automotive usage
--288-
-Embedded System Lab
 
 ## Page 289
 
-㉦
-SOF
-SOF
--289-
-Data Frame VS Remote Frame
-Data frame
-ID
-Header
-RTR
-rl
-ControI Field
-rO
-DLC
-TaiI
-CRC CRC ACK AC
-Data
-Sequence DeI SIOt DeI
-Remote frame
-Header
-ID
-RTR
-rl
-ControI Field
-rO
-DLC
-CRC
-Sequence
-Tail
-CRC ACK AC
-SIot DeI
-DeI
-EOF
-EOF
+- 289 -
 Embedded System Lab
+Data Frame vs Remote Frame
+Data frame
+Remote frameSOFEOFRTRACKDelID ACKSlotCRCSequenceCRCDelDataControl Fieldr1r0DLCHeaderTail
+SOF EOFRTRACKDelIDACKSlotCRCSequenceCRCDelControl Fieldr1r0DLCHeaderTail
 
 ## Page 290
 
-㉦
-Data Frame VS Remote Frame
-Data frame
-RTR (Remote Transmission Request) bit = “0” (dominant)
-"RTR(Remote transmission request)" is false.
-> i.e. NOT request the transmission from another ECU
-Remote frame
-RTR (Remote Transmission Request) bit = “1” (recessive)
-"RTR(Remote transmission request)" is true.
-> i.e. Request the transmission from another ECU
-Request one data frame whose identifier is the same as the
-remote frame
--290-
+- 290 -
 Embedded System Lab
+Data Frame vs Remote Frame
+Data frame
+RTR (Remote Transmission Request)  bit = “0” (dominant)
+“RTR(Remote transmission request)” is false.i.e. NOT request the transmission from another ECU
+Remote frame
+RTR (Remote Transmission Request)  bit = “1” (recessive)
+“RTR(Remote transmission request)” is true.i.e. Request the transmission from another ECU–Request one data frame whose identifier is the same as the remote frame
 
 ## Page 291
 
-Remote Frame
-An ECU may need information, which it does not have,
-tO carry out its task.
-An ECU needing data can initialize the request
-for transmission of the data from another ECU
-by sending a remote frame.
--291-
+- 291 -
 Embedded System Lab
+Remote Frame
+An ECU may need information, which it does not have, to carry out its task.
+An ECU needing data can initialize the requestfor transmission of the data from another ECU by sending a remote frame.
 
 ## Page 292
 
+- 292 -
+Embedded System Lab
 Remote frame
 Remote frame
 Start of frame
 Arbitration field
 Control field
-(NO Data field)
+(No Data field)
 CRC sequence
 Acknowledgement field
 End of frame
-7th area (interframe space)
--292-
-Embedded System Lab
+7tharea (interframe space)
 
 ## Page 293
 
-Remote Frame
-Remote frame
-IFS
--293-
-SOF
-ID
-RTR
-rl
-ControI FieId
-rO
-DLC
-CRC CRC ACK AC
-Sequence DeI SIot DeI
-EOF
-IFS
+- 293 -
 Embedded System Lab
+Remote Frame
+SOFEOFRTRACKDelIDACKSlotCRCSequenceCRCDelControl Fieldr1r0DLCRemote frameIFSIFS
 
 ## Page 294
 
-Remote frame
+- 294 -
+Embedded System Lab
 Start of frame
-The same as in 'data frame'
+The same as in ‘data frame’
 Arbitration field
-ldentifier
-the same as in 'data frame'
+Identifier
+the same as in ‘data frame’
 RTR bit
 Recessive (Compare that it is dominant in data frame)
-ldentifier
-SOF IDIO
-MSB
--294-
-ID9
-ID8
-ID7
-ID6
-ID5
-ID4
-ID3
-ID2
-IDI
-IDO
-LSB
-RTR= 1
-Embedded System Lab
+Remote frame
+SOFRTR=“1”ID10IdentifierID9ID8ID7ID6ID5ID4ID3ID2ID1ID0MSBLSB
 
 ## Page 295
 
-㉦
-Data Frame VS Remote Frame
-If a remote frame and its corresponding data frame
-are sending simultaneously,
-their identifiers are same and SO
-lD5i lD4:
-RTRi IDE
-ECU A
-SOF
-Standard
-Data
-frame
-ECU B
-Standard
-Remote
-frame
-l다0: lD9
-lD7
-lD6
-lD3
-lD2:
-IDI :
-lDo
-Recessive
-Dominant
-Recessive
-Dominant
-ECU B Remote frame loses the arbitration
-ECU A data frame takes over the bus
+- 295 -
+Embedded System Lab
+If a remote frame and its corresponding data frameare sending simultaneously,
+their identifiers are same and sothe data frame wins because of RTR bit.
+Data Frame vs Remote Frame
 
 ## Page 296
 
-Remote frame
-ControI field
+- 296 -
+Embedded System Lab
+Control field
 Reserved bits: the same
 Data length
-Unnecessary, but it is advisable tO specify this field correctly
-SOF
--296-
-ID
-ControI
-RTR rl rO DLC DLC DLC DLC
-3 2 1 0
-“000 0”
-EOF
-Embedded System Lab
+Unnecessary, but it is advisable to specify this field correctly
+Remote frame
+r1r0DLC3DLC2DLC1DLC0SOFEOFRTRIDControl“1”“ 0   0    0    0 ”
 
 ## Page 297
 
-Remote frame
+- 297 -
+Embedded System Lab
 Data field
 No data field in remote frame
 CRC, acknowledgement, EOF and IFS
 The same
-SOF
--297-
-ID
-RTR rl rO DLC DLC DLC DLC
-1
-CRC
-Sequenc
-CRC ACK ACK
-DeI slot DeI
-EOF
-IFS
-Embedded System Lab
+Remote frame
+r1r0DLC3DLC2DLC1DLC0SOFEOFRTRIDCRCSequenceCRCDelACKslotACKDelIFS“1”
 
 ## Page 298
 
-Remote Frame
-Remote frame
-(number of bits = 44)
-12
-Arb1trat10n field
-6
-00而이 field
-4
-8 毯
-16
-0R0 field
-15
-CRC
-0
-0
-7
-End of frame
--298-
-lld까ID까까I|티티ID|lld까ID까까I國|IID까I|1||||||||
+- 298 -
 Embedded System Lab
+Remote Frame
 
 ## Page 299
 
-ERROR FRAME IN CAN
--299-
+- 299 -
 Embedded System Lab
+ERROR FRAME IN CAN
 
 ## Page 300
 
-Error Frame
-Error frame is used tO indicate errors detected
-during communication
-An 0090ing erroneous data transmission iS terminated and
-an error frame iS issued.
--300-
+- 300 -
 Embedded System Lab
+Error Frame
+Error frame is used to indicate errors detected during communication
+An ongoing erroneous data transmission is terminated andan error frame is issued.
 
 ## Page 301
 
+- 301 -
+Embedded System Lab
 Error Frame
 Error frame
 Error flag
 Error delimiter
--301-
-Embedded System Lab
 
 ## Page 302
 
+- 302 -
+Embedded System Lab
+Data frame
 Active Error Frame
-EV Active error frame
+Active error frame
 Active error flag
 (6 dominant bits)
 000 000
 Error delimiter
 (8 recessive bits)
-11111111
-Active error flag
-Data Remote
-0 0 00 0 0
-or
-frame
-frame
--302-
-1
-Error delimiter
-1 1 1 1 1 1
-1
-IFS or OverIoad frame
-Embedded System Lab
+1111 11110  0  0  0  0  01  1  1  1  1  1  1  1Active error flagError delimiterIFS or Overload frameRemote frameor
 
 ## Page 303
 
+- 303 -
+Embedded System Lab
 Active Error Frame
 Active error flag
-Consists Of si)( consecutive 'dominant' bitS
-" The primary and secondary error flags might overlap.
-Data
-Error frame
-frame
-Error flag
-Superpositlon Of
-Error flags
--303-
-lnterframe space
-or
-Overload frame
-Error Delimiter
-Embedded System Lab
+Consists of six consecutive ’dominant’ bits
+The primary and secondary error flags might overlap.
 
 ## Page 304
 
-Active Error Frame
-EV Active error frame
+- 304 -
+Embedded System Lab
+Active error frame
 The primary and secondary error flags might overlap.
-6 active error flag length K12
+6 ≤ active error flag length ≤12
 Error delimiter
 (8 recessive bits)
-11111111
-Error frame
-Data frame
-remote frame
--304-
-6
-Error flag
-로6
-Echo
-error flag
-8
-Error delimiter
-lnter-frame space
-frame
-Embedded System Lab
+1111 1111
+Active Error Frame
 
 ## Page 305
 
-Passive Error Frame
-EV Passive error frame
-Passive error flag
-6 recessive bitS
-111111
-Error delimiter
-8 recessive bitS
-11111111
-Passive error
-flag
-Data Remote
-111111
-or
-frame
-frame
--305-
-1
-Error delimiter
-1 1 1 1 1 1
-1
-IFS or OverIoad frame
+- 305 -
 Embedded System Lab
+Data frame
+Passive Error Frame
+Passive error frame
+Passive error flag
+6 recessive bits
+111 111
+Error delimiter
+8 recessive bits
+1111 11111  1  1  1  1  11  1  1  1  1  1  1  1Passive error flagError delimiterIFS or Overload frameRemote frameor
 
 ## Page 306
 
--306-
+- 306 -
+Embedded System Lab
 Passive Error Frame
 Passive error flag
-Consists Of si)( consecutive 'recessive' bits
-unless it is overwritten by dominant' bits from other ECUs
-Embedded System Lab
+Consists of six consecutive ’recessive’ bits unless it is overwritten by ’dominant’ bits from other ECUs
 
 ## Page 307
 
-DATA PROTECTION IN CAN
--307-
+- 307 -
 Embedded System Lab
+DATA PROTECTION IN CAN
 
 ## Page 308
 
-CAN
-하otocol
-CAN
-PhysicaI Layer
--308-
-Data Protection
-Error Tracking
-Error Handling
-Error Detection
-Error Avoidance
+- 308 -
 Embedded System Lab
+CANProtocolCANPhysical Layer
+Error TrackingError HandlingError DetectionError Avoidance
+Data Protection
 
 ## Page 309
 
-㉦
+- 309 -
+Embedded System Lab
+Principle of Data Protection
 CAN
-PrinciDIe Of Data Protection
--309-
 Strict real time requirements
 Reliable data transmission
-Because CAN is aISO used in very time and safety critical
-applications within the motor vehicle,
-> requirements for data integrity are extremely high.
-Embedded System Lab
+Because CAN is also used in very time and safety critical applications within the motor vehicle,requirements for data integrity are extremely high.
 
 ## Page 310
 
-㉦
--310-
-PrinciDIe Of Data Protection
-ReIiabIe data transmission
-A prerequisite for the safety and reliability of ECU in vehicles
+- 310 -
 Embedded System Lab
+Principle of Data Protection
+Reliable data transmission
+A prerequisite for the safety and reliability of ECU in vehicles
 
 ## Page 311
 
-㉦
--311-
-PrinciDIe Of Data Protection
+- 311 -
+Embedded System Lab
+Principle of Data Protection
 For reliable data transmission,
 (First) Physical system design
-" With considering EMC(EIectroMagnetic CompatibiIity)
-Embedded System Lab
+With considering EMC(ElectroMagnetic Compatibility)
 
 ## Page 312
 
-㉦
-PrinciDIe Of Data Protection
-Despite electromagnetically compatible design and
-physical data protection,
-Several interference due tO noise may OCCur
-Attenuation and distortion Of signals
-) Errors may occur!
--312-
+- 312 -
 Embedded System Lab
+Principle of Data Protection
+Despite electromagnetically compatible design and physical data protection,
+Several interference due to noise may occur
+Attenuation and distortion of signalsErrors may occur!
 
 ## Page 313
 
-㉦
+- 313 -
+Embedded System Lab
+Principle of Data Protection
 Let
-PI
-PrinciDIe Of Data Protection
+P1
 probability with which the data is disturbed during transmission
 P2
 probability that disturbed data remains undetected
 Then
-Probability Of Data integrity = 1 - P1*P2
--313-
-Embedded System Lab
+Probability of Data integrity = 1–P1*P2
 
 ## Page 314
 
-㉦
--314-
-PrinciDIe Of Data Protection
-To reduce PI
-(i.e. For avoiding corruption 0f data )
+- 314 -
+Embedded System Lab
+Principle of Data Protection
+To reduce P1
+(i.e. For avoiding corruption of data )
 Physical layer design
-EIectromagneticaIIy compatible
+Electromagnetically compatible
 To reduce P2
 (i.e. For detecting corrupted data well)
 Effective logical error detection and logical error handling
-Embedded System Lab
 
 ## Page 315
 
--315-
+- 315 -
+Embedded System Lab
 Data Protection
 CAN physical layer
 Twist
-" Reducing cross talk
+Reducing cross talk
 Termination
 Preventing reflection
 Differential bus
 Reducing external noise effect
 CAN controller (CAN protocol)
 Effective logical error detection and logical error handling
-Embedded System Lab
 
 ## Page 316
 
-ERROR DETECTION IN CAN
--316-
+- 316 -
 Embedded System Lab
+ERROR DETECTION IN CAN
 
 ## Page 317
 
+- 317 -
+Embedded System Lab
 Logical Error detection
-Five different types 0f errors (N0t mutually exclusive)
-ln the Physical layer
+Five different types of errors (Not mutually exclusive)
+In the Physical layer
 Bit error
 Stuff error
 Frame structure level
-ACKnowIedgement error
-• CRC error
+ACKnowledgement error
+CRC error
 Violation of the frame structure
 Structure error
--317-
-Embedded System Lab
 
 ## Page 318
 
-㉦
-Bit error
-Stuff bit error
-ACK error
-Transmitter
-Receiver
-Bit error
-Stuff bit error
-Format error
-CRC error
--318-
-Error Detection Procedures
-0
-Arbitration |
-Control
-Data
-CRC
-ACK
-EOFI
+- 318 -
 Embedded System Lab
+Error Detection Procedures
 
 ## Page 319
 
-CAN BLIS
-Bit (monitoring) Error
-Core
-CAN ControIIer
-CAN
-Transceiver
--319-
-MCU
-Core
-CAN ControIIer
-TxD
-CAN
-RxD
-Transceiver
+- 319 -
 Embedded System Lab
+Bit (monitoring) ErrorECUECUCoreCAN ControllerCAN TransceiverMCUECUCoreCAN ControllerCAN TransceiverMCUECU
+CAN Bus
+TxDRxD
 
 ## Page 320
 
-Transceiver
--320-
-㉦
-Error Detection by Transmitter
-Bit (monitoring) Error
-`C)鬱4)鬱4)
-TxD
-Core
-CAN ControIIer
-RxD
-CAN
-Core
-CAN ControIIer
-CAN
-Transceiver
-Core
-CAN ControIIer
-CAN
-Transceiver
+- 320 -
 Embedded System Lab
+Error Detection by Transmitter
+Bit (monitoring) ErrorECUECUECUCoreCAN ControllerCAN TransceiverMCUECUECUCoreCAN ControllerCAN TransceiverMCUECUCoreCAN ControllerCAN TransceiverMCUECUTxDRxD
 
 ## Page 321
 
-ERROR SIGNALING
--321-
+- 321 -
 Embedded System Lab
+ERROR SIGNALING
 
 ## Page 322
 
-Error Signaling
-If an active ECU detects an error condition
-send an ACTIVE error frame
-Active error frame
-Active error flag
-Data Remote
-0 0 00 0 0
-or
-frame
-frame
--322-
-1
-Error delimiter
-1 1 1 1 1 1
-1
-IFS or OverIoad frame
+- 322 -
 Embedded System Lab
+Error Signaling
+If an active ECU detects an error conditionsend an ACTIVE error frameData frame0  0  0  0  0  01  1  1  1  1  1  1  1Active error flagError delimiterIFS or Overload frameRemote frameorActive error frame
 
 ## Page 323
 
-Error Signaling
-If a passive ECU detects an error condition
-send a PASSIVE error frame
-Passive error frame
-Passive error flag
-Data Remote
-111111
-or
-frame
-frame
--323-
-Error delimiter
-IFS or OverIoad frame
+- 323 -
 Embedded System Lab
+Error Signaling
+If a passive ECU detects an error conditionsend a PASSIVE error frameData frame1  1  1  1  1  11  1  1  1  1  1  1  1Passive error flagError delimiterIFS or Overload frameRemote frameorPassive error frame
 
 ## Page 324
 
-Error Signaling
--324-
-For a Bit error,
-a Stuff error,
-a Structure error, or
-an ACK error,
-the error-detecting ECU starts tO send an error frame at the next bit
+- 324 -
 Embedded System Lab
+Error Signaling
+For a Bit error, a Stuff error, a Structure error, oran ACK error,the error-detecting ECU starts to send an error frame at the next bit
 
 ## Page 325
 
+- 325 -
+Embedded System Lab
 Error Signaling
 For a CRC error,
-the error detecting ECU starts tO send an error frame
-at the bit following the ACK delimiter
-unless an error frame for another error condition has already been
-started.
--325-
-Embedded System Lab
+the error detecting ECU starts to send an error frame at the bit following the ACK delimiter
+unless an error frame for another error condition has already been started.
 
 ## Page 326
 
-Error HandIing
-Six dominant bits in error flag
-An intentional violation Of the bit stuffing rule
-" Generating a bit stuffing error
-Error
-detection
-Data frame
-lnform
-all other ECU
-Error frame
-Error indication
-by error-detecting
-CAN ECU
-Active error frame
-Active error flag
--326-
-1
-Error delimiter
-1 1 1 11 1
-1
+- 326 -
 Embedded System Lab
+Error Handling
+Six dominant bits in error flag
+An intentional violation of the bit stuffing rule
+Generating a bit stuffing error
+0  0  0  0  0  01  1  1  1  1  1  1  1Active error flagError delimiterActive error frameError indicationby error-detecting CAN ECUError frameData frameInform all other ECU Error detection
 
 ## Page 327
 
--327-
-Error HandIing
-Transmission Of an error flag ensures that
-other CAN ECUs
-" will aISO transmit an error flag
-> secondary error flag
-and thereby aISO terminate the regular data transmission
-just like the sender Of the primary error flag.
-Depending on the situation,
-the primary and secondary error flags might overlap.
+- 327 -
 Embedded System Lab
+Error Handling
+Transmission of an error flag ensures that
+all other CAN ECUs
+will also transmit an error flag secondary error flag
+and thereby also terminate the regular data transmission just like the sender of the primary error flag.
+Depending on the situation, the primary and secondary error flags might overlap.
 
 ## Page 328
 
-Error HandIing
-Transmission Of an error flag
-is always terminated by an error delimiter.
-The error delimiter consists Of 8 recessive bits.
-The error delimiter
-replaces the ACK delimiter and
-the EOF of a regular message transmission,
-Error
-detection
-Active
-error flag
-000000
-Error
-delimiter
-11111111
-Data frame
--328-
-Error indication
-by error-detecting
-CAN ECU
+- 328 -
 Embedded System Lab
+Error Handling
+Transmission of an error flag is always terminated by an error delimiter.
+The error delimiter consists of 8 recessive bits.
+The error delimiter
+replaces the ACK delimiter and the EOF of a regular message transmission, 0 0 0 0 0 01 1 1 1 1 1 1 1Active error flagErrordelimiterError indicationby error-detecting CAN ECUData frameError detection
 
 ## Page 329
 
-Error HandIing
-Together with the obligatory transmission pause (IFS)
-on the CAN bus,
-the error delimiter Of 8 recessive bits results in 11 recessive
-bits (bus-idle identifier).
-Error
-detection
-Data frame
-Active
-error flag
-000000
-Error
-IFS
-delimiter
--329-
-Error indication
-by error-detecting
-CAN ECU
+- 329 -
 Embedded System Lab
+Error Handling
+Together with the obligatory transmission pause (IFS) on the CAN bus,
+the error delimiter of 8 recessive bits results in 11 recessive bits (bus-idle identifier).0 0 0 0 0 01 1 1 1 1 1 1 1Active error flagErrordelimiterError indicationby error-detecting CAN ECUData frameError detection1 1 1 IFS
 
 ## Page 330
 
-㉦
-HandIing A Bit Monitoring Error
-EV Because Of Si)( consecutive dominant biS,
-Some receivers that do not detect errors until this time
-recognize a bit stuffing error.
-They send error flags
-> CAN bus may represent the max 12 consecutive dominant bis.
-recesslve
-Sende
-dominant
-Receiver
-CAN
-Bus
--330-
-recesslve
-dominant
-Error Flag
-Error FIag
-2
-Data Field Error FIag -빠-- Error FIag
-m e e
-YS em a
+- 330 -
+Embedded System Lab
+Handling A Bit Monitoring Error
+Because of six consecutive dominant bis,
+Some receivers that do not detect errors until this time recognize a bit stuffing error.
+They send error flagsCAN bus may represent the max 12 consecutive dominant bis.
+recessivedominantrecessivedominantSenderCANBusReceiver
 
 ## Page 331
 
-recesslve
-Sende
-dominant
-Receiver
-㉦
-HandIing A Bit Monitoring Error
-EV Because Of Si)( consecutive dominant biS,
-Some receivers that do not detect errors until this time
-recognize a bit stuffing error.
-They send error flags
-> After error flags, they send error delimiters.
-Data Field Error FIag -빠-- Error FIag Error Delimiter
-Error Flag
-Error FIag
-I
-CAN
-Bus
--331-
-recesslve
-dominant
-Error Delimiter
-Error Delimiter
+- 331 -
 Embedded System Lab
+Handling A Bit Monitoring Error
+Because of six consecutive dominant bis,
+Some receivers that do not detect errors until this time recognize a bit stuffing error.
+They send error flagsAfter error flags, they send error delimiters.
+recessivedominantrecessivedominantSenderCANBusReceiver
 
 ## Page 332
 
-㉦
-HandIing A Bit Monitoring Error
-Transmission Of an error flag
-is always terminated by an error delimiter.
-The error delimiter consists Of 8 recessive bits.
-Sende
-Receiver
-CAN
-Bus
--332-
-dominant
-Data FieId Error FIag Error FIag Error DeIimiter
+- 332 -
 Embedded System Lab
+Handling A Bit Monitoring Error
+Transmission of an error flag is always terminated by an error delimiter.
+The error delimiter consists of 8 recessive bits.
+recessivedominantrecessivedominantSenderCANBusReceiver
 
 ## Page 333
 
-㉦
-HandIing A Bit Monitoring Error
-The error delimiter
-replaces the ACK delimiter and the EOF of a regular message
-transmission,
-Sende
-Receiver
-CAN
-Bus
--333-
-dominant
-Data FieId Error FIag Error FIag Error DeIimiter
+- 333 -
 Embedded System Lab
+Handling A Bit Monitoring Error
+The error delimiter
+replaces the ACK delimiter and the EOF of a regular message transmission,
+recessivedominantrecessivedominantSenderCANBusReceiver
 
 ## Page 334
 
-on the CAN bus,
-the error delimiter of 8 recessive bits results in 11
-bits (bus-idle identifier).
-Sende
-Receiver
-CAN
-Bus
--334-
-㉦
-HandIing A Bit Monitoring Error
-Together with the obligatory transmission pause (IFS)
-Data Field Error FIag -빠-- Error FIag Error Delimiter
-dominant
-recesslve
+- 334 -
 Embedded System Lab
+Handling A Bit Monitoring Error
+Together with the obligatory transmission pause (IFS) on the CAN bus,
+the error delimiter of 8 recessive bits results in 11 recessive bits (bus-idle identifier).
+recessivedominantrecessivedominantSenderCANBusReceiver
 
 ## Page 335
 
--335-
-Error HandIing
-Error handling is completed
-by the sender 0f the interrupted CAN message.
-After the IFS, the sender attempts tO transmit
-the interrupted CAN message again.
-Because Of priority-driven bus access,
-there iS no guarantee Of an immediate repetition.
+- 335 -
 Embedded System Lab
+Error Handling
+Error handling is completed by the sender of the interrupted CAN message.
+After the IFS, the sender attempts to transmit the interrupted CAN message again.
+Because of priority-driven bus access,there is no guarantee of an immediate repetition.
 
 ## Page 336
 
-Error HandIing
+- 336 -
+Embedded System Lab
+Error Handling
 Case 1 (The best case)
 After an error detection, error frames are sent.
-" Primary and secondary error flags overlap.
+Primary and secondary error flags overlap.
 After IFS,
-An interrupted data frame may start t0 be sent.
-Error
-detection
-Data frame
-Active
-error flag
-000000
-Error
-delimiter
-IFS
-1 1 1 1 1 1 11 1 11
-Data frame
--336-
-Error indication
-by error-detecting
-CAN ECU
-Repetition Of
-interrupted data
-frame
-Embedded System Lab
+An interrupted data frame may start to be sent.0 0 0 0 0 01 1 1 1 1 1 1 1Active error flagErrordelimiterError indicationby error-detecting CAN ECUData frameError detection1 1 1IFSData frameRepetition of interrupted data frame
 
 ## Page 337
 
-Error HandIing
-Case 1 (The best case)
-A time period of 17 bit times elapses
-from error detection tO resending
-6(primary error fIag)+8(error deIimiter)+3(IFS)
-Error
-detection
-Data frame
-Active
-error flag
-000000
-17 bits
-Error
-delimiter
-IFS
-1 1 1 1 1 1 11 1 11
-Data frame
--337-
-Error indication
-by error-detecting
-CAN ECU
-Repetition Of
-interrupted data
-frame
+- 337 -
 Embedded System Lab
+Error Handling
+Case 1 (The best case)
+A time period of 17 bit times elapses from error detection to resending
+6(primary error flag)+8(error delimiter)+3(IFS)0 0 0 0 0 01 1 1 1 1 1 1 1Active error flagErrordelimiterError indicationby error-detecting CAN ECUData frameError detection1 1 1IFSData frameRepetition of interrupted data frame17 bits
 
 ## Page 338
 
-Error HandIing
+- 338 -
+Embedded System Lab
+Error Handling
 Case 2
 After an error detection, error frames are sent.
-" Primary and secondary error flags dO not overlap at all.
+Primary and secondary error flags do not overlap at all.
 After IFS,
-An interrupted data frame may start tO be sent.
-Error
-detection
-Data frame
-Superposition
-oferrorfla s
-000000 000000
-Error
-delimiter
-IFS
-11111111111
-Data frame
-Error indication
-by error-detecting
-CAN ECU
--338-
-Repetition Of
-interrupted data
-frame
-Embedded System Lab
+An interrupted data frame may start to be sent.0 0 0 0 0 0Superposition of error flagsError indicationby error-detecting CAN ECUData frameError detection1 1 1 1 1 1 1 1Errordelimiter1 1 1IFSData frameRepetition of interrupted data frame0 0 0 0 0 0
 
 ## Page 339
 
-Error HandIing
-Case 2
-A time period of 23 bit times elapses
-from error detection tO resending
-6(primary error flag)+ 6(secondary error flag)+ 8(error
-deIimiter)+3(IFS)
-23 bits
-Error
-detection
-Data frame
-Superposition
-oferrorfla s
-000000 000000
-Error
-delimiter
-IFS
-11111111111
-Data frame
-Error indication
-by error-detecting
-CAN ECU
--339-
-Repetition Of
-interrupted data
-frame
+- 339 -
 Embedded System Lab
+Error Handling
+Case 2
+A time period of 23 bit times elapses from error detection to resending
+6(primary error flag)+ 6(secondary error flag)+ 8(error delimiter)+3(IFS)0 0 0 0 0 0Superposition of error flagsError indicationby error-detecting CAN ECUData frameError detection1 1 1 1 1 1 1 1Errordelimiter1 1 1IFSData frameRepetition of interrupted data frame0 0 0 0 0 023 bits
 
 ## Page 340
 
-Error HandIing
+- 340 -
+Embedded System Lab
+Error Handling
 Case 3 (Passive state (error detecting) ECU)
 After an error detection, error frames are sent.
-" Primary and secondary error flags overlap.
-After IFS and "Suspend Transmission Time'
-An interrupted data frame may start tO be sent.
-Error
-detection
-Data frame
-Superposition
-oferrorfla s
-Error
-delimiter
-IFS
-Suspend
-trans. time
-6 bits
-6 bits
-Error indication
-by error-detecting
-CAN ECU
--340-
-Data frame
-Repetition Of
-interrupted data
-frame
-Embedded System Lab
+Primary and secondary error flags overlap.
+After IFS and “Suspend Transmission Time”,
+An interrupted data frame may start to be sent.Superposition of error flagsError indicationby error-detecting CAN ECUData frameError detection1 1 1 1 1 1 1 1Errordelimiter1 1 1IFSData frameRepetition of interrupted data frameSuspendtrans. time1 1 1 1 1 1 1 16 bits6 bits
 
 ## Page 341
 
-Error HandIing
-Case 3 (Passive state (error detecting) ECU)
-A time period of 31 bit times elapses from error detection t0
-resending
-6(primary error flag)+ 6(secondary error flag)+ 8(error
-deIimiter)+3(IFS)+8(suspend transmission time)
-Error
-detection
-Data frame
-Superposition
-oferrorfla s
-6 bits
-6 bits
-31 bits
-Error
-IFS
-delimiter
-11111111111
-Suspend
-trans. time
-11111111
-Data frame
-Error indication
-by error-detecting
-CAN ECU
--341-
-Repetition Of
-interrupted data
-frame
+- 341 -
 Embedded System Lab
+Error Handling
+Case 3 (Passive state (error detecting) ECU)
+A time period of 31 bit times elapses from error detection to resending
+6(primary error flag)+ 6(secondary error flag)+ 8(error delimiter)+3(IFS)+8(suspend transmission time)Superposition of error flagsError indicationby error-detecting CAN ECUData frameError detection1 1 1 1 1 1 1 1Errordelimiter1 1 1IFSData frameRepetition of interrupted data frame6 bits31 bits1 1 1 1 1 1 1 1Suspendtrans. time6 bits
 
 ## Page 342
 
-ERROR TRACKING IN CAN
--342-
+- 342 -
 Embedded System Lab
+ERROR TRACKING IN CAN
 
 ## Page 343
 
+- 343 -
+Embedded System Lab
 Error Counters
 Each CAN controller has
 a TEC (Transmit Error Counter)
 a REC (Receive Error Counter)
--343-
-Embedded System Lab
 
 ## Page 344
 
-REC > 127
-or
-TEC > 127
-Error Passive
-Error Tracking
-Start_Up
-대W Reset)
-Error Active
-REC < 128
-and
-TEC < 128
-TEC > 255
-SW Reset
-and
-Reception of 128 )( 11
-Bus Off
-“1” bits
+- 344 -
 Embedded System Lab
+Error Tracking
+Error ActiveStart_Up(HW Reset)
+Error PassiveBus OffREC > 127orTEC > 127REC < 128andTEC < 128TEC > 255SW Reset andReception of 128 X 11  “1” bits
 
 ## Page 345
 
-Error Counters
-EV ln case Of successful transmission Of a data or remote
-frame,
-the relevant error counter iS decremented
-(TEC=TEC-I; REC=REC-I).
--345-
+- 345 -
 Embedded System Lab
+Error Counters
+In case of successful transmission of a data or remote frame,
+the relevant error counter is decremented (TEC=TEC-1; REC=REC-1).
 
 ## Page 346
 
-Error Counters
-Detection and subsequent transmission Of an error flag
-causes
-the relevant error counter tO be incremented according tO
-certain rules.
--346-
+- 346 -
 Embedded System Lab
+Error Counters
+Detection and subsequent transmission of an error flag causes
+the relevant error counter to be incremented according to certain rules.
 
 ## Page 347
 
-㉦
-Receive Error Counter [8E0]
-Change When a node
-successful reception 0f a message if REC 127
-Avalue successful reception 0fa message if REC > 127
-btw 119
-and 127
-+8
--347-
-detects an error
-unless a Bit Error during an Active Error FIag or an OverIoad FIag
-detects a dominant bit as the first bit after sending an Error Flag
-detects a Bit Error while sending an Active E. F. or an OverIoad FIag
-detects more than 7 consecutive dominant bits
-after sending an Active E. F., Passive E.F. or OverIoad FIag
-(+8 for each additional 8 dominant bits)
+- 347 -
 Embedded System Lab
+Receive Error Counter (REC)Change When a node-1 successful reception of a message if REC ≤ 127,A value btw 119 and 127successful reception of a message if REC > 127+1 detects an error unless a Bit Error during an Active Error Flag or an Overload Flag+8 detects a dominant bit as the first bit after sending an Error Flagdetects a Bit Error while sending an Active E. F. or an Overload Flagdetects more than 7 consecutive dominant bits after sending an Active E. F., Passive E.F. or Overload Flag(+8 for each additional 8 dominant bits)
 
 ## Page 348
 
-㉦
-Change
-+8
--348-
-Transmit Error Counter [TEC)
-When a node
-Successful transmission Of a message
-detects a Bit Error while sending an Active E.F. or an OverIoad FIag
-detects more than 7 consecutive dominant bits
-after sending an Active E.F., Passive E.F. or OverIoad FIag
-(+8 for each additional 8 dominant bits)
-sends an Error FIag
-(Exception 1.
-If a node is 'error passive and detects an ACK Error and
-does not detect a 'dominant' bit while sending its Passive E.F.
-Exception 2:
-If a node sends an Error FIag because a Stuff Error occurred during arbitration
-whereby the Stuff Bit is located before the RTR bit, and should have been
-recessive and has been sent as 'recessive' but monitored as 'dominant'
-ln exception 1 and 2, TEC is not changed.)
+- 348 -
 Embedded System Lab
+Transmit Error Counter (TEC)Change When a node-1 successful transmission of a message+8 detects a Bit Error while sending an Active E.F. or an Overload Flagdetects more than 7 consecutive dominant bits after sending an Active E.F., Passive E.F. or Overload Flag(+8 for each additional 8 dominant bits)sends an Error Flag (Exception 1: If a node is ‘error passive’ and detects an ACK Error and does not detect a ‘dominant’ bit while sending its Passive E.F.Exception 2: If a node sends an Error Flag because a Stuff Error occurred during arbitration whereby the Stuff Bit is located before the RTR bit, and should have been  ‘recessive’, and has been sent as ‘recessive’ but monitored as ‘dominant’In exception 1 and 2, TEC is not changed.)
 
 ## Page 349
 
+- 349 -
+Embedded System Lab
 Error Active ECU
-Depending on the specific error count, a CAN
-controller handles switching Of the error state.
-REC > 127
-or
-TEC > 127
-Error Passive
--349-
-Start_Up
-대W Reset)
-Error Active
-REC < 128
-and
-TEC < 128
-TEC > 255
-SW Reset
-and
-Reception of 128 )( 11
-Bus Off
-“1” bits
-mbedded System Lab
+Depending on the specific error count, a CAN controller handles switching of the error state. Error ActiveStart_Up(HW Reset)
+Error PassiveBus OffREC > 127orTEC > 127REC < 128andTEC < 128TEC > 255SW Reset andReception of 128 X 11  “1” bits
 
 ## Page 350
 
+- 350 -
+Embedded System Lab
 Error Active ECU
 After the reset,
-"Error Active" CAN controller
-" Active error flag after detecting an error.
-Active error frame
-Active error flag
-0 0 0 00 0
--350-
-1
-Error delimiter
-111111
-1
-Embedded System Lab
+“Error Active” CAN controller
+Active error flag after detecting an error.
+0  0  0  0  0  01  1  1  1  1  1  1  1Active error flagError delimiterActive error frame
 
 ## Page 351
 
--351-
-Error Active ECU
-After 11 bit consecutive 1
-error delimiter (8 bit “1”) + IFS (3bit “1”)
-thiS (error active) sender tries
-t0 send the interrupted CAN message.
+- 351 -
 Embedded System Lab
+Error Active ECU
+After 11 bit consecutive “1”
+error delimiter (8 bit “1”) + IFS (3bit “1”)this (error active) sender tries to send the interrupted CAN message.
 
 ## Page 352
 
--352-
+- 352 -
+Embedded System Lab
 Error Passive ECU
 When a limit is exceeded (TEC>127 or REC>127),
-the CAN controllers switch over to the "Error Passive” state.
-Embedded System Lab
+the CAN controllers switch over to the “Error Passive” state.
 
 ## Page 353
 
+- 353 -
+Embedded System Lab
 Error Passive ECU
 When a limit is exceeded (TEC>127 or REC>127),
-the CAN controllers switch over to the "Error Passive” state.
-"Error Passive" CAN controllers
+the CAN controllers switch over to the “Error Passive” state.
+“Error Passive” CAN controllers
 Passive error flag
-Sending si)( homogeneous recessive bits.
-This prevents the error-detecting receivers from globalizing
-detected errors.
-Passive error frame
-Passive error flag
-11 11 1 1
-Error delimiter
-Data Remote
-or
-frame
-frame
--353-
-IFS or OverIoad frame
-Embedded System Lab
+Sending six homogeneous recessivebits.
+This prevents the error-detecting receivers from globalizing detected errors.Data frame1  1  1  1  1  11  1  1  1  1  1  1  1Passive error flagError delimiterIFS or Overload frameRemote frameorPassive error frame
 
 ## Page 354
 
-Error Passive ECU
-Before starting tO transmit the next CAN frame,
-The error passive ECU must wait the "Suspend Transmission
-Time” (8 bits)
-Frame
-lntermission
-lnterframe space
-Suspend
-transmission
-8 bits
-Bus idle
-Frame
+- 354 -
 Embedded System Lab
+Error Passive ECU
+Before starting to transmit the next CAN frame,
+The error passive ECU  must wait the “Suspend Transmission Time” (8 bits)
+8 bits
 
 ## Page 355
 
-Error Tracking
-If a CAN controller fails or
-if there are extreme accumulations Of errors,
-a state transition is made to the "Bus Off” state.
-The CAN controller disconnects from the CAN bus.
--355-
+- 355 -
 Embedded System Lab
+Error Tracking
+If a CAN controller fails or if there are extreme accumulations of errors,
+a state transition is made to the “Bus Off” state.
+The CAN controller disconnects from the CAN bus.
 
 ## Page 356
 
-Error Tracking
-The Bus-Off state can 이•飜y be exited
-by intervention 0f the host (with a mandatory waiting time 0f
-128 x 11 bits)
-or by a hardware reset.
--356-
+- 356 -
 Embedded System Lab
+Error Tracking
+The Bus-Off state can only be exited
+by intervention of the host (with a mandatory waiting time of 128 x 11 bits)
+or by a hardware reset.
 
 ## Page 357
 
-OVERLOAD FRAME
--357-
+- 357 -
 Embedded System Lab
+OVERLOAD FRAME
 
 ## Page 358
 
-OverIoad Conditions
-EV lnternal conditions Of a receiver
-which requires a delay Of the next data frame or remote frame
-Detection of a dominant bit
-during the first two bits 0f interframe space
-Detection of a dominant bit at the last bit of
-(The 8th bit) an Error DeIimiter
-Overload Delimiter
-(The 7th bit) an End of Frame
--358-
+- 358 -
 Embedded System Lab
+Overload Conditions
+Internal conditions of a receiver
+which requires a delay of the next data frame or remote frame
+Detection of a dominant bit during the first two bits of interframe space
+Detection of a dominant bit at the last bit of
+(The 8thbit) an Error Delimiter
+Overload Delimiter
+(The 7thbit) an End of Frame
 
 ## Page 359
 
-OverIoad Conditions
-EV lnternal conditions Of a receiver
-) The start 0f an overload frame is a〃owed only in the first time
-bit 0f the anticipated interframe space
-ReguIar
-recelver
-Receiver
-which requires delay
--359-
-Data frame
-Data frame
-OverIoad
-frame
-000000 1 1 1 1 1 1 1 1
-OverIoad frame
-sent by one receiver
+- 359 -
 Embedded System Lab
+Overload Conditions
+Internal conditions of a receiver The start of an overload frame is allowed only in the first time bit of the anticipated interframe space
+Overload framesent by one receiverData frame0 0 0 0 0 01 1 1 1 1 1 1 1Overloadframe1 1 1IFSData frameRegular receiverReceiverwhich requires delay
 
 ## Page 360
 
-OverIoad Conditions
-Detection Of a dominant bit during the first two bits Of
-interframe space
-The start Of the overload frame occurs immediately after the
-detection of the dominant bit
-0
--360-
-End of Frame
-• ln rframe •
-Bus ldle
-pace
-0Ⅴ
-혁-극•
-OverIoad
-frame
+- 360 -
 Embedded System Lab
+Overload Conditions
+Detection of a dominant bit during the first two bits of interframe spaceThe start of the overload frame occurs immediately after the detection of the dominant bit
+1 1 1 1 1 1 1 1Overloadframe0  0  0  0  0  0
 
 ## Page 361
 
-OverIoad Conditions
-Detection Of a dominant bit during the first two bits Of
-interframe space
-The start Of the overload frame occurs immediately after the
-detection of the dominant bit
-0
--361-
-End of Frame
-: lnterfr ei
-Bus ldle
-Spa
-OV
-OverIoad
-frame
+- 361 -
 Embedded System Lab
+Overload Conditions
+Detection of a dominant bit during the first two bits of interframe spaceThe start of the overload frame occurs immediately after the detection of the dominant bit
+1 1 1 1 1 1 1 1Overloadframe0  0  0  0  0  0
 
 ## Page 362
 
--362-
-OverIoad Conditions
-Detection of a dominant bit at the last bit of
-(The 8th bit) an Error DeIimiter
-Overload Delimiter
-(The 7th bit) an End of Frame
-) The start of the overload frame occurs
-immediately after the detection Of the dominant bit
+- 362 -
 Embedded System Lab
+Overload Conditions
+Detection of a dominant bit at the last bit of
+(The 8thbit) an Error Delimiter
+Overload Delimiter
+(The 7thbit) an End of FrameThe start of the overload frame occurs immediately after the detection of the dominant bit
 
 ## Page 363
 
-MESSAGE DOUBLING
--363-
+- 363 -
 Embedded System Lab
+MESSAGE DOUBLING
 
 ## Page 364
 
-LocaI Errors in EOF
-Error detection region
-OF
-Arbitration
-field
-ontro
-field
-Error detection
-by Sender ECU
-Data field (4 bytes)
-Error detection
-by Receiver ECU
-CRC
-field
--364-
-ACK
-field
-EOF
-One bit
-difference
+- 364 -
 Embedded System Lab
+Local Errors in EOF
+Error detection regionError detectionby Receiver ECUEOFArbitrationfieldData field (4 bytes)CRCfieldACKfieldControlfieldSOFError detection by Sender ECUOne bit difference
 
 ## Page 365
 
-LocaI Errors in EOF
-SUPP0se that a single bit error near the end of End of
-Frame (EOF).
-SOF
-Arbitration
-field
--365-
-ontro
-Data field (4 bytes)
-field
-CRC
-field
-One bit error
-occurs!
-ACK
-field
-EOF
+- 365 -
 Embedded System Lab
+Suppose that a single bit error near the end of End of Frame (EOF).
+Local Errors in EOF
+EOFArbitrationfieldData field (4 bytes)CRCfieldACKfieldControlfieldSOFOne bit error occurs!
 
 ## Page 366
 
-LocaI Errors in EOF
-Then
-Receivers recognize thiS frame as valid
-But the sender does not.
-SOF
-Arbitration
-CRC
-field
-field
--366-
-ontro
-Data field (4 bytes)
-field
-One bit error
-occurs!
-ACK
-field
-EOF
+- 366 -
 Embedded System Lab
+Then
+Receivers recognize this frame as valid
+But the sender does not.
+Local Errors in EOF
+EOFArbitrationfieldData field (4 bytes)CRCfieldACKfieldControlfieldSOFOne bit error occurs!
 
 ## Page 367
 
-Message DoubIing
-Thus
-The sender must retransmit this frame.
-Receivers may have 90t one frame more than once.
-SOF
-Arbitration
-field
--367-
-ontro
-Data field (4 bytes)
-field
-CRC
-field
-One bit error
-occurs!
-ACK
-field
-EOF
+- 367 -
 Embedded System Lab
+Thus
+The sender must retransmit this frame.Receivers may have got one frame more than once.
+Message Doubling
+EOFArbitrationfieldData field (4 bytes)CRCfieldACKfieldControlfieldSOFOne bit error occurs!
 
 ## Page 368
 
-6) CAN BLIS Error HandIing - Message DoubIing
-One message may be doubled by a single bit error near
-the end 0f End of Frame (EOF).
+- 368 -
+Embedded System Lab
+CAN Bus Error Handling –Message Doubling
+One message may be doubled by a single bit error near the end of End of Frame (EOF).
 If CAN bus is used in a disturbed environment:
--368-
 NEVER use toggle messages
 NEVER transmit messages carrying relative data
 like angle increments or delta counts
-Use protected protocols or sequence numbers
-for data or program segmentation
-~ Alive counter
-> ls incremented upon each transmission Of the data
-and the receiver can verify that the counter has been incremented.
-Embedded System Lab
+Use protected protocols or sequence numbers for data or program segmentation
+Alive counterIs incremented upon each transmission of the data and the receiver can verify that the counter has been incremented.
 
 ## Page 369
 
-Overload frame
-Purpose 0f overload frame
-to indicate that an ECU has been overloaded for a certain time
-With an OverIoad Frame
-the transmitter is requested
-t0 delay the start 0f the next transmission.
-OverIoad
-flag
-000000
-OverIoad
-delimiter
-11111111
--369-
-OverIoad
-frame
+- 369 -
 Embedded System Lab
+Overload frame
+Purpose of overload frame
+to indicate that an ECU has been overloaded for a certain time
+With an Overload Frame
+the transmitter is requested to delay the start of the next transmission. 0 0 0 0 0 01 1 1 1 1 1 1 1OverloadframeOverloadflagOverloaddelimiter
 
 ## Page 370
 
-OverIoad Frame
-OverIoad flag field (OLF)
-6 consecutive dominant bits
-The OLF destroys the defined structure 0f interframe space
-) AII the other ECUs then detect an overload condition, and
-each starts to transmit an OLF on its own account.
-OverIoad
-flag
-000000
-OverIoad
-delimiter
-11111111
--370-
-OverIoad
-frame
+- 370 -
 Embedded System Lab
+Overload Frame
+Overload flag field (OLF)
+6 consecutive dominant bits
+The OLF destroys the defined structure of interframe spaceAll the other ECUs then detect an overload condition, and each starts to transmit an OLF on its own account.0 0 0 0 0 01 1 1 1 1 1 1 1OverloadframeOverloadflagOverloaddelimiter
 
 ## Page 371
 
-OverIoad Conditions
-ExampIe
-If one receiver requires a delay Of the next frame,
-Receiver
-which requires delay
--371-
-Data frame
+- 371 -
 Embedded System Lab
+Overload Conditions
+Example
+If one receiver requires a delay of the next frame, Data frameReceiverwhich requires delay
 
 ## Page 372
 
-OverIoad Conditions
-ExampIe
-If one receiver requires a delay Of the next frame,
-it will send one overload frame after the current frame.
-OverIoad frame
-sent by one receiver
-Receiver
-which requires delay
--372-
-Data frame
-OverIoad
-frame
+- 372 -
 Embedded System Lab
+Overload Conditions
+Example
+If one receiver requires a delay of the next frame, it will send one overload frame after the current frame.Overload framesent by one receiver0 0 0 0 0 01 1 1 1 1 1 1 1OverloadframeData frameReceiverwhich requires delay
 
 ## Page 373
 
-OverIoad Conditions
-ExampIe
-Because Of dominant values in this overload frame,
-CAN bus values become dominant during IFS.
-OverIoad frame
-sent by one receiver
-Receiver
-which requires delay
-CAN Bus
--373-
-Data frame
-Data frame
-OverIoad
-frame
-IFS
-000000
+- 373 -
 Embedded System Lab
+Overload Conditions
+Example
+Because of dominant values in this overload frame, CAN bus values become dominant during IFS.Overload framesent by one receiver0 0 0 0 0 01 1 1 1 1 1 1 1OverloadframeData frameReceiverwhich requires delayCAN Bus0 0 0 0 0 0IFSData frame
 
 ## Page 374
 
-OverIoad Conditions
-ExampIe
-Because of dominant values of the lst bit in IFS,
-other ECUs will also send overload frames.
-OverIoad frame
-sent by one receiver
-Receiver
-which requires delay
--374-
-Data frame
-OverIoad
-frame
-IFS
-000000
-000000111 11111
-OverIoad frames
-sent by other ECUs
+- 374 -
 Embedded System Lab
+Overload Conditions
+Example
+Because of dominant values of the 1stbit in IFS, other ECUs will also send overload frames.Overload framesent by one receiver0 0 0 0 0 01 1 1 1 1 1 1 1OverloadframeData frameReceiverwhich requires delay0 0 0 0 0 0IFS0 0 0 0 0 01 1 1 1 1 1 1 1Overload framessent by other ECUs
 
 ## Page 375
 
-OverIoad Conditions
-ExampIe
-Thus, overload flags may overlap.
-OverIoad frame
-sent by one receiver
-Receiver
-which requires delay
-CAN Bus
--375-
-Data frame
-Data frame
-OverIoad
-frame
-IFS
-000000
-00000011111111
-0000000 1 1 1 1 1 1 1 1
+- 375 -
 Embedded System Lab
+Overload Conditions
+Example
+Thus, overload flags may overlap.Overload framesent by one receiver0 0 0 0 0 01 1 1 1 1 1 1 1OverloadframeData frameReceiverwhich requires delay0 0 0 0 0 0IFS0 0 0 0 0  01 1 1 1 1 1 1 1CAN Bus0 0 0 0 0 0 0Data frame1 1 1 1 1 1 1 1
 
 ## Page 376
 
-OverIoad Conditions
-Receiver
-which requires delay
-CAN Bus
--376-
-ExampIe
-After (overlapped) overload delimiter, one IFS will be followed.
-OverIoad frame
-sent by one receiver
-OverIoad
-frame
-00000011111111
-Data frame
-Data frame
-IFS
-000000
-0000000
-11111111
+- 376 -
 Embedded System Lab
+Overload Conditions
+Example
+After (overlapped) overload delimiter, one IFS will be followed.Overload framesent by one receiver0 0 0 0 0 01 1 1 1 1 1 1 1OverloadframeData frameReceiverwhich requires delay0 0 0 0 0 0IFS0 0 0 0 0  01 1 1 1 1 1 1 1CAN Bus0 0 0 0 0 0 0Data frame1 1 1 1 1 1 1 11 1 1 IFS
 
 ## Page 377
 
-OverIoad Conditions
-Receiver
-which requires delay
-CAN Bus
--377-
-ExampIe
-As a result, the next frame transmission will be delayed.
-OverIoad frame
-sent by one receiver
-OverIoad
-frame
-00000011111111
-Data frame
-Data frame
-IFS
-000000
-0000000
-11111111
-1 1 1 Nextframe
+- 377 -
 Embedded System Lab
+Next frame
+Overload Conditions
+Example
+As a result, the next frame transmission will be delayed.Overload framesent by one receiver0 0 0 0 0 01 1 1 1 1 1 1 1OverloadframeData frameReceiverwhich requires delay0 0 0 0 0 0IFS0 0 0 0 0  01 1 1 1 1 1 1 1CAN Bus0 0 0 0 0 0 0Data frame1 1 1 1 1 1 1 1IFS1 1 1
 
 ## Page 378
 
-OverIoad Conditions
-Superposition 0f overlapped flags
-End of frame or
-Error Delimiter or
-Overload Delimiter
--378-
-Overload frame
-OverIoad flag
-Superposition 0f
-OverIoad flags
-lntefframe space
-or
-Overload frame
-Overload Delimiter
+- 378 -
 Embedded System Lab
+Overload Conditions
+Superposition of overlapped flags
 
 ## Page 379
 
-OverIoad Frame
-OverIoad Frame
-The same shape Of an Active Error Frame
-Difference between overload and error frames
-OverIoad frame
-> does not increase the error counters and
-> does not causes a retransmission Of a frame.
-OverIoad
-flag
-000000
-OverIoad
-delimiter
-11111111
--379-
-OverIoad
-frame
+- 379 -
 Embedded System Lab
+Overload Frame
+Overload Frame
+The same shape of an Active Error Frame
+Difference between overload and error frames
+Overload frame does not increase the error counters and does not causes a retransmission of a frame. 0 0 0 0 0 01 1 1 1 1 1 1 1OverloadframeOverloadflagOverloaddelimiter
 
 ## Page 380
 
+- 380 -
+Embedded System Lab
 Overload frame
-An overload frame can appear at the end 0f
+An overload frame can appear at the end of
 A frame
 an error delimiter, or
 another overload delimiter
-End of frame or
-Error Delimiter or
-Overload Delimiter
-Overload frame
-OverIoad flag
-Superposition 0f
-OverIoad flags
-lntefframe space
-or
-Overload frame
-Overload Delimiter
-Embedded System Lab
 
 ## Page 381
 
+- 381 -
+Embedded System Lab
 Overload frame
 An overload frame is followed
 by the interframe space, or
 by another overload frame.
-End of frame or
-Error Delimiter or
-Overload Delimiter
--381-
-Overload frame
-OverIoad flag
-Superposition 0f
-OverIoad flags
-lntefframe space.
-or
-Overload frame .
-Overload Delimitet
-• MfiDéddéd 하성té『h뀐•龜
 
 ## Page 382
 
--382-
-Overload frame
-TO avoid blocking the bus indefinitely,
-only tWO consecutive overload frames can be generated
-tO delay the following data or remote frames.
+- 382 -
 Embedded System Lab
+Overload frame
+To avoid blocking the bus indefinitely,
+only two consecutive overload frames can be generated to delay the following data or remote frames.
 
 ## Page 383
 
-CAN 2.OB
--383-
+- 383 -
 Embedded System Lab
+CAN 2.0B
 
 ## Page 384
 
+- 384 -
+Embedded System Lab
 ISO 11898-1
 ISO 11898-1
-CAN 2.OA
-• Standard frame of 11 identifier bits
-CAN 2.OB
+CAN 2.0A
+Standard frame of 11 identifier bits
+CAN 2.0B
 Standard frame of 11 identifier bits
 Extended frame of 29 identifier bits
-Embedded System Lab
 
 ## Page 385
 
-㉦
-Standard VS Extended Frames
-Control
-0
-0
-Arbitration
-11—bit identifier
-•刀
-•刀
-•刀
-0
-0
-3
-DLC
-0 far data 7 for remote frame
-Base identifier
-|d28-|d18
-ifthe first ll-bits are the some standard frames prevail
-Arbitration
-Extended identifier
-|d17-|d0
--385-
-Control
-그 3 DLC
-0 for data frame
-1 for remote frame
+- 385 -
 Embedded System Lab
+Standard vs Extended Frames
 
 ## Page 386
 
-㉦
-Standard VS Extended Frames
+- 386 -
+Embedded System Lab
+Standard vs Extended Frames
 RTR(Remote transmission request)
 SRR(substitute remote request bit)
 IDE (identifier extension bit)
-Control
-Arbitration
-0 ll—bit identifier : 0 3
-: 刀
-0 for data 7 for remote frame
-DLC
-ifthe first ll-bits are the some standard frames prevail
-8
--386-
-Base identifier
-|d28-|d18
-. 刀 :0
-Arbitration
-Extended identifier
-|d17-|d0
-Control
-그 3 DLC
-0 for data frame
-1 for remote frame
-Embedded System Lab
 
 ## Page 387
 
-㉦
-0
-Standard VS Extended Frames
-Arbitration
-11—bit identifier
-0 for data 7 for remote frame
-Control
-DLC
-• ifthe first ll-bits are the some standard frames prevail
-8
--387-
-Base identifier
-|d28-|d18
-.Arbitration
-Extended identifier
-|d17-|d0
-Control
-그 3 DLC
-0 for data frame
-1 for remote frame
+- 387 -
 Embedded System Lab
+Standard vs Extended Frames
 
 ## Page 388
 
-㉦
-0
-Standard VS Extended Frames
-Arbitration
-11—bit identifier
-ControI
-0 3
-DLC
-0 for data 7 for remote frame
-if he first ll-bits are the some standard frames prevail
-8
--388-
-Base identifier
-|d28-|d18
-刀
-0
-ArSitration
-Extended identifier
-|d17-|d0
-Control
-그 3 DLC
-0 for data frame
-1 for remote frame
+- 388 -
 Embedded System Lab
+Standard vs Extended Frames
 
 ## Page 389
 
-㉦
-0
-Standard VS Extended Frames
-Arbitration
-11—bit identifier
-Control
-刀
-刀
-0 3
-m
-DLC
-0 for data 7 for remote frame
-ifthe first ll-bits are the some standard frames prevail
-8
--389-
-Base identifier
-|d28-|d18
-0
-Arbitration
-Extended identifier
-|d17-|d0
-Control
-그 3 DLC
-0 for data frame
-1 for remote frame
+- 389 -
 Embedded System Lab
+Standard vs Extended Frames
 
 ## Page 390
 
-㉦
-0
-Standard VS Extended Frames
-Arbitration
-11—bit identifier
-Control
-刀
-刀
-刀
-0 3
-m
-DLC
-0 for data 7 for remote frame
-ifthe first ll-bits are the some standard frames prevail
-8
--390-
-Base identifier
-|d28-|d18
-0
-m
-Arbitration
-Extended identifier
-|d17-|d0
-Control
-그 3 : DLC
-0 for aata frame
-1 for remote frame
+- 390 -
 Embedded System Lab
+Standard vs Extended Frames
 
 ## Page 391
 
-ECU A
-SOF
-Standard
-frame
-ECU B
-SOF
-Extended
-frame
-<Dominique Paret>
--391-
-㉦
-Arbitration btw 2.OA and 2.OB
-Arbitration between a standard frame and an extended frame
-lDs:. lD4:
-RTR? IDE
-lD26: lD25
-l다0: lD9
-lD7
-lD6
-lD24
-lD3
-lD23: lD22 : lD21
-lDo
-lD20 : D19 :lD18 : SRRE IDE
-lD2ä
-lD28 •
-lD27
-Recessiv
-Dominan
-Recessiv
-Dominan
-The extended frame loses the arbitration
+- 391 -
 Embedded System Lab
+Arbitration between a standard frame and an extended frameArbitration btw 2.0A and 2.0B
+<Dominique Paret>
 
 ## Page 392
 
-Frames in 2.OA and 2.OB
-Standard data frames
-SOF
-11 bit
-0
-rl 『0
-DLC DLC
-0 0 0
-DL
-0
-Data
-3
-2
-DLC
-1
-CRC CRC ACK ACK
-Sequence DeI slot DeI
-RTR
--392-
-EOF
+- 392 -
 Embedded System Lab
+Frames in 2.0A and 2.0B
+Standard data framesr1r0DLC3DLC2DLC1DLC0SOFEOFRTR11 bitIDDataCRCSequenceCRCDelACKslotACKDel00 00
 
 ## Page 393
 
-Frames in 2.OA and 2.OB
-Standard and extended data frames
-SOF
-11 bit
-0
-SOF
-11 bit
-0
-0 0
-RTR
-:IDE
-0
-DLC
-Data
-CRC CRC ACK ACK
-Sequence DeI slot DeI
-『1 rO
-EOF
-18 bit
-0 0 0
-RTR
-DLC
-Data
-늘R艮
--393-
-CRC CRC ACK ACK
-EOF
-Sequence DeI slot DeI
+- 393 -
 Embedded System Lab
+DLC
+Frames in 2.0A and 2.0B
+Standard and extended data framesr1r0DLCSOFEOFRTR11 bitIDDataCRCSequenceCRCDelACKslotACKDel00 00IDESOFEOFSRR11 bitIDDataCRCSequenceCRCDelACKslotACKDel11018 bitIDr1r0RTR00 0
 
 ## Page 394
 
-Frames in 2.OA and 2.OB
-Standard and extended data frames
-SOF
-11 bit
-0
-SOF
-11 bit
-0
--394-
-0 : 0
-RTR:
-: 『1 :rO
-『1 rO
-:0
-DLC
-Data
-CRC CRC ACK ACK
-Sequence DeI slot DeI
-EOF
-:IDS
-18 bit
-0 0 0
-RTR
-DLC
-Data
-CRC CRC ACK ACK
-EOF
-Sequence DeI slot DeI
+- 394 -
 Embedded System Lab
+DLC
+Frames in 2.0A and 2.0B
+Standard and extended data framesr1r0DLCSOFEOFRTR11 bitIDDataCRCSequenceCRCDelACKslotACKDel00 00IDESOFEOFSRR11 bitIDDataCRCSequenceCRCDelACKslotACKDel11018 bitIDr1r0RTR00 0
 
 ## Page 395
 
-Frames in 2.OA and 2.OB
-Standard and extended data frames
-SOF
-11 bit
-『1 『0
-: 0 0
-0
-RTR
-DLC
-18 bit
-Data
-RTR
-CRC CRC ACK ACK
-Sequence DeI slot DeI
-『1 rO
-EOF
-SOF
-11 bit :
-SRR
--395-
-DLC
-Data
-CRC CRC ACK ACK
-EOF
-Sequence DeI slot DeI
+- 395 -
 Embedded System Lab
+DLC
+Frames in 2.0A and 2.0B
+Standard and extended data framesr1r0DLCSOFEOFRTR11 bitIDDataCRCSequenceCRCDelACKslotACKDel00 00IDESOFEOFSRR11 bitIDDataCRCSequenceCRCDelACKslotACKDel11018 bitIDr1r0RTR00 0
 
 ## Page 396
 
-Frames in 2.OA and 2.OB
-Standard and extended data frames
-SOF
-0
-SOF
-『1 rO
-0
--396-
-11 bit
-11 bit
-『1 『0
-0 0 0 DLC
-: RTR
-Data
-0 0 0
-• RTR
-CRC CRC ACK ACK
-Sequence DeI slot DeI
-EOF
-IDE
-SRR
-18 bit
-DLC
-Data
-CRC CRC ACK ACK
-EOF
-Sequence DeI slot DeI
+- 396 -
 Embedded System Lab
+DLC
+Frames in 2.0A and 2.0B
+Standard and extended data framesr1r0DLCSOFEOFRTR11 bitIDDataCRCSequenceCRCDelACKslotACKDel00 00IDESOFEOFSRR11 bitIDDataCRCSequenceCRCDelACKslotACKDel11018 bitIDr1r0RTR00 0
 
 ## Page 397
 
-6) ADDIication fields 0f CAN 2.OA and CAN 2.OB
-三95%
-三50%
--397-
-Applications
-0
-(0
-Trucks
-Buses
-UtilitV vehicles
-Message type
-Standard
-message frame
-(1 1-bit identifier)
-Extended
-message frame
-(29-bit identifier)
-2.OA
-CAN
-2.OB
+- 397 -
 Embedded System Lab
+Application fields of CAN 2.0A and CAN 2.0B
