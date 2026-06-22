@@ -6,6 +6,7 @@
 
 - [과목 목차](<목차.md>)
 - [Quiz 1](<퀴즈/quiz-1.md>)
+- [오프라인 실습: Tiny LLaMA](<실습/오프라인실습-Tiny-LLaMA/README.md>)
 
 ## 교안 목록
 
@@ -21,3 +22,9 @@
 | 07 | Mapping & Dataflow | [PPTX](<교안/7. Mapping.pptx>) | [MD](<텍스트/7. Mapping.md>) |
 | 08 | AI Accelerators | [PPTX](<교안/8_HW.pptx>) | [MD](<텍스트/8_HW.md>) |
 | 09 | In-memory & In-sensor Computing | [PPTX](<교안/9. IMC_ISC.pptx>) | [MD](<텍스트/9. IMC_ISC.md>) |
+
+## 실습
+
+| 날짜/주제 | 자료 |
+| --- | --- |
+| 오프라인 실습: Tiny LLaMA | [README](<실습/오프라인실습-Tiny-LLaMA/README.md>) / [목차](<실습/오프라인실습-Tiny-LLaMA/목차.md>) / [PPTX](<실습/오프라인실습-Tiny-LLaMA/교안/온디바이스AI_오프라인실습_Tiny_LLaMA.pptx>) |
