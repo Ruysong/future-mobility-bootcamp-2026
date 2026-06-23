@@ -7,7 +7,7 @@
 | 과목 | 목차 | 과목 폴더 | 퀴즈/실습 |
 | --- | --- | --- | --- |
 | 미래차공학개론 | [목차](<미래차공학개론/목차.md>) | [README](<미래차공학개론/README.md>) | [weekly quiz](<미래차공학개론/퀴즈/weekly-quiz.md>) |
-| 온디바이스-AI | [목차](<온디바이스-AI/목차.md>) | [README](<온디바이스-AI/README.md>) | [Tiny LLaMA 실습](<온디바이스-AI/실습/오프라인실습-Tiny-LLaMA/README.md>) |
+| 온디바이스-AI | [목차](<온디바이스-AI/목차.md>) | [README](<온디바이스-AI/README.md>) | [퀴즈](<온디바이스-AI/퀴즈>) / [Tiny LLaMA 실습](<온디바이스-AI/실습/오프라인실습-Tiny-LLaMA/README.md>) |
 | 차량용통신-CAN-FD | [목차](<차량용통신-CAN-FD/목차.md>) | [README](<차량용통신-CAN-FD/README.md>) | [CAN 실습](<차량용통신-CAN-FD/실습/README.md>) |
 
 ## 저장소 구조
@@ -51,7 +51,9 @@
 │   ├── 텍스트/
 │   │   └── 온디바이스 AI 강의 텍스트 md
 │   ├── 퀴즈/
-│   │   └── quiz-1.md
+│   │   ├── quiz-1.md
+│   │   ├── quiz-2.md
+│   │   └── quiz-3.md
 │   └── 실습/
 │       └── 오프라인실습-Tiny-LLaMA/
 │           ├── README.md

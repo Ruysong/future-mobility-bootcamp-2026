@@ -6,6 +6,8 @@
 
 - [과목 목차](<목차.md>)
 - [Quiz 1](<퀴즈/quiz-1.md>)
+- [Quiz 2](<퀴즈/quiz-2.md>)
+- [Quiz 3](<퀴즈/quiz-3.md>)
 - [오프라인 실습: Tiny LLaMA](<실습/오프라인실습-Tiny-LLaMA/README.md>)
 
 ## 교안 목록
@@ -22,6 +24,14 @@
 | 07 | Mapping & Dataflow | [PPTX](<교안/7. Mapping.pptx>) | [MD](<텍스트/7. Mapping.md>) |
 | 08 | AI Accelerators | [PPTX](<교안/8_HW.pptx>) | [MD](<텍스트/8_HW.md>) |
 | 09 | In-memory & In-sensor Computing | [PPTX](<교안/9. IMC_ISC.pptx>) | [MD](<텍스트/9. IMC_ISC.md>) |
+
+## 퀴즈
+
+| 번호 | 범위 | 파일 |
+| --- | --- | --- |
+| Quiz 1 | Introduction / Pruning / Quantization | [quiz-1.md](<퀴즈/quiz-1.md>) |
+| Quiz 2 | KD / NAS / Efficient LLM | [quiz-2.md](<퀴즈/quiz-2.md>) |
+| Quiz 3 | Mapping & Dataflow / AI Accelerators / IMC & ISC | [quiz-3.md](<퀴즈/quiz-3.md>) |
 
 ## 실습
 
