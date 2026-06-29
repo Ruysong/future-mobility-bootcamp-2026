@@ -9,6 +9,7 @@
 | 미래차공학개론 | [목차](<미래차공학개론/목차.md>) | [README](<미래차공학개론/README.md>) | [weekly quiz](<미래차공학개론/퀴즈/weekly-quiz.md>) |
 | 온디바이스-AI | [목차](<온디바이스-AI/목차.md>) | [README](<온디바이스-AI/README.md>) | [퀴즈](<온디바이스-AI/퀴즈>) / [Tiny LLaMA 실습](<온디바이스-AI/실습/오프라인실습-Tiny-LLaMA/README.md>) |
 | 차량용통신-CAN-FD | [목차](<차량용통신-CAN-FD/목차.md>) | [README](<차량용통신-CAN-FD/README.md>) | [CAN 실습](<차량용통신-CAN-FD/실습/README.md>) |
+| 차량용-미들웨어 | [목차](<차량용-미들웨어/목차.md>) | [README](<차량용-미들웨어/README.md>) | [SOME/IP 실습총자료](<차량용-미들웨어/텍스트/단기강좌_SOMEIP_교육자료.md>) |
 
 ## 저장소 구조
 
@@ -63,36 +64,43 @@
 │           └── notebooks/
 │               ├── starter.ipynb
 │               └── completed.ipynb
-└── 차량용통신-CAN-FD/
+├── 차량용통신-CAN-FD/
+│   ├── README.md
+│   ├── 목차.md
+│   ├── 교안/
+│   │   ├── Classic CAN.pdf
+│   │   └── CAN FD (Flexible Data Rate).pdf
+│   ├── 텍스트/
+│   │   ├── Classic CAN.md
+│   │   └── CAN FD (Flexible Data Rate).md
+│   └── 실습/
+│       ├── README.md
+│       ├── 1일차-CAN-통신-실습/
+│       │   ├── README.md
+│       │   ├── 교안/
+│       │   │   └── CAN자료.pdf
+│       │   ├── 실습파일/
+│       │   │   ├── ELF/
+│       │   │   │   ├── Renesas_SummerCamp_CAN_Ex0.hex
+│       │   │   │   ├── Renesas_SummerCamp_CAN_Ex1.hex
+│       │   │   │   └── Renesas_SummerCamp_CAN_Ex2.hex
+│       │   │   ├── UI/
+│       │   │   │   └── Renesas_SummerCamp_CAN_UI.exe
+│       │   │   └── Workspace/
+│       │   │       └── CAN/
+│       │   │           ├── CAN.rpj
+│       │   │           └── RA.fcf
+│       │   └── 원본압축/
+│       │       └── Renesas_SummerCamp_CAN.zip
+│       └── 2일차-CAN-FD-실습/
+│           └── README.md
+└── 차량용-미들웨어/
     ├── README.md
     ├── 목차.md
     ├── 교안/
-    │   ├── Classic CAN.pdf
-    │   └── CAN FD (Flexible Data Rate).pdf
-    ├── 텍스트/
-    │   ├── Classic CAN.md
-    │   └── CAN FD (Flexible Data Rate).md
-    └── 실습/
-        ├── README.md
-        ├── 1일차-CAN-통신-실습/
-        │   ├── README.md
-        │   ├── 교안/
-        │   │   └── CAN자료.pdf
-        │   ├── 실습파일/
-        │   │   ├── ELF/
-        │   │   │   ├── Renesas_SummerCamp_CAN_Ex0.hex
-        │   │   │   ├── Renesas_SummerCamp_CAN_Ex1.hex
-        │   │   │   └── Renesas_SummerCamp_CAN_Ex2.hex
-        │   │   ├── UI/
-        │   │   │   └── Renesas_SummerCamp_CAN_UI.exe
-        │   │   └── Workspace/
-        │   │       └── CAN/
-        │   │           ├── CAN.rpj
-        │   │           └── RA.fcf
-        │   └── 원본압축/
-        │       └── Renesas_SummerCamp_CAN.zip
-        └── 2일차-CAN-FD-실습/
-            └── README.md
+    │   └── 단기강좌_SOMEIP_교육자료.pdf
+    └── 텍스트/
+        └── 단기강좌_SOMEIP_교육자료.md
 ```
 
 ## 정리 원칙
