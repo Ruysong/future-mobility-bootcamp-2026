@@ -10,6 +10,7 @@
 | 온디바이스-AI | [목차](<온디바이스-AI/목차.md>) | [README](<온디바이스-AI/README.md>) | [퀴즈](<온디바이스-AI/퀴즈>) / [Tiny LLaMA 실습](<온디바이스-AI/실습/오프라인실습-Tiny-LLaMA/README.md>) |
 | 차량용통신-CAN-FD | [목차](<차량용통신-CAN-FD/목차.md>) | [README](<차량용통신-CAN-FD/README.md>) | [CAN 실습](<차량용통신-CAN-FD/실습/README.md>) |
 | 차량용-미들웨어 | [목차](<차량용-미들웨어/목차.md>) | [README](<차량용-미들웨어/README.md>) | [SOME/IP](<차량용-미들웨어/텍스트/단기강좌_SOMEIP_교육자료.md>) / [DDS](<차량용-미들웨어/텍스트/DDS 단기강좌 강의자료.md>) |
+| 차량용-Ethernet | [목차](<차량용-Ethernet/목차.md>) | [README](<차량용-Ethernet/README.md>) | [1일차 실습자료](<차량용-Ethernet/텍스트/이더넷_강의자료.md>) |
 
 ## 저장소 구조
 
@@ -94,15 +95,22 @@
 │       │       └── Renesas_SummerCamp_CAN.zip
 │       └── 2일차-CAN-FD-실습/
 │           └── README.md
-└── 차량용-미들웨어/
+├── 차량용-미들웨어/
+│   ├── README.md
+│   ├── 목차.md
+│   ├── 교안/
+│   │   ├── 단기강좌_SOMEIP_교육자료.pdf
+│   │   └── DDS 단기강좌 강의자료.pdf
+│   └── 텍스트/
+│       ├── 단기강좌_SOMEIP_교육자료.md
+│       └── DDS 단기강좌 강의자료.md
+└── 차량용-Ethernet/
     ├── README.md
     ├── 목차.md
     ├── 교안/
-    │   ├── 단기강좌_SOMEIP_교육자료.pdf
-    │   └── DDS 단기강좌 강의자료.pdf
+    │   └── 이더넷_강의자료.pdf
     └── 텍스트/
-        ├── 단기강좌_SOMEIP_교육자료.md
-        └── DDS 단기강좌 강의자료.md
+        └── 이더넷_강의자료.md
 ```
 
 ## 정리 원칙
